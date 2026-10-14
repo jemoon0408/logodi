@@ -99,7 +99,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.096px;
@@ -147,7 +147,7 @@
 .sub-visual__title {
   margin: 0;
   color: #fff;
-  font-size: 45px;
+  font-size: 2.8125rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1.5px;
@@ -260,7 +260,7 @@
   background: #fff;
   color: #444;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: -0.48px;
@@ -317,7 +317,7 @@
   gap: 10px;
   color: #444;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: -0.48px;
@@ -458,7 +458,7 @@
   display: flex;
   align-items: center;
   color: #3c4655;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.45;
   letter-spacing: -0.4px;
@@ -628,7 +628,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 800;
   line-height: 1.2;
   white-space: nowrap;
@@ -657,7 +657,7 @@
   display: flex;
   align-items: center;
   color: #000;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
   text-decoration: none;
@@ -727,7 +727,7 @@
   gap: 8px;
   color: #000;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -0.5px;
@@ -787,7 +787,7 @@
   border: 0;
   display: block;
   color: #444;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.4px;
@@ -856,7 +856,7 @@
 .sub-page-title h2 {
   margin: 0;
   color: #111;
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1.4px;
@@ -891,7 +891,7 @@
 .sub-section__title {
   margin: 0 0 35px;
   color: #111;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1.9px;
@@ -928,7 +928,7 @@
 .sub-small-title h4 {
   margin: 0;
   color: #001f59;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1.4px;
@@ -999,7 +999,7 @@
 .sub-info-box p {
   margin: 0;
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -1px;
@@ -1026,7 +1026,7 @@
   align-items: center;
   gap: 10px;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   letter-spacing: -1px;
 }
@@ -1048,7 +1048,7 @@
   position: relative;
   padding-left: 23px;
   color: #111;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -1px;
@@ -1077,7 +1077,7 @@
 .sub-course-list li {
   position: relative;
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: -1px;
@@ -1175,7 +1175,7 @@
   background: #fff;
   box-shadow: 1px 2px 8px rgba(0, 27, 96, 0.12);
   color: #1e2124;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   cursor: pointer;
 }
@@ -1206,7 +1206,7 @@
   display: block;
   margin-bottom: 15px;
   color: #111;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -1px;
@@ -1233,7 +1233,7 @@
   width: 82px;
   padding-left: 23px;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -1px;
@@ -1254,7 +1254,7 @@
   min-width: 0;
   margin: 0;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -1px;
@@ -1305,7 +1305,7 @@
   padding: 6px 10px;
   background: #eaeef4;
   color: #111;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
@@ -1326,7 +1326,7 @@
   border-bottom: 1px solid #ddd;
   background: #fafafa;
   color: #111;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
@@ -1343,7 +1343,7 @@
   border-bottom: 1px solid #ddd;
   background: #fff;
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
   text-align: left;
@@ -1371,7 +1371,7 @@
   padding: 6px 10px;
   background: #8994ae;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
@@ -1391,7 +1391,7 @@
   border-bottom: 1px solid #ddd;
   background: #fff;
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
   vertical-align: middle;
@@ -1442,7 +1442,7 @@
   min-width: 87px;
   padding-left: 18px;
   color: #1652be;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -1px;
@@ -1462,7 +1462,7 @@
 .sub-review-row span {
   min-width: 0;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   letter-spacing: -1px;
   word-break: keep-all;
@@ -1479,7 +1479,7 @@
   margin: 0;
   padding-left: 23px;
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.8;
   letter-spacing: -1px;
   word-break: keep-all;
@@ -1532,7 +1532,7 @@
     #2b4bd9 109%
   );
   color: #fff;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -1550,7 +1550,7 @@
   padding-bottom: 15px;
   border-bottom: 1px solid #c2c2c7;
   color: #1652be;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1.1px;
@@ -1561,7 +1561,7 @@
   min-width: 0;
   margin: 0;
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
   word-break: keep-all;
@@ -1628,7 +1628,7 @@
   align-items: center;
   gap: 6px;
   color: #2257b4;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -1641,7 +1641,7 @@
 
 .sub-satisfaction__contact-item strong {
   color: #111;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -1677,7 +1677,7 @@
 
 .sub-satisfaction__question strong {
   color: #111;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
   word-break: keep-all;
@@ -1686,7 +1686,7 @@
 .sub-satisfaction__question p {
   margin: 0;
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.2;
   word-break: keep-all;
 }
@@ -1741,7 +1741,7 @@
 
 .sub-satisfaction__radios span {
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 23px;
 }
@@ -1759,7 +1759,7 @@
   border-radius: 5px;
   background: #0b3460;
   color: #fff;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
   letter-spacing: -1px;
   cursor: pointer;
@@ -1794,7 +1794,7 @@
   .sub-location-select__button {
     padding-left: 16px;
     padding-right: 40px;
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
   .sub-location-select__icon {
@@ -1844,11 +1844,11 @@
   }
 
   .sub-section__title {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .sub-small-title h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .sub-step-row {
@@ -1882,7 +1882,7 @@
   }
 
   .sub-visual__title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
 
@@ -1931,7 +1931,7 @@
       14px;
     border: 1px solid #d4dee3;
     border-radius: 7px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .sub-location-select__icon {
@@ -1965,7 +1965,7 @@ display: none;
   }
 
   .sub-page-title h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .sub-section {
@@ -1973,7 +1973,7 @@ display: none;
   }
 
   .sub-section__title {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   .sub-content {
@@ -2046,7 +2046,7 @@ display: none;
     padding: 11px 15px;
     background: #8994ae;
     color: #fff;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 700;
     line-height: 1.5;
     text-align: left;
@@ -2056,7 +2056,7 @@ display: none;
     display: block;
     padding: 15px;
     color: #3c4655;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.6;
     word-break: keep-all;
@@ -2078,7 +2078,7 @@ display: none;
   }
 
   .sub-satisfaction__question strong {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 
   .sub-satisfaction__form fieldset {
@@ -2156,7 +2156,7 @@ display: none;
       38px
       10px
       12px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
 
@@ -2165,7 +2165,7 @@ display: none;
   --------------------------------------------------------- */
 
   .sub-section__title {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 
   .sub-small-title {
@@ -2174,7 +2174,7 @@ display: none;
 
   .sub-small-title h4 {
     padding-top: 3px;
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .sub-small-title__bullet {
@@ -2243,7 +2243,7 @@ display: none;
   }
 
   .sub-visual__title {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
 
@@ -2288,15 +2288,15 @@ display: none;
   --------------------------------------------------------- */
 
   .sub-page-title h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   .sub-section__title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .sub-small-title h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .sub-info-box {
@@ -2310,12 +2310,12 @@ display: none;
 
   .sub-technique-table__mobile-title {
     padding: 10px 13px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .sub-technique-table__text {
     padding: 14px 13px;
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
 
@@ -2395,11 +2395,11 @@ display: none;
   --------------------------------------------------------- */
 
   .sub-section__title {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .sub-small-title h4 {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 
   .sub-satisfaction__radios {
@@ -2426,7 +2426,7 @@ display: none;
   background: #fff;
   box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.1);
   color: #1e2124;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
@@ -2559,7 +2559,7 @@ display: none;
   left: 0;
   right: 0;
   z-index: 2;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.3;
   letter-spacing: -1px;
   text-align: center;
@@ -2633,7 +2633,7 @@ display: none;
 .sub-history__year {
   margin: 0 0 6px;
   color: #000;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -2px;
@@ -2655,7 +2655,7 @@ display: none;
 .sub-history__event dt {
   flex: none;
   color: #08a3bb;
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -1.25px;
@@ -2665,7 +2665,7 @@ display: none;
   min-width: 0;
   margin: 0;
   color: #2f3747;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.51px;
@@ -2742,7 +2742,7 @@ display: none;
   right: 0;
   margin: 0;
   color: #162c4f;
-  font-size: 34px;
+  font-size: 2.125rem;
   font-size: 8.61cqw;
   font-weight: 700;
   line-height: 1.5;
@@ -2889,7 +2889,7 @@ display: none;
 .sub-mi-color__title {
   margin: 0;
   color: #3c4655;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -1.1px;
@@ -2922,7 +2922,7 @@ display: none;
   flex-direction: column;
   gap: 4px;
   color: #3c4655;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.5;
   letter-spacing: -1px;
 }
@@ -3020,7 +3020,7 @@ display: none;
 
 .sub-logo60__banner-org {
   color: #002466;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -1.4px;
@@ -3029,7 +3029,7 @@ display: none;
 .sub-logo60__banner-title {
   margin: 0;
   color: #1155d0;
-  font-size: 39px;
+  font-size: 2.4375rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -1.95px;
@@ -3038,7 +3038,7 @@ display: none;
 .sub-logo60__text p {
   margin: 0;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -3074,7 +3074,7 @@ display: none;
   background: linear-gradient(173deg, #2257b4 0%, #6396ed 69%);
   filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.1));
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
@@ -3115,18 +3115,18 @@ display: none;
 @media (max-width: 1200px) {
 
   .sub-mi-color__title {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 }
 
 @media (max-width: 876px) {
 
   .sub-history__year {
-    font-size: 34px;
+    font-size: 2.125rem;
   }
 
   .sub-history__event dt {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .sub-mi-colors {
@@ -3135,11 +3135,11 @@ display: none;
   }
 
   .sub-logo60__banner-org {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .sub-logo60__banner-title {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 
@@ -3164,7 +3164,7 @@ display: none;
 
   .sub-history__tab-label {
     top: 68px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .sub-history__panel {
@@ -3251,7 +3251,7 @@ display: none;
 @media (max-width: 580px) {
 
   .sub-history__year {
-    font-size: 28px;
+    font-size: 1.75rem;
     letter-spacing: -1.4px;
   }
 
@@ -3260,16 +3260,16 @@ display: none;
   }
 
   .sub-history__event dt {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: -0.9px;
   }
 
   .sub-history__event dd {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .sub-mi-color__title {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .sub-logo60__banner {
@@ -3277,22 +3277,22 @@ display: none;
   }
 
   .sub-logo60__banner-org {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .sub-logo60__banner-title {
-    font-size: 26px;
+    font-size: 1.625rem;
     letter-spacing: -1.3px;
   }
 
   .sub-logo60__text p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .sub-logo60__label {
     width: auto;
     padding: 6px 18px;
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .sub-logo60__logos {
@@ -3300,7 +3300,7 @@ display: none;
   }
 
   .btn.lg.sub-download-btn {
-    font-size: 16px;
+    font-size: 1rem;
     padding: 0 20px;
   }
 }
@@ -3366,7 +3366,7 @@ display: none;
 .sub-greeting__title {
   margin: 0 0 60px;
   color: #111;
-  font-size: 34px;
+  font-size: 2.125rem;
   font-weight: 800;
   line-height: 1.5;
   letter-spacing: -1px;
@@ -3386,14 +3386,14 @@ display: none;
 }
 
 .sub-greeting__title small {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
 }
 
 .sub-greeting__text p {
   margin: 0;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   word-break: keep-all;
 }
@@ -3404,7 +3404,7 @@ display: none;
 
 .sub-greeting__text p.is-strong {
   color: #111;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -3469,7 +3469,7 @@ display: none;
   border-radius: 60px;
   background: #1a3c70;
   color: #fff;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 1.5;
   letter-spacing: -0.32px;
 }
@@ -3482,7 +3482,7 @@ display: none;
   min-width: 0;
   margin: 0;
   color: #1a41a3;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
   word-break: keep-all;
@@ -3528,7 +3528,7 @@ display: none;
 .sub-former__row dt {
   flex: none;
   color: #08a3bb;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -3537,7 +3537,7 @@ display: none;
   min-width: 0;
   margin: 0;
   color: #2f3747;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2;
 }
 
@@ -3595,7 +3595,7 @@ display: none;
 .sub-video__intro-title {
   margin: 0 0 18px;
   color: #002466;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 700;
   line-height: 1.2;
   word-break: keep-all;
@@ -3604,7 +3604,7 @@ display: none;
 .sub-video__intro p {
   margin: 0;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   letter-spacing: -1px;
   word-break: keep-all;
@@ -3686,7 +3686,7 @@ display: none;
   display: block;
   margin-top: 24px;
   color: #000;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1px;
@@ -3743,7 +3743,7 @@ display: none;
   background: #1a3c70;
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.09));
   color: #fff;
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 700;
   letter-spacing: -0.75px;
 }
@@ -3813,7 +3813,7 @@ display: none;
   border-radius: 10px;
   background: #2257b4;
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.72px;
   text-align: center;
@@ -3854,7 +3854,7 @@ display: none;
 .sub-org__dept-name {
   margin: 0 0 14px;
   color: #202950;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   letter-spacing: -0.66px;
   text-align: center;
@@ -3875,7 +3875,7 @@ display: none;
 
 .sub-org__duty li {
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   letter-spacing: -0.51px;
   word-break: keep-all;
@@ -3924,11 +3924,11 @@ display: none;
 
   .sub-greeting__title {
     margin-bottom: 40px;
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   .sub-greeting__title small {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
 
   .sub-formers {
@@ -3949,7 +3949,7 @@ display: none;
   }
 
   .sub-video__intro-title {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   /* 조직도 : 본부 세로 배치 */
@@ -3972,7 +3972,7 @@ display: none;
   }
 
   .sub-org__head {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 }
 
@@ -3984,19 +3984,19 @@ display: none;
   }
 
   .sub-greeting__title {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
 
   .sub-greeting__title small {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 
   .sub-greeting__text p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .sub-greeting__text p.is-strong {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .sub-former {
@@ -4018,7 +4018,7 @@ display: none;
   }
 
   .sub-former__name {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .sub-former__info {
@@ -4036,11 +4036,11 @@ display: none;
   }
 
   .sub-video__intro-title {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   .sub-video__intro p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .sub-video__list {
@@ -4068,7 +4068,7 @@ display: none;
   .sub-org__leader-name {
     top: 104px;
     height: 48px;
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 
   .sub-org__branch {
@@ -4080,7 +4080,7 @@ display: none;
   }
 
   .sub-org__dept-name {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 
   .sub-org__duty {
@@ -4088,7 +4088,7 @@ display: none;
   }
 
   .sub-org__duty li {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -4148,7 +4148,7 @@ display: none;
   justify-content: center;
   padding: 13px 12px;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 500;
   letter-spacing: -1.02px;
   text-decoration: none;
@@ -4231,7 +4231,7 @@ display: none;
   justify-content: center;
   border-radius: 80px;
   color: #777e88;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -1px;
@@ -4312,7 +4312,7 @@ display: none;
     padding: 0 14px;
     border: 1px solid #e1e4ea;
     background: #fff;
-    font-size: 15px;
+    font-size: 0.9375rem;
     white-space: nowrap;
   }
 
@@ -4383,7 +4383,7 @@ display: none;
   justify-content: center;
   border: 1px solid #3c4655;
   border-radius: 50%;
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 600;
   line-height: 1;
 }
@@ -4402,7 +4402,7 @@ display: none;
 .sub-result-title {
   margin: 0 0 10px;
   color: #1652be;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 600;
   line-height: 1.4;
   text-align: center;
@@ -4422,7 +4422,7 @@ display: none;
 .sub-flow > div {
   padding: 24px;
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* 가운데 구분선 (사이에 화살표 span 이 있어 ~ 사용) */
@@ -4557,7 +4557,7 @@ display: none;
   }
 
   .sub-result-title {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 }
 
@@ -4570,7 +4570,7 @@ display: none;
   .sub-table--kv tbody th,
   .sub-table--kv tbody td {
     padding: 12px 10px;
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }
 
@@ -4633,7 +4633,7 @@ display: none;
   padding: 16px 14px 18px;
   border-top: 1px solid #eee;
   color: #111;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 600;
   line-height: 1.5;
   text-align: center;
@@ -4671,7 +4671,7 @@ display: none;
 .sub-table-note {
   margin: 12px 0 0;
   color: #111;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -4692,7 +4692,7 @@ display: none;
   display: block;
   margin-top: 2px;
   color: #6d757f;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 /* 표 안 왼쪽 정렬 칸 (preinfo-table 공통 표) */
@@ -4709,7 +4709,7 @@ display: none;
 
   .sub-page-tabs .preinfo__tab {
     padding: 13px 12px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .sub-page-body {
@@ -4731,7 +4731,7 @@ display: none;
 
   .sub-book__caption {
     padding: 12px 10px 14px;
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }
 
@@ -4754,7 +4754,7 @@ display: none;
   display: block;
   margin: 0;
   color: #1155d0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: -0.5px;
@@ -4816,7 +4816,7 @@ display: none;
   display: block;
   margin-bottom: 12px;
   color: #111;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
 }
 
@@ -4842,7 +4842,7 @@ display: none;
 .sub-professor__list dt {
   flex: none;
   color: #002466;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -4851,7 +4851,7 @@ display: none;
   min-width: 0;
   margin: 0;
   color: #2f3747;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.4;
   word-break: keep-all;
 }
@@ -4870,7 +4870,7 @@ display: none;
   align-items: center;
   gap: 8px;
   color: #222;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1px;
@@ -4885,7 +4885,7 @@ display: none;
 .sub-contact-line__text {
   margin: 0;
   color: #222;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.5;
   letter-spacing: -1px;
 }
@@ -4939,13 +4939,13 @@ display: none;
   align-items: center;
   gap: 22px;
   color: #1a41a3;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
 .sub-facility__title span {
   color: #2f3747;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -4967,7 +4967,7 @@ display: none;
   flex: 0 0 auto;
   min-width: 63px;
   color: #08a3bb;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -4976,7 +4976,7 @@ display: none;
   min-width: 0;
   margin: 0;
   color: #2f3747;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.4;
   word-break: keep-all;
 }
@@ -5024,7 +5024,7 @@ display: none;
   margin: 0 auto;
   padding: 0 40px;
   color: #3c4655;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -1.26px;
@@ -5072,7 +5072,7 @@ display: none;
 .sub-lead__title {
   margin: 0;
   color: #111;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -1.14px;
@@ -5094,7 +5094,7 @@ display: none;
 .sub-lead__desc {
   margin: 0;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   word-break: keep-all;
 }
@@ -5127,7 +5127,7 @@ display: none;
   border-radius: 6px;
   background: linear-gradient(178deg, #008dad 0%, #08c7c7 67%);
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.7;
   letter-spacing: -0.72px;
@@ -5173,7 +5173,7 @@ display: none;
   display: block;
   margin-bottom: 5px;
   color: #1155d0;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -1.1px;
@@ -5182,7 +5182,7 @@ display: none;
 .sub-spec p {
   margin: 0;
   color: #000;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 500;
   line-height: 1.7;
   letter-spacing: -0.85px;
@@ -5206,7 +5206,7 @@ display: none;
   align-items: center;
   gap: 6px;
   color: #111;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -5221,7 +5221,7 @@ display: none;
   margin: 0 0 6px;
   padding-left: 38px;
   color: #3c4655;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   letter-spacing: -1px;
   word-break: keep-all;
@@ -5246,7 +5246,7 @@ display: none;
 .sub-studio-room__desc {
   margin: 0 0 16px;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   letter-spacing: -1px;
   word-break: keep-all;
@@ -5274,7 +5274,7 @@ display: none;
   margin: 0;
   padding-left: 23px;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   letter-spacing: -1px;
   word-break: keep-all;
@@ -5293,7 +5293,7 @@ display: none;
 
 .sub-dot-item strong {
   color: #111;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
@@ -5301,7 +5301,7 @@ display: none;
   margin-top: 12px;
   padding-left: 0;
   color: #1155d0;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* 항목명 + 내용 가로 배치 (승용차 경로) */
@@ -5366,7 +5366,7 @@ display: none;
   display: block;
   margin-bottom: 14px;
   color: rgba(108, 50, 0, 0.74);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -5374,7 +5374,7 @@ display: none;
 .sub-flow-steps p {
   margin: 0;
   color: #111;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   word-break: keep-all;
@@ -5435,7 +5435,7 @@ display: none;
   padding-bottom: 20px;
   border-bottom: 1.5px solid #ddd;
   color: #111;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1px;
@@ -5445,7 +5445,7 @@ display: none;
 .sub-link-card__text p {
   margin: 0;
   color: #3c4655;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.5;
   letter-spacing: -0.51px;
   word-break: keep-all;
@@ -5484,7 +5484,7 @@ display: none;
 .sub-way__title {
   margin: 0;
   color: #000;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -1.4px;
@@ -5497,7 +5497,7 @@ display: none;
 .sub-way__body > .sub-note,
 .sub-notes .sub-note,
 .sub-content-block > .sub-note {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .sub-notes {
@@ -5513,7 +5513,7 @@ display: none;
 .sub-small-title h4 .sub-note {
   display: inline;
   margin-left: 6px;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: -0.5px;
 }
 
@@ -5549,7 +5549,7 @@ display: none;
 .sub-table--compact tbody th,
 .sub-table--compact tbody td {
   padding: 12px 6px;
-  font-size: 15px;
+  font-size: 0.9375rem;
   letter-spacing: -0.5px;
   word-break: keep-all;
   white-space: nowrap;
@@ -5568,7 +5568,7 @@ display: none;
 @media (max-width: 1200px) {
 
   .sub-quote {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .sub-facility__photo {
@@ -5611,11 +5611,11 @@ display: none;
   }
 
   .sub-contact-line__title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .sub-contact-line__text {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .sub-facility,
@@ -5651,12 +5651,12 @@ display: none;
   .sub-facility__title,
   .sub-way__title,
   .sub-link-card__text h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .sub-quote {
     padding: 0 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .sub-quote::before,
@@ -5666,7 +5666,7 @@ display: none;
   }
 
   .sub-lead__title {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 
   .sub-lead__illust {
@@ -5683,7 +5683,7 @@ display: none;
   }
 
   .sub-space__label {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .sub-spec-card {
@@ -5701,11 +5701,11 @@ display: none;
   }
 
   .sub-spec strong {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 
   .sub-spec p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   /* 이용안내 박스 : 항목 사이 구분선 */
