@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/* --------------------------------------------------------------------------------
+	admin.css : 서브 페이지 관리 화면 전용 스타일
+	reset.css, font.css, style.css 다음에 로드 - 사이트 색상/폰트 변수를 그대로 사용
+	이 화면은 저장 기능이 없는 정적 표라, 상태는 admin.html의 <tr data-status>를
+	직접 편집해서 바꾼다 (admin.html 상단 주석 참고)
+--------------------------------------------------------------------------------- */
+
+:root {
+  --admin-progress-bg: #fff3dc;
+  --admin-progress-text: #a15c00;
+  --admin-progress-dot: #f5a300;
+  --admin-done-bg: #e4f7ea;
+  --admin-done-text: #1b7a43;
+  --admin-done-dot: #1e8a4c;
+}
+
+body {
+  background: var(--bg-light);
+  min-height: 100vh;
+}
+
+/* ===== 헤더 ===== */
+.admin-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid var(--gray-line);
+}
+
+.admin-header-inner {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+}
+
+.admin-logo img {
+  height: 36px;
+  width: auto;
+}
+
+html.kbd-nav .admin-logo:focus-visible {
+  outline: 2px solid #0051D3;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* ===== 메인 레이아웃 ===== */
+.admin-main {
+  padding: 40px 0 100px;
+}
+
+.admin-intro h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.admin-intro p {
+  margin-top: 8px;
+  color: var(--gray-1);
+  font-size: 0.9375rem;
+}
+
+/* ===== 현황 카드 ===== */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid var(--gray-line);
+  border-left: 4px solid var(--gray-line);
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 3px 15px rgba(146, 162, 171, .1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-card .stat-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--gray-2);
+}
+
+.stat-card .stat-num {
+  font-family: "Paperozi", "Pretendard", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.stat-progress {
+  border-left-color: var(--admin-progress-dot);
+}
+
+.stat-progress .stat-num {
+  color: var(--admin-progress-text);
+}
+
+.stat-done {
+  border-left-color: var(--admin-done-dot);
+}
+
+.stat-done .stat-num {
+  color: var(--admin-done-text);
+}
+
+/* ===== 패널 ===== */
+.admin-panel {
+  background: #fff;
+  border: 1px solid var(--gray-line);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 3px 15px rgba(146, 162, 171, .1);
+}
+
+.admin-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.admin-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  background: var(--bg-light);
+  border-radius: 999px;
+}
+
+.admin-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--gray-1);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 999px;
+  transition: background .2s ease, color .2s ease, box-shadow .2s ease;
+}
+
+.admin-tab::before {
+  content: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.admin-tab[data-filter="progress"]::before {
+  content: "";
+  background: var(--admin-progress-dot);
+}
+
+.admin-tab[data-filter="done"]::before {
+  content: "";
+  background: var(--admin-done-dot);
+}
+
+.admin-tab:hover {
+  color: var(--navy);
+}
+
+.admin-tab.is-active {
+  background: #fff;
+  color: var(--navy);
+  box-shadow: 0 2px 8px rgba(20, 26, 46, .12);
+}
+
+html.kbd-nav .admin-tab:focus-visible {
+  outline: 2px solid #0051D3;
+  outline-offset: 2px;
+}
+
+.admin-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid var(--gray-line);
+  border-radius: 10px;
+  color: var(--gray-2);
+  transition: border-color .2s ease;
+}
+
+.admin-search:focus-within {
+  border-color: var(--blue);
+}
+
+.admin-search input {
+  border: 0;
+  font-size: 0.875rem;
+  color: var(--text);
+  width: 220px;
+  max-width: 100%;
+}
+
+/* ===== 테이블 ===== */
+.admin-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--gray-line);
+  border-radius: 14px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.admin-table th {
+  text-align: left;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--gray-2);
+  background: var(--bg-light);
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--gray-line);
+  white-space: nowrap;
+}
+
+.admin-table td {
+  padding: 16px;
+  border-bottom: 1px solid var(--gray-line);
+  vertical-align: top;
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.admin-table tbody tr:hover {
+  background: var(--bg-light);
+}
+
+.page-cell strong {
+  display: block;
+  font-weight: 700;
+  color: #273541;
+}
+
+.page-cell a {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8125rem;
+  color: var(--gray-2);
+  word-break: break-all;
+  transition: color .2s ease;
+}
+
+.page-cell a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+html.kbd-nav .page-cell a:focus-visible {
+  color: var(--blue);
+  text-decoration: underline;
+  outline: 2px solid #0051D3;
+  outline-offset: 2px;
+}
+
+.muted {
+  color: var(--gray-2);
+}
+
+.note-cell {
+  max-width: 320px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.date-cell {
+  white-space: nowrap;
+  color: var(--gray-1);
+  font-size: 0.875rem;
+}
+
+/* ===== 상태 뱃지 (admin.html 파일에 직접 기록되는 값) ===== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.badge-progress {
+  background: var(--admin-progress-bg);
+  color: var(--admin-progress-text);
+}
+
+.badge-progress::before {
+  background: var(--admin-progress-dot);
+}
+
+.badge-done {
+  background: var(--admin-done-bg);
+  color: var(--admin-done-text);
+}
+
+.badge-done::before {
+  background: var(--admin-done-dot);
+}
+
+/* ===== 접근성 검토 ===== */
+.badge-pending {
+  background: #f1f3f5;
+  color: #6d757f;
+}
+
+.badge-pending::before {
+  background: #adb5bd;
+}
+
+.a11y-cell {
+  white-space: nowrap;
+}
+
+.a11y-note {
+  max-width: 200px;
+  margin: 8px 0 0;
+  color: var(--gray-2);
+  font-size: 0.8125rem;
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.admin-empty {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--gray-2);
+  font-size: 0.9375rem;
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 780px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-toolbar {
+    align-items: stretch;
+  }
+
+  .admin-search input {
+    width: 160px;
+  }
+}

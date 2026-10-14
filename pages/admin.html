@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>페이지 관리 | 지방자치인재개발원</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+  <header class="admin-header">
+
+    <div class="inner admin-header-inner">
+
+      <a
+        href="main-ko.html"
+        class="admin-logo">
+
+        <img
+          src="../img/icons/logo-mark.png"
+          alt="지방자치인재개발원">
+
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <main
+    class="admin-main"
+    id="admin-main"
+    tabindex="-1">
+
+    <div class="inner">
+
+
+      <!-- =========================
+           TITLE
+      ========================= -->
+      <div class="admin-intro">
+
+        <h1>
+          페이지 관리
+        </h1>
+
+        <p>
+          페이지 작업 진행 상황과 수정사항을 기록한 표입니다.
+        </p>
+
+      </div>
+
+
+      <!-- =========================
+           STATS
+      ========================= -->
+      <section
+        class="admin-stats"
+        aria-label="현황 요약">
+
+        <div class="stat-card">
+
+          <span class="stat-label">
+            전체 페이지
+          </span>
+
+          <strong
+            class="stat-num"
+            id="statAll">
+            0
+          </strong>
+
+        </div>
+
+
+        <div class="stat-card stat-progress">
+
+          <span class="stat-label">
+            수정 중
+          </span>
+
+          <strong
+            class="stat-num"
+            id="statProgress">
+            0
+          </strong>
+
+        </div>
+
+
+        <div class="stat-card stat-done">
+
+          <span class="stat-label">
+            수정 완료
+          </span>
+
+          <strong
+            class="stat-num"
+            id="statDone">
+            0
+          </strong>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           PANEL
+      ========================= -->
+      <section class="admin-panel">
+
+
+        <!-- =========================
+             TOOLBAR
+        ========================= -->
+        <div class="admin-toolbar">
+
+
+          <!-- FILTER -->
+          <div
+            class="admin-tabs"
+            role="group"
+            aria-label="상태 필터">
+
+            <button
+              type="button"
+              class="admin-tab is-active"
+              aria-pressed="true"
+              data-filter="all">
+              전체
+            </button>
+
+            <button
+              type="button"
+              class="admin-tab"
+              aria-pressed="false"
+              data-filter="progress">
+              수정 중
+            </button>
+
+            <button
+              type="button"
+              class="admin-tab"
+              aria-pressed="false"
+              data-filter="done">
+              수정 완료
+            </button>
+
+          </div>
+
+
+          <!-- SEARCH -->
+          <div class="admin-toolbar-actions">
+
+            <label class="admin-search">
+
+              <span class="sr-only">
+                페이지 검색
+              </span>
+
+              <i
+                class="fa-solid fa-magnifying-glass"
+                aria-hidden="true">
+              </i>
+
+              <input
+                type="search"
+                id="pageSearch"
+                placeholder="페이지명, 경로 검색 (초성 가능)">
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             TABLE
+        ========================= -->
+        <div class="admin-table-wrap">
+
+          <table class="admin-table">
+
+            <caption class="sr-only">
+              페이지별 작업 진행 상황
+            </caption>
+
+            <thead>
+
+              <tr>
+
+                <th scope="col">
+                  페이지명 / 경로
+                </th>
+
+                <th scope="col">
+                  수정사항
+                </th>
+
+                <th scope="col">
+                  상태
+                </th>
+
+                <th scope="col">
+                  접근성 검토
+                </th>
+
+                <th scope="col">
+                  최종 수정일
+                </th>
+
+              </tr>
+
+            </thead>
+
+
+            <!--
+              데이터는 admin.js에서 생성
+            -->
+            <tbody id="pageList">
+            </tbody>
+
+          </table>
+
+
+          <p
+            class="admin-empty"
+            id="emptyState"
+            hidden>
+            검색/필터 조건에 맞는 페이지가 없습니다.
+          </p>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       ADMIN SCRIPT
+  ========================= -->
+  <script src="../js/admin.js"></script>
+
+</body>
+
+</html>

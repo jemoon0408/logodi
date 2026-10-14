@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>강의실대관 | 지방자치인재개발원</title>
+
+  <link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+
+  <!-- ========================= 공통 HEADER START ========================= -->
+  <div id="include-header"></div>
+  <!-- ========================= 공통 HEADER END ========================= -->
+
+
+  <!-- ========================= 공통 QUICK MENU START ========================= -->
+  <div id="include-quick-menu"></div>
+  <!-- ========================= 공통 QUICK MENU END ========================= -->
+
+
+  <main id="main-content" class="sub-page" tabindex="-1" data-page-label="강의실대관">
+
+    <!-- ========================= SUB VISUAL START ========================= -->
+    <section class="sub-visual">
+
+      <div class="sub-visual__inner">
+
+        <nav class="sub-visual__breadcrumb" aria-label="현재 위치">
+
+          <ol>
+
+            <li class="sub-visual__breadcrumb-home">
+              <img
+                src="../../img/icons/breadcrumb-home-icon.png"
+                alt="홈">
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 1DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--1">
+              기관소개
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 2DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--2">
+
+              <span class="sub-visual__breadcrumb-depth-text">
+                시설안내
+              </span>
+
+              <span
+                class="sub-visual__breadcrumb-depth-ellipsis"
+                aria-hidden="true">
+                ...
+              </span>
+
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 3DEPTH -->
+            <li
+              class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--3"
+              aria-current="page">
+              강의실대관
+            </li>
+
+          </ol>
+
+        </nav>
+
+
+        <h1 class="sub-visual__title">
+          기관소개
+        </h1>
+
+      </div>
+
+    </section>
+    <!-- ========================= SUB VISUAL END ========================= -->
+
+
+    <!-- ========================= LOCATION NAV START ========================= -->
+    <nav class="sub-location" aria-label="서브 메뉴 경로">
+
+      <div class="sub-location__inner">
+
+        <!-- 홈 버튼 (768px 이하 숨김) -->
+        <a href="../main-ko.html" class="sub-location__home">
+          <img src="../../img/icons/sub-location-home.png" alt="">
+          <span class="sr-only">홈으로 이동</span>
+        </a>
+
+
+        <div class="sub-location__menus">
+
+          <!-- 1DEPTH : 사이드 메뉴와 동일한 1Depth -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth1" class="sr-only">
+              1단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth1"
+              class="sub-location-select__native"
+              data-sub-location-depth="1"
+              data-selected="facility"
+              aria-label="1단계 메뉴 선택">
+            </select>
+
+          </div>
+
+
+          <!-- 2DEPTH : 선택한 1Depth의 하위메뉴 -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth2" class="sr-only">
+              2단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth2"
+              class="sub-location-select__native"
+              data-sub-location-depth="2"
+              data-selected="facility-status"
+              aria-label="2단계 메뉴 선택">
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="sub-location__print"
+          id="subPrintBtn">
+
+          <img
+            src="../../img/icons/print.png"
+            alt="">
+
+          <span class="sr-only">
+            현재 페이지 인쇄
+          </span>
+
+        </button>
+
+      </div>
+
+    </nav>
+    <!-- ========================= LOCATION NAV END ========================= -->
+
+
+    <!-- ========================= SUB CONTENT START ========================= -->
+    <div class="sub-layout">
+
+      <!-- ========================= LEFT MENU START ========================= -->
+      <aside class="sub-lnb" aria-label="기관소개 메뉴">
+
+        <div class="sub-lnb__head">
+          <h2>기관소개</h2>
+        </div>
+
+        <nav
+          class="sub-lnb__menu"
+          aria-label="기관소개 1단계 메뉴">
+
+          <ul>
+
+            <li>
+              <a
+                href="content-action13.html"
+                data-sub-lnb-value="intro">
+                기관소개
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action06.html"
+                data-sub-lnb-value="pr">
+                홍보관
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action09.html"
+                data-sub-lnb-value="organization">
+                조직안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action41.html"
+                data-sub-lnb-value="facility"
+                class="is-active"
+                aria-current="page">
+                시설안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action45.html"
+                data-sub-lnb-value="directions">
+                오시는 길
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                data-sub-lnb-value="weekly-menu">
+                주간식단
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </aside>
+      <!-- ========================= LEFT MENU END ========================= -->
+
+
+      <!-- ========================= RIGHT CONTENT START ========================= -->
+      <div class="sub-content">
+
+        <div class="sub-content__main">
+
+          <div class="sub-page-title">
+
+            <h2>
+              강의실대관
+            </h2>
+
+            <span aria-hidden="true"></span>
+
+          </div>
+
+
+          <!-- ========================= 페이지 내 탭 ========================= -->
+          <nav class="preinfo__tabs sub-page-tabs" aria-label="시설현황 메뉴">
+            <a href="content-action41.html" class="preinfo__tab">강의시설</a>
+            <a href="#" class="preinfo__tab">교육지원시설</a>
+            <a href="content-action42.html" class="preinfo__tab">도서관</a>
+            <a href="#" class="preinfo__tab">건강/편의시설</a>
+            <a href="content-action10.html" class="preinfo__tab is-active" aria-current="page">강의실대관</a>
+            <a href="content-action11.html" class="preinfo__tab">지방행정역사관</a>
+            <a href="content-action43.html" class="preinfo__tab">인비전 스튜디오</a>
+          </nav>
+
+
+          <!-- ========================= 강의실대관 START ========================= -->
+          <section class="sub-section sub-page-body" aria-label="강의실대관">
+
+            <p class="sub-detail-label sub-page-lead">
+              강의실 대관 안내 <span class="sub-text-accent">교육총괄과 (☎ 063-907-5156)</span>
+            </p>
+
+            <div class="sub-section__contents">
+
+              <div class="sub-content-block">
+
+                <div class="sub-small-title">
+
+                  <span
+                    class="sub-small-title__bullet"
+                    aria-hidden="true">
+                  </span>
+
+                  <h4>
+                    대관 가능 시기 : 1~12월 평일 상시 <small>(주말·공휴일 제한)</small>
+                  </h4>
+
+                </div>
+
+                <div class="sub-info-box">
+                  <p>※ 지방자치인재개발원 교육과정 운영에 차질이 없는 경우에 한하여 이용가능</p>
+                </div>
+
+              </div>
+
+
+              <div class="sub-content-block">
+
+                <div class="sub-small-title">
+
+                  <span
+                    class="sub-small-title__bullet"
+                    aria-hidden="true">
+                  </span>
+
+                  <h4>
+                    대관절차
+                  </h4>
+
+                </div>
+
+                <div class="sub-info-box">
+
+                  <ul class="sub-course-list">
+                    <li>
+                      <span class="sub-text-accent">유선문의(063-907-5156) → 대관 가능 여부 확인 → 시설물 사용신청서</span>
+                      작성 및 공문신청(이용목적·이용기간·인원·요청사항 등) <span class="sub-text-accent">→ 승인</span>
+                    </li>
+                    <li>다만, 교육과정 운영 상황에 따라 이용 목적에 맞는 다른 강의실 대관 가능</li>
+                    <li>생활관·식당을 함께 이용할 경우, 수용인원 및 운영상황에 따라 대관이 제한될 수 있음</li>
+                  </ul>
+
+                  <p>※ 시설현황은 자치인재원 홈페이지 ‘시설안내-강의시설’ 메뉴 참고</p>
+
+                </div>
+
+              </div>
+
+
+              <div class="sub-content-block">
+
+                <div class="sub-small-title">
+
+                  <span
+                    class="sub-small-title__bullet"
+                    aria-hidden="true">
+                  </span>
+
+                  <h4>
+                    강의실 대관료 <small>(「지방자치인재개발원 시설물 사용료 징수규정」)</small>
+                  </h4>
+
+                </div>
+
+                <div class="sub-table-wrap">
+
+                  <table class="sub-table sub-course-table sub-table--center">
+
+                    <caption class="sr-only">
+                      강의실 대관료 - 구분, 사용료, 비고 정보 제공
+                    </caption>
+
+                    <colgroup>
+                      <col style="width: 18%;">
+                      <col style="width: 26%;">
+                      <col style="width: 14%;">
+                      <col>
+                    </colgroup>
+
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="2">구분</th>
+                        <th scope="col">사용료</th>
+                        <th scope="col">비고</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+                        <th scope="row">대강당</th>
+                        <td>483석</td>
+                        <td>300,000</td>
+                        <td>1일 8시간 기준</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="rowgroup" rowspan="4">강의실</th>
+                        <td>200석 이상</td>
+                        <td>150,000</td>
+                        <td rowspan="7">
+                          1일 사용기준<br>
+                          (대강당, 실내체육관, 천연잔디축구장은<br>
+                          4시간 이하 사용시 1/2 징수)
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>100석 이상 200석 미만</td>
+                        <td>100,000</td>
+                      </tr>
+
+                      <tr>
+                        <td>100석 미만</td>
+                        <td>50,000</td>
+                      </tr>
+
+                      <tr>
+                        <td>분임실</td>
+                        <td>20,000</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">정보화강의실</th>
+                        <td>-</td>
+                        <td>100,000</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">실내체육관</th>
+                        <td>1,320m<sup>2</sup></td>
+                        <td>270,000</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">천연잔디축구장</th>
+                        <td>7,000m<sup>2</sup></td>
+                        <td>526,000</td>
+                      </tr>
+
+                    </tbody>
+
+                  </table>
+
+                </div>
+
+                <p class="sub-table-note">※ 위 시설 외에는 대관이 불가합니다.</p>
+
+              </div>
+
+            </div>
+
+          </section>
+          <!-- ========================= 강의실대관 END ========================= -->
+
+        </div>
+
+
+        <!-- ========================= SATISFACTION START ========================= -->
+        <section class="sub-satisfaction">
+
+          <h2 class="sr-only">
+            페이지 만족도 및 담당부서 안내
+          </h2>
+
+
+          <div class="sub-satisfaction__contact">
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/department.png"
+                  alt="">
+
+                담당부서 안내
+
+              </span>
+
+              <strong>
+                교육총괄과
+              </strong>
+
+            </div>
+
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/contact.png"
+                  alt="">
+
+                문의전화
+
+              </span>
+
+              <strong>
+                063-907-5155
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="sub-satisfaction__survey">
+
+            <div class="sub-satisfaction__question">
+
+              <img
+                class="sub-satisfaction__illustration"
+                src="../../img/icons/survey.png"
+                alt="">
+
+              <div>
+
+                <strong>
+                  현재 페이지에 만족하십니까?
+                </strong>
+
+                <p>
+                  페이지 내용과 사용 편의성에 대한 의견을 들려주세요.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <form class="sub-satisfaction__form">
+
+              <fieldset>
+
+                <legend class="sr-only">
+                  페이지 만족도 선택
+                </legend>
+
+                <div class="sub-satisfaction__radios">
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="5"
+                      checked>
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="4">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="3">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        보통
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="2">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="1">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+                </div>
+
+
+                <button
+                  type="button"
+                  class="btn-tertiary btn sm">
+                  확인
+                </button>
+
+              </fieldset>
+
+            </form>
+
+          </div>
+
+        </section>
+        <!-- ========================= SATISFACTION END ========================= -->
+
+      </div>
+      <!-- ========================= RIGHT CONTENT END ========================= -->
+
+    </div>
+    <!-- ========================= SUB CONTENT END ========================= -->
+
+  </main>
+
+
+  <!-- ========================= 공통 FOOTER START ========================= -->
+  <div id="include-footer"></div>
+  <!-- ========================= 공통 FOOTER END ========================= -->
+
+
+  <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/keyboardfocusing.js"></script>
+
+  <!-- 퍼블리싱용 sub-location 가데이터 -->
+  <script src="../../js/sub-location-data.js"></script>
+
+  <!-- sub-location 공통 UI -->
+  <script src="../../js/sub-location-common.js"></script>
+
+</body>
+
+</html>

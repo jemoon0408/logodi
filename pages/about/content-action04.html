@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MI | 지방자치인재개발원</title>
+
+  <link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+
+  <!-- ========================= 공통 HEADER START ========================= -->
+  <div id="include-header"></div>
+  <!-- ========================= 공통 HEADER END ========================= -->
+
+
+  <!-- ========================= 공통 QUICK MENU START ========================= -->
+  <div id="include-quick-menu"></div>
+  <!-- ========================= 공통 QUICK MENU END ========================= -->
+
+
+  <main id="main-content" class="sub-page" tabindex="-1">
+
+    <!-- ========================= SUB VISUAL START ========================= -->
+    <section class="sub-visual">
+
+      <div class="sub-visual__inner">
+
+        <nav class="sub-visual__breadcrumb" aria-label="현재 위치">
+
+          <ol>
+
+            <li class="sub-visual__breadcrumb-home">
+              <img
+                src="../../img/icons/breadcrumb-home-icon.png"
+                alt="홈">
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 1DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--1">
+              기관소개
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 2DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--2">
+
+              <span class="sub-visual__breadcrumb-depth-text">
+                기관소개
+              </span>
+
+              <span
+                class="sub-visual__breadcrumb-depth-ellipsis"
+                aria-hidden="true">
+                ...
+              </span>
+
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 3DEPTH -->
+            <li
+              class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--3"
+              aria-current="page">
+              MI
+            </li>
+
+          </ol>
+
+        </nav>
+
+
+        <h1 class="sub-visual__title">
+          기관소개
+        </h1>
+
+      </div>
+
+    </section>
+    <!-- ========================= SUB VISUAL END ========================= -->
+
+
+    <!-- ========================= LOCATION NAV START ========================= -->
+    <nav class="sub-location" aria-label="서브 메뉴 경로">
+
+      <div class="sub-location__inner">
+
+        <!-- 홈 버튼 (768px 이하 숨김) -->
+        <a href="../main-ko.html" class="sub-location__home">
+          <img src="../../img/icons/sub-location-home.png" alt="">
+          <span class="sr-only">홈으로 이동</span>
+        </a>
+
+
+        <div class="sub-location__menus">
+
+          <!-- 1DEPTH : 사이드 메뉴와 동일한 1Depth -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth1" class="sr-only">
+              1단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth1"
+              class="sub-location-select__native"
+              data-sub-location-depth="1"
+              data-selected="intro"
+              aria-label="1단계 메뉴 선택">
+            </select>
+
+          </div>
+
+
+          <!-- 2DEPTH : 선택한 1Depth의 하위메뉴 -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth2" class="sr-only">
+              2단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth2"
+              class="sub-location-select__native"
+              data-sub-location-depth="2"
+              data-selected="mi"
+              aria-label="2단계 메뉴 선택">
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="sub-location__print"
+          id="subPrintBtn">
+
+          <img
+            src="../../img/icons/print.png"
+            alt="">
+
+          <span class="sr-only">
+            현재 페이지 인쇄
+          </span>
+
+        </button>
+
+      </div>
+
+    </nav>
+    <!-- ========================= LOCATION NAV END ========================= -->
+
+
+    <!-- ========================= SUB CONTENT START ========================= -->
+    <div class="sub-layout">
+
+      <!-- ========================= LEFT MENU START ========================= -->
+      <aside class="sub-lnb" aria-label="기관소개 메뉴">
+
+        <div class="sub-lnb__head">
+          <h2>기관소개</h2>
+        </div>
+
+        <nav
+          class="sub-lnb__menu"
+          aria-label="기관소개 1단계 메뉴">
+
+          <ul>
+
+            <li>
+              <a
+                href="content-action13.html"
+                data-sub-lnb-value="intro"
+                class="is-active"
+                aria-current="page">
+                기관소개
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action06.html"
+                data-sub-lnb-value="pr">
+                홍보관
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action09.html"
+                data-sub-lnb-value="organization">
+                조직안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action41.html"
+                data-sub-lnb-value="facility">
+                시설안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action45.html"
+                data-sub-lnb-value="directions">
+                오시는 길
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                data-sub-lnb-value="weekly-menu">
+                주간식단
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </aside>
+      <!-- ========================= LEFT MENU END ========================= -->
+
+
+      <!-- ========================= RIGHT CONTENT START ========================= -->
+      <div class="sub-content">
+
+        <div class="sub-content__main">
+
+          <div class="sub-page-title">
+
+            <h2>
+              MI
+            </h2>
+
+            <span aria-hidden="true"></span>
+
+          </div>
+
+
+          <!-- ========================= MI START ========================= -->
+          <section class="sub-mi" aria-label="MI">
+
+            <div class="sub-grid-board">
+
+              <!-- 로고 / 다운로드 -->
+              <div class="sub-mi__logo-area">
+
+                <div class="sub-mi__logo-box">
+                  <img
+                    src="../../img/about/mi-logo.png"
+                    alt="행정안전부 지방자치인재개발원">
+                </div>
+
+                <a
+                  href="#"
+                  class="btn-basic btn lg sub-download-btn"
+                  download>
+                  MI 파일 다운로드
+                  <img src="../../img/about/icon-download.png" alt="">
+                </a>
+
+              </div>
+
+
+              <!-- 기관문양(MI) 설명 -->
+              <div class="sub-content-block">
+
+                <div class="sub-small-title">
+
+                  <span
+                    class="sub-small-title__bullet"
+                    aria-hidden="true">
+                  </span>
+
+                  <h4>
+                    기관문양(MI) 설명
+                  </h4>
+
+                </div>
+
+                <div class="sub-mi__desc">
+
+                  <p class="sub-detail-label">
+                    대한민국 정부의 역사와 전통, 미래 비전을 구현하기 위해 모든 국민적 공감대 형성이 가능한 소재로서 '태극'을 사용
+                  </p>
+
+                  <p class="sub-detail-label">
+                    「정부기에 관한 공고」(대통령 공고)에 따라 통일된 정부상징 적용
+                  </p>
+
+                  <ul class="sub-course-list">
+                    <li>태극문양은 태백기의 청·홍·백의 조합과 담백함으로 대한민국다움을 극대화하고, 열린 조형으로 국민, 세계, 미래를 향해 진취적인 대한민국 정부를 표상함</li>
+                    <li>글꼴은 한글 창제기의 글꼴인 정음체를 현대적 감각에 맞게 발전시켜 태극과의 조화를 추구하고 정부상징이 갖는 최고의 권위를 뒷받침함</li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+
+              <!-- 색상 -->
+              <div class="sub-content-block">
+
+                <div class="sub-small-title">
+
+                  <span
+                    class="sub-small-title__bullet"
+                    aria-hidden="true">
+                  </span>
+
+                  <h4>
+                    색상
+                  </h4>
+
+                </div>
+
+                <ul class="sub-mi-colors">
+
+                  <li class="sub-mi-color">
+
+                    <h5 class="sub-mi-color__title"># 정부청색 GOK Blue</h5>
+
+                    <div class="sub-mi-color__card">
+
+                      <div class="sub-mi-color__swatch" style="--swatch: #053863;" aria-hidden="true"></div>
+
+                      <dl class="sub-mi-color__spec">
+
+                        <div>
+                          <dt>Munsell</dt>
+                          <dd>5PB 2/6</dd>
+                        </div>
+
+                        <div>
+                          <dt>CIE 색좌표</dt>
+                          <dd>YD 3.069 / xD 0.1833 / yD 0.1988</dd>
+                        </div>
+
+                        <div>
+                          <dt>KS계통색</dt>
+                          <dd>진한 파랑</dd>
+                        </div>
+
+                        <div>
+                          <dt>CNYK</dt>
+                          <dd>C 100% + M 70% + Y 20% + K 40%</dd>
+                        </div>
+
+                        <div>
+                          <dt>RGB</dt>
+                          <dd>R 0 / G 55 / B 100</dd>
+                        </div>
+
+                        <div>
+                          <dt>PANTONE</dt>
+                          <dd>PANTONE 2955 C</dd>
+                        </div>
+
+                      </dl>
+
+                    </div>
+
+                  </li>
+
+                  <li class="sub-mi-color">
+
+                    <h5 class="sub-mi-color__title"># 정부적색 GOK Red</h5>
+
+                    <div class="sub-mi-color__card">
+
+                      <div class="sub-mi-color__swatch" style="--swatch: #e4032f;" aria-hidden="true"></div>
+
+                      <dl class="sub-mi-color__spec">
+
+                        <div>
+                          <dt>Munsell</dt>
+                          <dd>2.5R 4/14</dd>
+                        </div>
+
+                        <div>
+                          <dt>CIE 색좌표</dt>
+                          <dd>YD 11.70 / xD 0.5369 / yD 0.2810</dd>
+                        </div>
+
+                        <div>
+                          <dt>KS계통색</dt>
+                          <dd>선명한 빨강</dd>
+                        </div>
+
+                        <div>
+                          <dt>CNYK</dt>
+                          <dd>M 100% + Y 80%</dd>
+                        </div>
+
+                        <div>
+                          <dt>RGB</dt>
+                          <dd>R 288 / G 3 / B 46</dd>
+                        </div>
+
+                        <div>
+                          <dt>PANTONE</dt>
+                          <dd>PANTONE 1935 C</dd>
+                        </div>
+
+                      </dl>
+
+                    </div>
+
+                  </li>
+
+                  <li class="sub-mi-color">
+
+                    <h5 class="sub-mi-color__title"># 정부회색 GDK Gray</h5>
+
+                    <div class="sub-mi-color__card">
+
+                      <div class="sub-mi-color__swatch" style="--swatch: #575556;" aria-hidden="true"></div>
+
+                      <dl class="sub-mi-color__spec">
+
+                        <div>
+                          <dt>Munsell</dt>
+                          <dd>N 3.75</dd>
+                        </div>
+
+                        <div>
+                          <dt>CIE 색좌표</dt>
+                          <dd>YD 11.70 / xD 0 / yD 0</dd>
+                        </div>
+
+                        <div>
+                          <dt>KS계통색</dt>
+                          <dd>어두운 회색</dd>
+                        </div>
+
+                        <div>
+                          <dt>CNYK</dt>
+                          <dd>K 80%</dd>
+                        </div>
+
+                        <div>
+                          <dt>RGB</dt>
+                          <dd>R 87 / G 87 / B 87</dd>
+                        </div>
+
+                        <div>
+                          <dt>PANTONE</dt>
+                          <dd>PANTONE Cool Gray 11 C</dd>
+                        </div>
+
+                      </dl>
+
+                    </div>
+
+                  </li>
+
+                  <li class="sub-mi-color">
+
+                    <h5 class="sub-mi-color__title"># 배경색상:백색 White</h5>
+
+                    <div class="sub-mi-color__card">
+
+                      <div class="sub-mi-color__swatch sub-mi-color__swatch--white" style="--swatch: #fff;" aria-hidden="true"></div>
+
+                      <dl class="sub-mi-color__spec">
+
+                        <div>
+                          <dt>Munsell</dt>
+                          <dd>N 9.5</dd>
+                        </div>
+
+                        <div>
+                          <dt>CIE 색좌표</dt>
+                          <dd>YD 87.7500 / xD 0 / yD 0</dd>
+                        </div>
+
+                        <div>
+                          <dt>KS계통색</dt>
+                          <dd>흰색(하양)</dd>
+                        </div>
+
+                        <div>
+                          <dt>CNYK</dt>
+                          <dd>K 0%</dd>
+                        </div>
+
+                        <div>
+                          <dt>RGB</dt>
+                          <dd>R 255 / G 255 / B 255</dd>
+                        </div>
+
+                      </dl>
+
+                    </div>
+
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+
+            <!-- 색상 표기 표 -->
+            <div class="sub-table-wrap">
+
+              <table class="sub-table sub-course-table sub-mi-table">
+
+                <caption class="sr-only">
+                  정부문양 부분별 KS 색표기 및 CIE 색표기
+                </caption>
+
+                <colgroup>
+                  <col class="sub-course-table__col01">
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+
+                <thead>
+
+                  <tr>
+                    <th scope="col">구분방법</th>
+                    <th scope="col">정부문양 내 좌측 부분</th>
+                    <th scope="col">정부문양 내 우측 부분</th>
+                    <th scope="col">정부문양 내 가운데와<br>바탕부분</th>
+                    <th scope="col">글자 부분</th>
+                  </tr>
+
+                </thead>
+
+                <tbody>
+
+                  <tr>
+                    <th scope="row">KS 색표기<br>(KS 계통색 이름)</th>
+                    <td>2.5PB 2/6 (진한 파랑)</td>
+                    <td>지방예산·재무회계 실무</td>
+                    <td>지방예산·재무회계 실무</td>
+                    <td>지방예산·재무회계 실무</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">CIE 색표기<br>(D65, 2도시야)</th>
+                    <td>Y = 3.069<br>x = 0.1833<br>y = 0.1988</td>
+                    <td>Y = 11.70<br>x = 0.5369<br>y = 0.2810</td>
+                    <td>Y = 87.75<br>x = 0<br>y = 0</td>
+                    <td>Y = 11.70<br>x = 0<br>y = 0</td>
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+          </section>
+          <!-- ========================= MI END ========================= -->
+
+        </div>
+
+
+        <!-- ========================= SATISFACTION START ========================= -->
+        <section class="sub-satisfaction">
+
+          <h2 class="sr-only">
+            페이지 만족도 및 담당부서 안내
+          </h2>
+
+
+          <div class="sub-satisfaction__contact">
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/department.png"
+                  alt="">
+
+                담당부서 안내
+
+              </span>
+
+              <strong>
+                기획협력과
+              </strong>
+
+            </div>
+
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/contact.png"
+                  alt="">
+
+                문의전화
+
+              </span>
+
+              <strong>
+                063-907-5044
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="sub-satisfaction__survey">
+
+            <div class="sub-satisfaction__question">
+
+              <img
+                class="sub-satisfaction__illustration"
+                src="../../img/icons/survey.png"
+                alt="">
+
+              <div>
+
+                <strong>
+                  현재 페이지에 만족하십니까?
+                </strong>
+
+                <p>
+                  페이지 내용과 사용 편의성에 대한 의견을 들려주세요.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <form class="sub-satisfaction__form">
+
+              <fieldset>
+
+                <legend class="sr-only">
+                  페이지 만족도 선택
+                </legend>
+
+                <div class="sub-satisfaction__radios">
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="5"
+                      checked>
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="4">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="3">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        보통
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="2">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="1">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+                </div>
+
+
+                <button
+                  type="button"
+                  class="btn-tertiary btn sm">
+                  확인
+                </button>
+
+              </fieldset>
+
+            </form>
+
+          </div>
+
+        </section>
+        <!-- ========================= SATISFACTION END ========================= -->
+
+      </div>
+      <!-- ========================= RIGHT CONTENT END ========================= -->
+
+    </div>
+    <!-- ========================= SUB CONTENT END ========================= -->
+
+  </main>
+
+
+  <!-- ========================= 공통 FOOTER START ========================= -->
+  <div id="include-footer"></div>
+  <!-- ========================= 공통 FOOTER END ========================= -->
+
+
+  <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/keyboardfocusing.js"></script>
+
+  <!-- 퍼블리싱용 sub-location 가데이터 -->
+  <script src="../../js/sub-location-data.js"></script>
+
+  <!-- sub-location 공통 UI -->
+  <script src="../../js/sub-location-common.js"></script>
+
+</body>
+
+</html>

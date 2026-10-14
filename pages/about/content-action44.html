@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>주변안내 | 지방자치인재개발원</title>
+
+  <link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+
+  <!-- ========================= 공통 HEADER START ========================= -->
+  <div id="include-header"></div>
+  <!-- ========================= 공통 HEADER END ========================= -->
+
+
+  <!-- ========================= 공통 QUICK MENU START ========================= -->
+  <div id="include-quick-menu"></div>
+  <!-- ========================= 공통 QUICK MENU END ========================= -->
+
+
+  <main id="main-content" class="sub-page" tabindex="-1" data-page-label="주변안내">
+
+    <!-- ========================= SUB VISUAL START ========================= -->
+    <section class="sub-visual">
+
+      <div class="sub-visual__inner">
+
+        <nav class="sub-visual__breadcrumb" aria-label="현재 위치">
+
+          <ol>
+
+            <li class="sub-visual__breadcrumb-home">
+              <img
+                src="../../img/icons/breadcrumb-home-icon.png"
+                alt="홈">
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 1DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--1">
+              기관소개
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 2DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--2">
+
+              <span class="sub-visual__breadcrumb-depth-text">
+                시설안내
+              </span>
+
+              <span
+                class="sub-visual__breadcrumb-depth-ellipsis"
+                aria-hidden="true">
+                ...
+              </span>
+
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 3DEPTH -->
+            <li
+              class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--3"
+              aria-current="page">
+              주변안내
+            </li>
+
+          </ol>
+
+        </nav>
+
+
+        <h1 class="sub-visual__title">
+          기관소개
+        </h1>
+
+      </div>
+
+    </section>
+    <!-- ========================= SUB VISUAL END ========================= -->
+
+
+    <!-- ========================= LOCATION NAV START ========================= -->
+    <nav class="sub-location" aria-label="서브 메뉴 경로">
+
+      <div class="sub-location__inner">
+
+        <!-- 홈 버튼 (768px 이하 숨김) -->
+        <a href="../main-ko.html" class="sub-location__home">
+          <img src="../../img/icons/sub-location-home.png" alt="">
+          <span class="sr-only">홈으로 이동</span>
+        </a>
+
+
+        <div class="sub-location__menus">
+
+          <!-- 1DEPTH : 사이드 메뉴와 동일한 1Depth -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth1" class="sr-only">
+              1단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth1"
+              class="sub-location-select__native"
+              data-sub-location-depth="1"
+              data-selected="facility"
+              aria-label="1단계 메뉴 선택">
+            </select>
+
+          </div>
+
+
+          <!-- 2DEPTH : 선택한 1Depth의 하위메뉴 -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth2" class="sr-only">
+              2단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth2"
+              class="sub-location-select__native"
+              data-sub-location-depth="2"
+              data-selected="nearby"
+              aria-label="2단계 메뉴 선택">
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="sub-location__print"
+          id="subPrintBtn">
+
+          <img
+            src="../../img/icons/print.png"
+            alt="">
+
+          <span class="sr-only">
+            현재 페이지 인쇄
+          </span>
+
+        </button>
+
+      </div>
+
+    </nav>
+    <!-- ========================= LOCATION NAV END ========================= -->
+
+
+    <!-- ========================= SUB CONTENT START ========================= -->
+    <div class="sub-layout">
+
+      <!-- ========================= LEFT MENU START ========================= -->
+      <aside class="sub-lnb" aria-label="기관소개 메뉴">
+
+        <div class="sub-lnb__head">
+          <h2>기관소개</h2>
+        </div>
+
+        <nav
+          class="sub-lnb__menu"
+          aria-label="기관소개 1단계 메뉴">
+
+          <ul>
+
+            <li>
+              <a
+                href="content-action13.html"
+                data-sub-lnb-value="intro">
+                기관소개
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action06.html"
+                data-sub-lnb-value="pr">
+                홍보관
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action09.html"
+                data-sub-lnb-value="organization">
+                조직안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action41.html"
+                data-sub-lnb-value="facility"
+                class="is-active"
+                aria-current="page">
+                시설안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action45.html"
+                data-sub-lnb-value="directions">
+                오시는 길
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                data-sub-lnb-value="weekly-menu">
+                주간식단
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </aside>
+      <!-- ========================= LEFT MENU END ========================= -->
+
+
+      <!-- ========================= RIGHT CONTENT START ========================= -->
+      <div class="sub-content">
+
+        <div class="sub-content__main">
+
+          <div class="sub-page-title">
+
+            <h2>
+              주변안내
+            </h2>
+
+            <span aria-hidden="true"></span>
+
+          </div>
+
+
+
+          <!-- ========================= 페이지 내 탭 ========================= -->
+          <nav class="preinfo__tabs sub-page-tabs" aria-label="주변안내 메뉴">
+            <a href="content-action44.html" class="preinfo__tab is-active" aria-current="page">주변안내</a>
+            <a href="content-action12.html" class="preinfo__tab">공공 및 편의시설안내</a>
+          </nav>
+
+          <!-- ========================= 주변안내 START ========================= -->
+          <section class="sub-section sub-page-body" aria-label="주변안내">
+
+            <ul class="sub-link-cards">
+
+              <li class="sub-link-card">
+                <img class="sub-link-card__thumb" src="../../img/about/nearby-lodging.png" alt="전북전주 혁신도시 숙소 정보 누리집 화면">
+                <div class="sub-link-card__body">
+                  <div class="sub-link-card__text">
+                    <h3>전북전주 혁신도시 숙소 정보</h3>
+                    <p>지방자치인재개발원 전북 신청사 주변의 숙박업체 및 공인중개사 현황정보 제공</p>
+                  </div>
+                  <a href="#" class="btn-secondary btn sm" target="_blank" title="새창열림">
+                    자세히 보기
+                    <img src="../../img/icons/link-blue.png" alt="" width="16" height="16">
+                  </a>
+                </div>
+              </li>
+
+              <li class="sub-link-card">
+                <img class="sub-link-card__thumb" src="../../img/about/nearby-market.png" alt="전북특별자치도 상인연합회 누리집 화면">
+                <div class="sub-link-card__body">
+                  <div class="sub-link-card__text">
+                    <h3>전북특별자치도 상인연합회(전통시장)</h3>
+                    <p>고품질의 물건을 합리적인 가격으로 구매가 가능한 전북의 전통시장들의 정보 제공</p>
+                  </div>
+                  <a href="#" class="btn-secondary btn sm" target="_blank" title="새창열림">
+                    자세히 보기
+                    <img src="../../img/icons/link-blue.png" alt="" width="16" height="16">
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+
+          </section>
+          <!-- ========================= 주변안내 END ========================= -->
+
+        </div>
+
+
+        <!-- ========================= SATISFACTION START ========================= -->
+        <section class="sub-satisfaction">
+
+          <h2 class="sr-only">
+            페이지 만족도 및 담당부서 안내
+          </h2>
+
+
+          <div class="sub-satisfaction__contact">
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/department.png"
+                  alt="">
+
+                담당부서 안내
+
+              </span>
+
+              <strong>
+                기획협력과
+              </strong>
+
+            </div>
+
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/contact.png"
+                  alt="">
+
+                문의전화
+
+              </span>
+
+              <strong>
+                063-907-5044
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="sub-satisfaction__survey">
+
+            <div class="sub-satisfaction__question">
+
+              <img
+                class="sub-satisfaction__illustration"
+                src="../../img/icons/survey.png"
+                alt="">
+
+              <div>
+
+                <strong>
+                  현재 페이지에 만족하십니까?
+                </strong>
+
+                <p>
+                  페이지 내용과 사용 편의성에 대한 의견을 들려주세요.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <form class="sub-satisfaction__form">
+
+              <fieldset>
+
+                <legend class="sr-only">
+                  페이지 만족도 선택
+                </legend>
+
+                <div class="sub-satisfaction__radios">
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="5"
+                      checked>
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="4">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="3">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        보통
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="2">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="1">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+                </div>
+
+
+                <button
+                  type="button"
+                  class="btn-tertiary btn sm">
+                  확인
+                </button>
+
+              </fieldset>
+
+            </form>
+
+          </div>
+
+        </section>
+        <!-- ========================= SATISFACTION END ========================= -->
+
+      </div>
+      <!-- ========================= RIGHT CONTENT END ========================= -->
+
+    </div>
+    <!-- ========================= SUB CONTENT END ========================= -->
+
+  </main>
+
+
+  <!-- ========================= 공통 FOOTER START ========================= -->
+  <div id="include-footer"></div>
+  <!-- ========================= 공통 FOOTER END ========================= -->
+
+
+  <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/keyboardfocusing.js"></script>
+
+  <!-- 퍼블리싱용 sub-location 가데이터 -->
+  <script src="../../js/sub-location-data.js"></script>
+
+  <!-- sub-location 공통 UI -->
+  <script src="../../js/sub-location-common.js"></script>
+
+</body>
+
+</html>

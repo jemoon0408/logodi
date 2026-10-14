@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>직원검색 | 지방자치인재개발원</title>
+
+  <link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+
+  <!-- ========================= 공통 HEADER START ========================= -->
+  <div id="include-header"></div>
+  <!-- ========================= 공통 HEADER END ========================= -->
+
+
+  <!-- ========================= 공통 QUICK MENU START ========================= -->
+  <div id="include-quick-menu"></div>
+  <!-- ========================= 공통 QUICK MENU END ========================= -->
+
+
+  <main id="main-content" class="sub-page" tabindex="-1" data-page-label="직원검색">
+
+    <!-- ========================= SUB VISUAL START ========================= -->
+    <section class="sub-visual">
+
+      <div class="sub-visual__inner">
+
+        <nav class="sub-visual__breadcrumb" aria-label="현재 위치">
+
+          <ol>
+
+            <li class="sub-visual__breadcrumb-home">
+              <img
+                src="../../img/icons/breadcrumb-home-icon.png"
+                alt="홈">
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 1DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--1">
+              기관소개
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 2DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--2">
+
+              <span class="sub-visual__breadcrumb-depth-text">
+                조직안내
+              </span>
+
+              <span
+                class="sub-visual__breadcrumb-depth-ellipsis"
+                aria-hidden="true">
+                ...
+              </span>
+
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 3DEPTH -->
+            <li
+              class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--3"
+              aria-current="page">
+              직원검색
+            </li>
+
+          </ol>
+
+        </nav>
+
+
+        <h1 class="sub-visual__title">
+          기관소개
+        </h1>
+
+      </div>
+
+    </section>
+    <!-- ========================= SUB VISUAL END ========================= -->
+
+
+    <!-- ========================= LOCATION NAV START ========================= -->
+    <nav class="sub-location" aria-label="서브 메뉴 경로">
+
+      <div class="sub-location__inner">
+
+        <!-- 홈 버튼 (768px 이하 숨김) -->
+        <a href="../main-ko.html" class="sub-location__home">
+          <img src="../../img/icons/sub-location-home.png" alt="">
+          <span class="sr-only">홈으로 이동</span>
+        </a>
+
+
+        <div class="sub-location__menus">
+
+          <!-- 1DEPTH : 사이드 메뉴와 동일한 1Depth -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth1" class="sr-only">
+              1단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth1"
+              class="sub-location-select__native"
+              data-sub-location-depth="1"
+              data-selected="organization"
+              aria-label="1단계 메뉴 선택">
+            </select>
+
+          </div>
+
+
+          <!-- 2DEPTH : 선택한 1Depth의 하위메뉴 -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth2" class="sr-only">
+              2단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth2"
+              class="sub-location-select__native"
+              data-sub-location-depth="2"
+              data-selected="org-staff"
+              aria-label="2단계 메뉴 선택">
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="sub-location__print"
+          id="subPrintBtn">
+
+          <img
+            src="../../img/icons/print.png"
+            alt="">
+
+          <span class="sr-only">
+            현재 페이지 인쇄
+          </span>
+
+        </button>
+
+      </div>
+
+    </nav>
+    <!-- ========================= LOCATION NAV END ========================= -->
+
+
+    <!-- ========================= SUB CONTENT START ========================= -->
+    <div class="sub-layout">
+
+      <!-- ========================= LEFT MENU START ========================= -->
+      <aside class="sub-lnb" aria-label="기관소개 메뉴">
+
+        <div class="sub-lnb__head">
+          <h2>기관소개</h2>
+        </div>
+
+        <nav
+          class="sub-lnb__menu"
+          aria-label="기관소개 1단계 메뉴">
+
+          <ul>
+
+            <li>
+              <a
+                href="content-action13.html"
+                data-sub-lnb-value="intro">
+                기관소개
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action06.html"
+                data-sub-lnb-value="pr">
+                홍보관
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action09.html"
+                data-sub-lnb-value="organization"
+                class="is-active"
+                aria-current="page">
+                조직안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action41.html"
+                data-sub-lnb-value="facility">
+                시설안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action45.html"
+                data-sub-lnb-value="directions">
+                오시는 길
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                data-sub-lnb-value="weekly-menu">
+                주간식단
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </aside>
+      <!-- ========================= LEFT MENU END ========================= -->
+
+
+      <!-- ========================= RIGHT CONTENT START ========================= -->
+      <div class="sub-content">
+
+        <div class="sub-content__main">
+
+          <div class="sub-page-title">
+
+            <h2>
+              직원검색
+            </h2>
+
+            <span aria-hidden="true"></span>
+
+          </div>
+
+
+          <!-- ========================= 페이지 내 탭 ========================= -->
+          <nav class="preinfo__tabs sub-page-tabs" aria-label="조직 및 직원 메뉴">
+            <a href="content-action16.html" class="preinfo__tab">조직도</a>
+            <a href="content-action09.html" class="preinfo__tab is-active" aria-current="page">직원검색</a>
+          </nav>
+
+
+          <!-- ========================= 직원검색 START ========================= -->
+          <section class="preinfo sub-page-body" aria-label="직원검색">
+
+            <div class="preinfo__list">
+
+              <!-- ========================= 검색 START ========================= -->
+              <form class="board-search-controls board-search-controls--4">
+
+                <div class="text-field__wrap md">
+                  <div class="text-field__box md">
+
+                    <label for="staffDept" class="sr-only">
+                      부서 선택
+                    </label>
+
+                    <div class="custom-select md">
+
+                      <button
+                        type="button"
+                        class="custom-select__button md"
+                        aria-haspopup="listbox"
+                        aria-expanded="false">
+
+                        <span class="custom-select__text">
+                          전체
+                        </span>
+
+                        <img
+                          src="../../img/arrow-down.png"
+                          alt=""
+                          class="custom-select__arrow"
+                          aria-hidden="true">
+
+                      </button>
+
+                      <ul class="custom-select__list md" role="listbox">
+
+                        <li>
+                          <button
+                            type="button"
+                            class="custom-select__option is-selected"
+                            data-value="all">
+                            전체
+                          </button>
+                        </li>
+
+                        <li>
+                          <button
+                            type="button"
+                            class="custom-select__option"
+                            data-value="director">
+                            원장
+                          </button>
+                        </li>
+
+                        <li>
+                          <button
+                            type="button"
+                            class="custom-select__option"
+                            data-value="planning">
+                            기획부
+                          </button>
+                        </li>
+
+                        <li>
+                          <button
+                            type="button"
+                            class="custom-select__option"
+                            data-value="professor">
+                            교수부
+                          </button>
+                        </li>
+
+                        <li>
+                          <button
+                            type="button"
+                            class="custom-select__option"
+                            data-value="admin">
+                            행정지원과
+                          </button>
+                        </li>
+
+                      </ul>
+
+                      <select
+                        id="staffDept"
+                        class="custom-select__native"
+                        name="dept">
+
+                        <option value="all" selected>전체</option>
+                        <option value="director">원장</option>
+                        <option value="planning">기획부</option>
+                        <option value="professor">교수부</option>
+                        <option value="admin">행정지원과</option>
+
+                      </select>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="text-field__wrap md">
+                  <div class="text-field__box md">
+
+                    <label for="staffSearchType" class="sr-only">
+                      검색 항목 선택
+                    </label>
+
+                    <div class="custom-select md">
+
+                      <button
+                        type="button"
+                        class="custom-select__button md"
+                        aria-haspopup="listbox"
+                        aria-expanded="false">
+
+                        <span class="custom-select__text">
+                          선택
+                        </span>
+
+                        <img
+                          src="../../img/arrow-down.png"
+                          alt=""
+                          class="custom-select__arrow"
+                          aria-hidden="true">
+
+                      </button>
+
+                      <ul class="custom-select__list md" role="listbox">
+
+                        <li>
+                          <button
+                            type="button"
+                            class="custom-select__option is-selected"
+                            data-value="">
+                            선택
+                          </button>
+                        </li>
+
+                        <li>
+                          <button
+                            type="button"
+                            class="custom-select__option"
+                            data-value="name">
+                            성명
+                          </button>
+                        </li>
+
+                        <li>
+                          <button
+                            type="button"
+                            class="custom-select__option"
+                            data-value="work">
+                            담당업무
+                          </button>
+                        </li>
+
+                      </ul>
+
+                      <select
+                        id="staffSearchType"
+                        class="custom-select__native"
+                        name="searchType">
+
+                        <option value="" selected>선택</option>
+                        <option value="name">성명</option>
+                        <option value="work">담당업무</option>
+
+                      </select>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="text-field__wrap md">
+                  <div class="text-field__box md">
+
+                    <label for="staffSearchWord" class="sr-only">
+                      검색어 입력
+                    </label>
+
+                    <input
+                      type="text"
+                      id="staffSearchWord"
+                      class="text-field__input md"
+                      name="searchWord"
+                      placeholder="검색어를 입력하세요"
+                      title="검색어 입력">
+
+                    <button
+                      type="button"
+                      class="text-field__btn text-field__btn--clear md">
+
+                      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                      <span class="sr-only">입력 내용 삭제</span>
+
+                    </button>
+
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn-tertiary btn md">
+                  검색
+                </button>
+
+              </form>
+              <!-- ========================= 검색 END ========================= -->
+
+
+              <!-- ========================= TABLE START ========================= -->
+              <div class="preinfo-table-wrap">
+
+                <table class="preinfo-table preinfo-table--board">
+
+                  <caption class="sr-only">
+                    직원 목록 - 부서, 성명, 연락처, 담당업무 정보 제공
+                  </caption>
+
+                  <colgroup>
+                    <col style="width: 20%;">
+                    <col style="width: 14%;">
+                    <col style="width: 24%;">
+                    <col style="width: 42%;">
+                  </colgroup>
+
+                  <thead>
+                    <tr>
+                      <th scope="col" class="preinfo-table__writer">부서</th>
+                      <th scope="col" class="preinfo-table__title">성명</th>
+                      <th scope="col" class="preinfo-table__date">연락처</th>
+                      <th scope="col" class="preinfo-table__desc">담당업무</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">원장</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">안준호</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5001</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">지방자치인재개발원 업무 총괄</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">기획부장</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">공석</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5003</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">기획부 업무 총괄</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">교수부장</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">김정훈</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5004</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">교수부 업무 총괄</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">강병철</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5011</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">행정지원과장</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">이성수</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5012</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">행정팀 업무 총괄</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">정윤아</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5014</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">인사, 상훈, 감사</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">김윤아</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5013</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">원 및 과 서무</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">박윤재</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5016</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">통신실 운영 총괄, 행정전화, CATV</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">심해원</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5020</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">건강증진 프로그램</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">허재은</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5015</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">관서운영경비, 직장교육</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">성주연</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5352</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">의무실 운영</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">류성현</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5026</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">과 서무 지원, 당직근무, 직원생활관, 출입통제시스템</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">윤경애</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5002</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">원장실 비서</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">신성숙</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5027</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">후생복지팀총괄, 열린미술관, 청년인턴 인사·운영</td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="부서" class="preinfo-table__writer">행정지원과</td>
+                      <td data-label="성명" class="preinfo-table__title"><span class="preinfo-table__content-text">박윤정</span></td>
+                      <td data-label="연락처" class="preinfo-table__date">063-907-5021</td>
+                      <td data-label="담당업무" class="preinfo-table__desc is-left">경리팀 업무 총괄</td>
+                    </tr>
+
+                  </tbody>
+
+                </table>
+
+              </div>
+              <!-- ========================= TABLE END ========================= -->
+
+
+              <!-- ========================= PAGINATION START ========================= -->
+              <nav
+                class="preinfo-pagination"
+                aria-label="직원 목록 페이지">
+
+                <a href="#" class="preinfo-pagination__button is-disabled" aria-label="첫 페이지" aria-disabled="true">
+                  <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="preinfo-pagination__button is-disabled" aria-label="이전 페이지" aria-disabled="true">
+                  <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="preinfo-pagination__page is-active" aria-current="page">1</a>
+
+                <a href="#" class="preinfo-pagination__page">2</a>
+
+                <a href="#" class="preinfo-pagination__page">3</a>
+
+                <a href="#" class="preinfo-pagination__page">4</a>
+
+                <a href="#" class="preinfo-pagination__page">5</a>
+
+                <a href="#" class="preinfo-pagination__button" aria-label="다음 페이지">
+                  <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="preinfo-pagination__button" aria-label="마지막 페이지">
+                  <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                </a>
+
+              </nav>
+              <!-- ========================= PAGINATION END ========================= -->
+
+            </div>
+
+          </section>
+          <!-- ========================= 직원검색 END ========================= -->
+
+        </div>
+
+
+        <!-- ========================= SATISFACTION START ========================= -->
+        <section class="sub-satisfaction">
+
+          <h2 class="sr-only">
+            페이지 만족도 및 담당부서 안내
+          </h2>
+
+
+          <div class="sub-satisfaction__contact">
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/department.png"
+                  alt="">
+
+                담당부서 안내
+
+              </span>
+
+              <strong>
+                -
+              </strong>
+
+            </div>
+
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/contact.png"
+                  alt="">
+
+                문의전화
+
+              </span>
+
+              <strong>
+                -
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="sub-satisfaction__survey">
+
+            <div class="sub-satisfaction__question">
+
+              <img
+                class="sub-satisfaction__illustration"
+                src="../../img/icons/survey.png"
+                alt="">
+
+              <div>
+
+                <strong>
+                  현재 페이지에 만족하십니까?
+                </strong>
+
+                <p>
+                  페이지 내용과 사용 편의성에 대한 의견을 들려주세요.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <form class="sub-satisfaction__form">
+
+              <fieldset>
+
+                <legend class="sr-only">
+                  페이지 만족도 선택
+                </legend>
+
+                <div class="sub-satisfaction__radios">
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="5"
+                      checked>
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="4">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="3">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        보통
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="2">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="1">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+                </div>
+
+
+                <button
+                  type="button"
+                  class="btn-tertiary btn sm">
+                  확인
+                </button>
+
+              </fieldset>
+
+            </form>
+
+          </div>
+
+        </section>
+        <!-- ========================= SATISFACTION END ========================= -->
+
+      </div>
+      <!-- ========================= RIGHT CONTENT END ========================= -->
+
+    </div>
+    <!-- ========================= SUB CONTENT END ========================= -->
+
+  </main>
+
+
+  <!-- ========================= 공통 FOOTER START ========================= -->
+  <div id="include-footer"></div>
+  <!-- ========================= 공통 FOOTER END ========================= -->
+
+
+  <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/keyboardfocusing.js"></script>
+  <script src="../../js/customSelect.js"></script>
+  <script src="../../js/input.js"></script>
+  <script src="../../js/pagination.js"></script>
+
+  <!-- 퍼블리싱용 sub-location 가데이터 -->
+  <script src="../../js/sub-location-data.js"></script>
+
+  <!-- sub-location 공통 UI -->
+  <script src="../../js/sub-location-common.js"></script>
+
+</body>
+
+</html>
