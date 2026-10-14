@@ -5708,6 +5708,12 @@ display: none;
     font-size: 16px;
   }
 
+  /* 이용안내 박스 : 항목 사이 구분선 */
+  .sub-guide-box__item + .sub-guide-box__item {
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+
   /* 대관절차 : 세로 배치 */
   .sub-flow-steps {
     grid-template-columns: minmax(0, 1fr);
