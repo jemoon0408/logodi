@@ -2451,3 +2451,64 @@ overflow-wrap: normal;
 		display: none;
 	}
 }
+
+
+/* =========================================================
+   사전정보공표 목록 (.preinfo-table--board.preinfo-table--disclosure)
+   sample02 게시판 표 + 바로가기 버튼 (번호/연번 열 없음)
+
+   열 클래스
+   - preinfo-table__cate   : 구분 / 정보목록
+   - preinfo-table__title  : 공표내용 / 공표항목
+   - preinfo-table__period : 공표시기
+   - preinfo-table__cycle  : 공표주기
+   - preinfo-table__link   : 바로가기
+
+   560px 이하 : 1줄 공표내용, 2줄 구분 | 공표시기 | 공표주기, 맨 아래 버튼
+========================================================= */
+
+.preinfo-table--disclosure tbody td.preinfo-table__link {
+	white-space: nowrap;
+}
+
+/* 태블릿 : 게시판용 열 너비 보정 대신 이 표의 col 너비 유지 */
+@media (max-width: 768px) {
+
+	.preinfo-table--disclosure col:nth-child(2) {
+		width: 39% !important;
+	}
+
+	.preinfo-table--disclosure col:nth-child(5) {
+		width: 12% !important;
+	}
+}
+
+@media (max-width: 560px) {
+
+	/* 2줄 : 구분 | 공표시기 | 공표주기 (항목명 함께 표시) */
+	.preinfo-table--disclosure tbody td.preinfo-table__period,
+	.preinfo-table--disclosure tbody td.preinfo-table__cycle {
+		margin-left: 8px;
+		padding-left: 9px;
+		border-left: 1px solid #d9d9d9;
+		line-height: 1.2;
+	}
+
+	.preinfo-table--disclosure tbody td.preinfo-table__period::before,
+	.preinfo-table--disclosure tbody td.preinfo-table__cycle::before {
+		content: attr(data-label) " ";
+		color: #555;
+		font-weight: 600;
+	}
+
+	/* 맨 아래 : 바로가기 버튼 (한 줄 전체) */
+	.preinfo-table--disclosure tbody td.preinfo-table__link {
+		order: 5;
+		flex: 0 0 100%;
+		margin-top: 12px;
+	}
+
+	.preinfo-table--disclosure tbody td.preinfo-table__link .btn {
+		width: 100%;
+	}
+}
