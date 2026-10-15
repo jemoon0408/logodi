@@ -145,7 +145,8 @@ button {
 }
 
 .top-bar {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 102;
   height: 42px;
   background: #f5f7fa;
@@ -211,9 +212,31 @@ button {
 }
 
 
+/* 공통 헤더 include 래퍼 : 박스를 없애 .header 가 페이지 기준으로 상단 고정되게 */
+#include-header {
+  display: contents;
+}
+
+/* 고정 헤더 높이 (상단 고정 탭 등 위치 기준) */
+:root {
+  --top-bar-h: 42px;
+  --header-h: 123px;
+}
+
+@media (max-width: 876px) {
+  :root {
+    --header-h: 73px;
+  }
+}
+
+/* 본문 바로가기 이동 시 고정 헤더에 가리지 않게 */
+#main-content {
+  scroll-margin-top: var(--header-h);
+}
+
 .header {
   position: sticky;
-  top: 0;
+  top: var(--top-bar-h);
   z-index: 100;
   background: #fff;
   border-bottom: 1px solid #ddd;
@@ -1565,7 +1588,7 @@ html.kbd-nav .service-card:focus-visible {
   flex: none;
 }
 
-.banner-head h3 {
+.banner-head h2 {
   font-size: 1.375rem;
   font-weight: 700;
   color: #111;

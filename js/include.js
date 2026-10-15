@@ -267,6 +267,37 @@
 
 
   /* =========================================================
+     고정 헤더 높이 동기화
+     화면 폭마다 헤더 높이가 달라 실제 높이를 --header-h 로 지정
+  ========================================================= */
+
+  function syncHeaderHeight() {
+    const header = document.querySelector(".header");
+
+    if (!header) {
+      return;
+    }
+
+    const topBar = document.querySelector(".top-bar");
+
+    function update() {
+      document.documentElement.style.setProperty(
+        "--header-h",
+        (header.offsetHeight + (topBar ? topBar.offsetHeight : 0)) + "px"
+      );
+    }
+
+    update();
+
+    if (window.ResizeObserver) {
+      new ResizeObserver(update).observe(header);
+    } else {
+      window.addEventListener("resize", update);
+    }
+  }
+
+
+  /* =========================================================
      COMMON SCRIPT
   ========================================================= */
 
@@ -320,6 +351,10 @@
 
       /* 퀵메뉴 HTML 생성 이후 실행 */
       initQuickMenu();
+
+
+      /* 고정 헤더 실제 높이 → CSS 변수 --header-h (상단 고정 탭 위치 기준) */
+      syncHeaderHeight();
 
 
       /* header.js / main.js 실행 */
