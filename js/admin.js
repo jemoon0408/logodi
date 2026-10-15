@@ -57,6 +57,7 @@
         "가데이터 사용한 반복적인 반응형 게시판 페이지 제작 완료",
       ],
       status: "done",
+      a11y: "done",
       date: "2026-09-30"
     },
   
@@ -67,6 +68,7 @@
         "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다."
       ],
       status: "done",
+      a11y: "done",
       date: "2026-09-30"
     },
   
@@ -79,6 +81,7 @@
         "키보드 접근성 개선"
       ],
       status: "done",
+      a11y: "done",
       date: "2026-10-15"
     },
 
@@ -87,6 +90,7 @@
       path: "pages/org-info/board-action02.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-01"
     },
 
@@ -95,6 +99,7 @@
       path: "pages/org-info/board-action03.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-01"
     },
 
@@ -103,6 +108,7 @@
       path: "pages/org-info/board-action04.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-01"
     },
 
@@ -111,6 +117,7 @@
       path: "pages/info-disclosure/board-action05.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-15"
     },
 
@@ -278,7 +285,11 @@
     {
       name: "교류협력 - 민관협력 > 공공기관 협력",
       path: "pages/exchange/content-action22.html",
-      note: [],
+      note: [
+        "탭 영역 스크롤 시 상단 고정(헤더 바로 아래)",
+        "탭 클릭 시 해당 섹션으로 앵커 이동, 고정 탭에 가리지 않도록 위치 보정",
+        "스크롤 위치에 따라 활성 탭 자동 변경"
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-15"
@@ -287,7 +298,11 @@
     {
       name: "교류협력 - 민관협력 > 민간기관 협력",
       path: "pages/exchange/content-action23.html",
-      note: [],
+      note: [
+        "탭 영역 스크롤 시 상단 고정(헤더 바로 아래)",
+        "탭 클릭 시 해당 섹션으로 앵커 이동, 고정 탭에 가리지 않도록 위치 보정",
+        "스크롤 위치에 따라 활성 탭 자동 변경"
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-15"
@@ -296,7 +311,11 @@
     {
       name: "교류협력 - 민관협력 > 민관 협의체",
       path: "pages/exchange/content-action24.html",
-      note: [],
+      note: [
+        "탭 영역 스크롤 시 상단 고정(헤더 바로 아래)",
+        "탭 클릭 시 해당 섹션으로 앵커 이동, 고정 탭에 가리지 않도록 위치 보정",
+        "스크롤 위치에 따라 활성 탭 자동 변경"
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-15"
@@ -618,6 +637,7 @@
       path: "pages/info-disclosure/content-action46.html",
       note: [],
       status: "progress",
+      a11y: "done",
       date: "2026-10-15"
     },
 
