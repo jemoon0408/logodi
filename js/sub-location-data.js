@@ -268,7 +268,7 @@
       /*
        * 실제 파일명 전달받지 않음
        */
-      url: "",
+      url: "pages/info-disclosure/content-action46.html",
 
       children: []
     },

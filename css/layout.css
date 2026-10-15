@@ -2501,12 +2501,16 @@ overflow-wrap: normal;
 		font-weight: 600;
 	}
 
-	/* 맨 아래 : 바로가기 버튼 (한 줄 전체) */
+	/* 맨 아래 줄 : 바로가기 버튼 */
 	.preinfo-table--disclosure tbody td.preinfo-table__link {
 		order: 5;
 		flex: 0 0 100%;
 		margin-top: 12px;
 	}
+}
+
+/* 480px 이하 : 바로가기 버튼 한 줄 전체 (그 위에서는 버튼 본래 크기 유지) */
+@media (max-width: 480px) {
 
 	.preinfo-table--disclosure tbody td.preinfo-table__link .btn {
 		width: 100%;

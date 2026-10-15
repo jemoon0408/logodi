@@ -595,6 +595,14 @@
       date: "2026-10-14"
     },
 
+    {
+      name: "정보공개 - 공공데이터개방",
+      path: "pages/info-disclosure/content-action46.html",
+      note: [],
+      status: "progress",
+      date: "2026-10-15"
+    },
+
   ];
 
 
