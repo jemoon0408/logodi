@@ -925,6 +925,9 @@
   gap: 8px;
 }
 
+.sub-small-title h3,
+
+.sub-small-title h3,
 .sub-small-title h4 {
   margin: 0;
   color: #001f59;
@@ -1847,6 +1850,9 @@
     font-size: 2rem;
   }
 
+  .sub-small-title h3,
+
+  .sub-small-title h3,
   .sub-small-title h4 {
     font-size: 1.5rem;
   }
@@ -2172,6 +2178,9 @@ display: none;
     align-items: flex-start;
   }
 
+  .sub-small-title h3,
+
+  .sub-small-title h3,
   .sub-small-title h4 {
     padding-top: 3px;
     font-size: 1.375rem;
@@ -2295,6 +2304,9 @@ display: none;
     font-size: 1.5rem;
   }
 
+  .sub-small-title h3,
+
+  .sub-small-title h3,
   .sub-small-title h4 {
     font-size: 1.25rem;
   }
@@ -2398,6 +2410,9 @@ display: none;
     font-size: 1.375rem;
   }
 
+  .sub-small-title h3,
+
+  .sub-small-title h3,
   .sub-small-title h4 {
     font-size: 1.1875rem;
   }
@@ -4112,6 +4127,7 @@ display: none;
   margin: 0 0 40px;
 }
 
+.sub-small-title h3 small,
 .sub-small-title h4 small {
   color: #6d757f;
   font-size: 0.6em;
@@ -4182,6 +4198,16 @@ display: none;
 
 .sub-tab-wrap > .preinfo__tabs.sub-page-tabs {
   margin-top: 0;
+}
+
+/* 탭 상단 고정 (앵커 이동 페이지, 예: 공공기관 협력)
+   - 섹션 위치 보정 / 스크롤 시 활성 탭 : js/sub-location-common.js */
+.sub-tab-wrap--sticky {
+  position: sticky;
+  top: var(--header-h, 0px);
+  z-index: 20;
+  padding: 10px 0;
+  background: #fff;
 }
 
 .sub-tab2 {
@@ -4374,10 +4400,12 @@ display: none;
   gap: 5px;
 }
 
-.sub-org-list__num {
+/* 원형 번호 (①② 대신 사용, 전체 페이지 공통) */
+.sub-circle-num {
   flex-shrink: 0;
   width: 20px;
   height: 20px;
+  margin: 0 5px 0 2px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4386,6 +4414,12 @@ display: none;
   font-size: 0.6875rem;
   font-weight: 600;
   line-height: 1;
+  vertical-align: 0.1em;
+}
+
+/* 목록 안에서는 li gap 으로 간격 */
+.sub-org-list .sub-circle-num {
+  margin: 0;
 }
 
 .sub-table--kv a {
@@ -4504,6 +4538,192 @@ display: none;
 
 .sub-inline-actions--end .btn {
   gap: 6px;
+}
+
+/* 가운데 정렬 (예: 정보공개시스템 바로가기) */
+.sub-inline-actions--center {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.sub-inline-actions--center .btn {
+  gap: 10px;
+}
+
+/* 게시판 상세 : 본문 / 첨부파일 / 이전·다음글 */
+.sub-view-body {
+  padding: 30px 0;
+  color: #3c4655;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+
+.sub-view-body p {
+  margin: 0;
+}
+
+.sub-view-file {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3c4655;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.sub-view-file:hover,
+.sub-view-file:focus-visible {
+  color: #1652be;
+  text-decoration: underline;
+}
+
+/* 게시판 상세 제목 (표 위) */
+.sub-view-title {
+  margin: 0 0 20px;
+  color: #111;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+
+  .sub-view-title {
+    margin-bottom: 14px;
+    font-size: 1.375rem;
+  }
+}
+
+/* 게시판 상세 표 (sub-view-table)
+   - th : 항목명(가운데 정렬) / td : 내용, 열 비율은 HTML colgroup 으로 지정
+   - 768px 이하 : th 25% / td 나머지 */
+.sub-view-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #999;
+  table-layout: fixed;
+}
+
+.sub-view-table th,
+.sub-view-table td {
+  padding: 13px 20px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.sub-view-table tr:last-child th,
+.sub-view-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.sub-view-table th {
+  border-right: 1px solid #ddd;
+  background: #f7f7f7;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sub-view-table td {
+  color: #333;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+
+  /* 행 단위 flex : 일반 행은 th 25% / td 나머지 */
+  .sub-view-table,
+  .sub-view-table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .sub-view-table tr {
+    display: flex;
+  }
+
+  .sub-view-table th {
+    flex: 0 0 25%;
+    width: auto;
+    padding: 12px 10px;
+  }
+
+  .sub-view-table td {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 12px 14px;
+  }
+
+}
+
+/* 이전글 / 다음글 */
+.sub-view-pager {
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.sub-view-pager li {
+  min-height: 50px;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sub-view-pager li + li {
+  border-top: 1px solid #e5e5e5;
+}
+
+.sub-view-pager__label {
+  flex: 0 0 90px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.sub-view-pager__label i {
+  color: #bbb;
+  font-size: 0.75rem;
+}
+
+.sub-view-pager__link,
+.sub-view-pager__empty {
+  min-width: 0;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.sub-view-pager__link {
+  text-decoration: none;
+}
+
+.sub-view-pager__link:hover,
+.sub-view-pager__link:focus-visible {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.sub-view-pager__empty {
+  color: #999;
 }
 
 /* 번호 목록 (- 대신 1. 2. 3.) */
@@ -5200,6 +5420,7 @@ display: none;
   background: #fff;
 }
 
+.sub-guide-box__item h4,
 .sub-guide-box__item h5 {
   margin: 0 0 10px;
   display: flex;
@@ -5211,6 +5432,7 @@ display: none;
   line-height: 1.5;
 }
 
+.sub-guide-box__item h4 img,
 .sub-guide-box__item h5 img {
   width: 33px;
   height: 29px;
@@ -5510,6 +5732,7 @@ display: none;
   margin-top: 10px;
 }
 
+.sub-small-title h3 .sub-note,
 .sub-small-title h4 .sub-note {
   display: inline;
   margin-left: 6px;

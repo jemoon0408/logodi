@@ -2516,3 +2516,39 @@ overflow-wrap: normal;
 		width: 100%;
 	}
 }
+
+
+/* =========================================================
+   첨부파일 아이콘 컬러 (게시판 목록 / 상세 첨부파일 공통)
+========================================================= */
+
+.preinfo-table__file .fa-file-pdf,
+.sub-view-file .fa-file-pdf {
+	color: #d93025;
+}
+
+.preinfo-table__file .fa-file-excel,
+.sub-view-file .fa-file-excel {
+	color: #1d6f42;
+}
+
+.preinfo-table__file .fa-file-word,
+.sub-view-file .fa-file-word {
+	color: #2b579a;
+}
+
+/* 한글(hwp) 등 문서 */
+.preinfo-table__file .fa-file-lines,
+.sub-view-file .fa-file-lines {
+	color: #1a73c9;
+}
+
+.preinfo-table__file .fa-file-image,
+.sub-view-file .fa-file-image {
+	color: #e37400;
+}
+
+.preinfo-table__file .fa-paperclip,
+.sub-view-file .fa-paperclip {
+	color: #666;
+}

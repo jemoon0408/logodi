@@ -71,7 +71,7 @@
     },
   
     {
-      name: "정보공개 - 정보공개목록(문서공개목록)",
+      name: "정보공개 - 정보공개목록(문서공개목록 > 2014년 1월 이후)",
       path: "pages/info-disclosure/content-action.html",
       note: [
         "부서별 탭 기능 추가",
@@ -199,6 +199,7 @@
       path: "pages/exchange/content-action17.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -207,6 +208,7 @@
       path: "pages/exchange/content-action18.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -215,6 +217,7 @@
       path: "pages/exchange/board-action11.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -223,6 +226,7 @@
       path: "pages/exchange/content-action19.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -231,6 +235,7 @@
       path: "pages/exchange/board-action12.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -239,6 +244,7 @@
       path: "pages/exchange/content-action20.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -247,6 +253,7 @@
       path: "pages/exchange/board-action13.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -255,6 +262,7 @@
       path: "pages/exchange/content-action21.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -263,6 +271,7 @@
       path: "pages/exchange/board-action14.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -271,6 +280,7 @@
       path: "pages/exchange/content-action22.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -279,6 +289,7 @@
       path: "pages/exchange/content-action23.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -287,6 +298,7 @@
       path: "pages/exchange/content-action24.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -295,6 +307,7 @@
       path: "pages/exchange/content-action25.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -303,6 +316,7 @@
       path: "pages/exchange/content-action26.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -311,6 +325,7 @@
       path: "pages/exchange/board-action15.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -319,6 +334,7 @@
       path: "pages/exchange/content-action27.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -327,6 +343,7 @@
       path: "pages/exchange/board-action16.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -335,6 +352,7 @@
       path: "pages/exchange/board-action17.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -598,6 +616,22 @@
     {
       name: "정보공개 - 공공데이터개방",
       path: "pages/info-disclosure/content-action46.html",
+      note: [],
+      status: "progress",
+      date: "2026-10-15"
+    },
+
+    {
+      name: "정보공개 - 정보공개목록(문서공개목록 > 이전목록자료)",
+      path: "pages/info-disclosure/board-action21.html",
+      note: [],
+      status: "progress",
+      date: "2026-10-15"
+    },
+
+    {
+      name: "정보공개 - 정보공개목록(문서공개목록 > 이전목록자료 상세)",
+      path: "pages/info-disclosure/board-view01.html",
       note: [],
       status: "progress",
       date: "2026-10-15"
