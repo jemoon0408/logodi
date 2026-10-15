@@ -237,7 +237,7 @@
 
 
           <!-- ========================= 공통 탭 ========================= -->
-          <div class="sub-tab-wrap">
+          <div class="sub-tab-wrap sub-tab-wrap--sticky">
 
             <nav class="preinfo__tabs sub-page-tabs" aria-label="민관협력 메뉴">
               <a href="content-action22.html" class="preinfo__tab">공공기관 협력</a>
@@ -245,16 +245,24 @@
               <a href="content-action24.html" class="preinfo__tab is-active" aria-current="page">민관 협의체</a>
             </nav>
 
+            <nav class="sub-tab2" aria-label="민관 협의체 바로가기">
+              <ul class="sub-tab2__list">
+                <li><a href="#council-01" class="sub-tab2__item is-active" aria-current="page">HRD실무자 회의</a></li>
+                <li><a href="#council-02" class="sub-tab2__item">교육훈련기관 협의체</a></li>
+                <li><a href="#council-03" class="sub-tab2__item">기관장협의회</a></li>
+              </ul>
+            </nav>
+
           </div>
 
           <section class="sub-section sub-page-body" aria-label="민관 협의체">
             <div class="sub-section__contents">
 
-              <div class="sub-content-block">
+              <div class="sub-content-block sub-anchor-block" id="council-01">
 
                 <div class="sub-small-title">
                   <span class="sub-small-title__bullet" aria-hidden="true"></span>
-                  <h4>민·관·학·군 「HRD실무자 회의」</h4>
+                  <h3>민·관·학·군 「HRD실무자 회의」</h3>
                 </div>
 
                 <div class="sub-info-box">
@@ -264,11 +272,11 @@
                 </div>
 
               </div>
-              <div class="sub-content-block">
+              <div class="sub-content-block sub-anchor-block" id="council-02">
 
                 <div class="sub-small-title">
                   <span class="sub-small-title__bullet" aria-hidden="true"></span>
-                  <h4>교육훈련기관 협의체</h4>
+                  <h3>교육훈련기관 협의체</h3>
                 </div>
 
                 <div class="sub-info-box">
@@ -278,11 +286,11 @@
                 </div>
 
               </div>
-              <div class="sub-content-block">
+              <div class="sub-content-block sub-anchor-block" id="council-03">
 
                 <div class="sub-small-title">
                   <span class="sub-small-title__bullet" aria-hidden="true"></span>
-                  <h4>민·관교육발전 기관장협의회</h4>
+                  <h3>민·관교육발전 기관장협의회</h3>
                 </div>
 
                 <div class="sub-info-box">
@@ -521,6 +529,7 @@
 
   <!-- sub-location 공통 UI -->
   <script src="../../js/sub-location-common.js"></script>
+  <script src="../../js/sticky-tabs.js"></script>
 
 </body>
 

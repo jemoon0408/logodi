@@ -1086,15 +1086,6 @@
 
       setTab2Active(list, link);
 
-      /* 섹션 전환형(data-tab2-panels)이면 스크롤 대신 해당 섹션만 표시 */
-      if (link.closest(".sub-tab2[data-tab2-panels]")) {
-        event.preventDefault();
-        showTab2Panel(list, link);
-
-        if (window.history && history.replaceState) {
-          history.replaceState(null, "", link.getAttribute("href"));
-        }
-      }
     }
   );
 
@@ -1129,47 +1120,6 @@
 
     list.scrollTo({ left: Math.max(0, target), behavior: "smooth" });
   }
-
-  /*
-   * 2차 탭 섹션 전환
-   * <nav class="sub-tab2" data-tab2-panels> 안의 #id 링크에 해당하는
-   * 섹션만 보이고 나머지는 hidden 처리
-   */
-  function showTab2Panel(list, activeLink) {
-    list.querySelectorAll(".sub-tab2__item[href^='#']").forEach(function (item) {
-      var panel = document.getElementById(item.getAttribute("href").slice(1));
-
-      if (panel) {
-        panel.hidden = item !== activeLink;
-      }
-    });
-  }
-
-  function initTab2Panels() {
-    document
-      .querySelectorAll(".sub-tab2[data-tab2-panels] .sub-tab2__list")
-      .forEach(function (list) {
-        var links = list.querySelectorAll(".sub-tab2__item[href^='#']");
-
-        if (!links.length) {
-          return;
-        }
-
-        /* 주소에 #id 가 있으면 해당 탭, 없으면 활성 탭(또는 첫 탭) */
-        var activeLink =
-          (location.hash && list.querySelector(".sub-tab2__item[href='" + location.hash + "']")) ||
-          list.querySelector(".sub-tab2__item.is-active") ||
-          links[0];
-
-        setTab2Active(list, activeLink);
-        showTab2Panel(list, activeLink);
-      });
-  }
-
-  document.addEventListener(
-    "DOMContentLoaded",
-    initTab2Panels
-  );
 
   var tab2Timer;
 
