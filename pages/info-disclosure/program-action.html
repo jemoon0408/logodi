@@ -449,8 +449,8 @@
                             <button
                               type="button"
                               class="custom-select__option"
-                              data-value="category">
-                              구분
+                              data-value="list">
+                              정보목록
                             </button>
                           </li>
 
@@ -458,10 +458,29 @@
                             <button
                               type="button"
                               class="custom-select__option"
-                              data-value="content">
-                              공표내용
+                              data-value="item">
+                              공표항목
                             </button>
                           </li>
+
+                          <li>
+                            <button
+                              type="button"
+                              class="custom-select__option"
+                              data-value="period">
+                              공표시기
+                            </button>
+                          </li>
+
+                          <li>
+                            <button
+                              type="button"
+                              class="custom-select__option"
+                              data-value="cycle">
+                              공표주기
+                            </button>
+                          </li>
+
 
                         </ul>
 
@@ -471,8 +490,10 @@
                           name="searchType">
 
                           <option value="">항목선택</option>
-                          <option value="category">구분</option>
-                          <option value="content">공표내용</option>
+                          <option value="list">정보목록</option>
+                          <option value="item">공표항목</option>
+                          <option value="period">공표시기</option>
+                          <option value="cycle">공표주기</option>
 
                         </select>
 
@@ -529,22 +550,24 @@
                   <table class="preinfo-table preinfo-table--board preinfo-table--disclosure">
 
                     <caption class="sr-only">
-                      사전정보공표 목록 - 구분, 공표내용, 공표시기, 공표주기, 바로가기 정보 제공
+                      사전정보공표 목록 - 연번, 정보목록, 공표항목, 공표시기, 공표주기, 바로가기 정보 제공
                     </caption>
 
                     <colgroup>
+                      <col style="width: 7%;">
                       <col style="width: 18%;">
-                      <col style="width: 39%;">
-                      <col style="width: 16%;">
-                      <col style="width: 11%;">
+                      <col style="width: 34%;">
+                      <col style="width: 17%;">
+                      <col style="width: 12%;">
                       <col style="width: 12%;">
                     </colgroup>
 
                     <thead>
 
                       <tr>
-                        <th scope="col" class="preinfo-table__cate">구분</th>
-                        <th scope="col" class="preinfo-table__title">공표내용</th>
+                        <th scope="col" class="preinfo-table__num">연번</th>
+                        <th scope="col" class="preinfo-table__cate">정보목록</th>
+                        <th scope="col" class="preinfo-table__title">공표항목</th>
                         <th scope="col" class="preinfo-table__period">공표시기</th>
                         <th scope="col" class="preinfo-table__cycle">공표주기</th>
                         <th scope="col" class="preinfo-table__link">바로가기</th>
@@ -556,18 +579,16 @@
 
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
+                        <td data-label="연번" class="preinfo-table__num">
+                          73
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
                           역량교육과정
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
-
-                          <a href="#" class="preinfo-table__content-text">
-                            시군구 과장 후보자 역량교육과정 입교 안내
-                          </a>
-
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">시군구 과장 후보자 역량교육과정 입교 안내</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
@@ -588,21 +609,18 @@
 
                       </tr>
 
-
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
+                        <td data-label="연번" class="preinfo-table__num">
+                          72
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
                           역량교육과정
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
-
-                          <a href="#" class="preinfo-table__content-text">
-                            특례시 과장 후보자 역량교육과정 입교 안내
-                          </a>
-
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">특례시 과장 후보자 역량교육과정 입교 안내</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
@@ -623,21 +641,18 @@
 
                       </tr>
 
-
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
+                        <td data-label="연번" class="preinfo-table__num">
+                          71
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
                           LOGODI 글로벌 포럼
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
-
-                          <a href="#" class="preinfo-table__content-text">
-                            결과보고
-                          </a>
-
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">결과보고</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
@@ -658,21 +673,82 @@
 
                       </tr>
 
-
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
+                        <td data-label="연번" class="preinfo-table__num">
+                          70
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
                           국제전문과정
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본운영계획</span>
+                        </td>
 
-                          <a href="#" class="preinfo-table__content-text">
-                            기본운영계획
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
                           </a>
+                        </td>
 
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          69
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          외국공무원 교육과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          68
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          의정연수과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">의정연수과정 기본운영계획</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
@@ -693,25 +769,182 @@
 
                       </tr>
 
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          67
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          역량교육과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">시·도 과장급 후보자 역량교육과정 입교 안내</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          기수별 교육대상자 확정 시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
 
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
-                          외국공무원 교육과정
+                        <td data-label="연번" class="preinfo-table__num">
+                          66
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          역량교육과정
+                        </td>
 
-                          <a href="#" class="preinfo-table__content-text">
-                            시·도 과장급 후보자 역량교육과정 입교 안내
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">시·도 국장급 후보자 역량교육과정 입교 안내</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          기수별 교육대상자 확정 시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
                           </a>
+                        </td>
 
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          65
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          고급리더과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고급리더과정 기본운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          1월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          64
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          고급리더과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고급리더과정 차수별 운영계획</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
                           2월, 4월, 6월, 8월, 10월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          63
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          국외정책과제연수
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고급리더과정 국외정책과제연수 기본계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          62
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          국외정책과제연수
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고위정책과정 국외정책과제연수 기본계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
                         </td>
 
                         <td data-label="공표주기" class="preinfo-table__cycle">
@@ -734,95 +967,38 @@
 
                 </div>
 
-
                 <nav
                   class="preinfo-pagination"
                   aria-label="사전정보공표 목록 페이지">
 
-                  <a
-                    class="preinfo-pagination__button is-disabled"
-                    aria-disabled="true">
-
-                    <i
-                      class="fa-solid fa-angles-left"
-                      aria-hidden="true">
-                    </i>
-
+                  <a class="preinfo-pagination__button is-disabled" role="link" aria-label="첫 페이지" aria-disabled="true">
+                    <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
                   </a>
 
-                  <a
-                    class="preinfo-pagination__button is-disabled"
-                    aria-disabled="true">
-
-                    <i
-                      class="fa-solid fa-angle-left"
-                      aria-hidden="true">
-                    </i>
-
+                  <a class="preinfo-pagination__button is-disabled" role="link" aria-label="이전 페이지" aria-disabled="true">
+                    <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
                   </a>
 
-                  <a
-                    href="#"
-                    class="preinfo-pagination__page is-active"
-                    aria-current="page">
-                    1
+                  <a href="#" class="preinfo-pagination__page is-active" aria-current="page">1</a>
+                  <a href="#" class="preinfo-pagination__page">2</a>
+                  <a href="#" class="preinfo-pagination__page">3</a>
+                  <a href="#" class="preinfo-pagination__page">4</a>
+                  <a href="#" class="preinfo-pagination__page">5</a>
+                  <a href="#" class="preinfo-pagination__page">6</a>
+                  <a href="#" class="preinfo-pagination__page">7</a>
+
+                  <a href="#" class="preinfo-pagination__button" aria-label="다음 페이지">
+                    <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                   </a>
 
-                  <a
-                    href="#"
-                    class="preinfo-pagination__page">
-                    2
-                  </a>
-
-                  <a
-                    href="#"
-                    class="preinfo-pagination__page">
-                    3
-                  </a>
-
-                  <a
-                    href="#"
-                    class="preinfo-pagination__page">
-                    4
-                  </a>
-
-                  <a
-                    href="#"
-                    class="preinfo-pagination__page">
-                    5
-                  </a>
-
-                  <a
-                    href="#"
-                    class="preinfo-pagination__page">
-                    6
-                  </a>
-
-                  <a
-                    href="#"
-                    class="preinfo-pagination__button"
-                  >
-
-                    <i
-                      class="fa-solid fa-angle-right"
-                      aria-hidden="true">
-                    </i>
-
-                  </a>
-
-                  <a
-                    href="#"
-                    class="preinfo-pagination__button"
-                    >
-
-                    <i
-                      class="fa-solid fa-angles-right"
-                      aria-hidden="true">
-                    </i>
-
+                  <a href="#" class="preinfo-pagination__button" aria-label="마지막 페이지">
+                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
                   </a>
 
                 </nav>
+
+
+
 
               </div>
 
@@ -883,8 +1059,8 @@
                             <button
                               type="button"
                               class="custom-select__option"
-                              data-value="category">
-                              구분
+                              data-value="list">
+                              정보목록
                             </button>
                           </li>
 
@@ -892,10 +1068,29 @@
                             <button
                               type="button"
                               class="custom-select__option"
-                              data-value="content">
-                              공표내용
+                              data-value="item">
+                              공표항목
                             </button>
                           </li>
+
+                          <li>
+                            <button
+                              type="button"
+                              class="custom-select__option"
+                              data-value="period">
+                              공표시기
+                            </button>
+                          </li>
+
+                          <li>
+                            <button
+                              type="button"
+                              class="custom-select__option"
+                              data-value="cycle">
+                              공표주기
+                            </button>
+                          </li>
+
 
                         </ul>
 
@@ -905,8 +1100,10 @@
                           name="searchType">
 
                           <option value="">항목선택</option>
-                          <option value="category">구분</option>
-                          <option value="content">공표내용</option>
+                          <option value="list">정보목록</option>
+                          <option value="item">공표항목</option>
+                          <option value="period">공표시기</option>
+                          <option value="cycle">공표주기</option>
 
                         </select>
 
@@ -963,20 +1160,22 @@
                   <table class="preinfo-table preinfo-table--board preinfo-table--disclosure">
 
                     <caption class="sr-only">
-                      행정지원과 사전정보공표 목록
+                      행정지원과 사전정보공표 목록 - 연번, 정보목록, 공표항목, 공표시기, 공표주기, 바로가기 정보 제공
                     </caption>
 
                     <colgroup>
+                      <col style="width: 7%;">
                       <col style="width: 18%;">
-                      <col style="width: 39%;">
-                      <col style="width: 16%;">
-                      <col style="width: 11%;">
+                      <col style="width: 34%;">
+                      <col style="width: 17%;">
+                      <col style="width: 12%;">
                       <col style="width: 12%;">
                     </colgroup>
 
                     <thead>
 
                       <tr>
+                        <th scope="col" class="preinfo-table__num">연번</th>
                         <th scope="col" class="preinfo-table__cate">정보목록</th>
                         <th scope="col" class="preinfo-table__title">공표항목</th>
                         <th scope="col" class="preinfo-table__period">공표시기</th>
@@ -989,147 +1188,387 @@
                     <tbody>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">자치인재원 주변안내</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">자치인재원 주변 편의시설 안내</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          16
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">자료발생시</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">수시</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          자치인재원 주변안내
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">자치인재원 주변 편의시설 안내</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">예산관리</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">예산이월 및 불용액 현황</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          15
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">12월</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">매년</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          예산관리
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">예산이월 및 불용액 현황</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          12월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">예산관리</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">예산현황</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          14
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">12월</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">매년</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          예산관리
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">예산현황</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          12월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">차량관리</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">공용차량 현황</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          13
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">12월</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">매년</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          차량관리
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">공용차량 현황</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          12월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">계약관리</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">계약현황</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          12
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">10일</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">매월</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          계약관리
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">계약현황</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          10일
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매월
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">일반서무</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">소장미술품 목록</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          11
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">자료발생시</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">수시</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          일반서무
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">소장미술품 목록</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">일반서무</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">온누리상품권 구매실적</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          10
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">1월</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">매년</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          일반서무
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">온누리상품권 구매실적</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          1월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">자치인재원 동호회 운영</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">자치인재원 동호회 운영계획</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          9
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">2월</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">매년</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          자치인재원 동호회 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">자치인재원 동호회 운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">자치인재원 동호회 운영</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">자치인재원 동호회 운영 추진결과</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          8
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">7월, 12월</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">반기</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          자치인재원 동호회 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">자치인재원 동호회 운영 추진결과</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          7월, 12월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          반기
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">정보공개</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">정보공개 업무처리절차</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          7
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">자료발생시</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">수시</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          정보공개
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">정보공개 업무처리절차</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">당직 및 비상근무에 관한 규정</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">당직 및 비상근무에 관한 규정</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          6
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">자료발생시</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">수시</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          당직 및 비상근무에 관한 규정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">당직 및 비상근무에 관한 규정</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                       <tr>
-                        <td data-label="정보목록" class="preinfo-table__cate">부서원 교육</td>
-                        <td data-label="공표항목" class="preinfo-table__title preinfo-table__content-cell">
-                          <a href="#" class="preinfo-table__content-text">직장교육 실시현황</a>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          5
                         </td>
-                        <td data-label="공표시기" class="preinfo-table__period">2월</td>
-                        <td data-label="공표주기" class="preinfo-table__cycle">매년</td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          부서원 교육
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">직장교육 실시현황</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
                         <td data-label="바로가기" class="preinfo-table__link">
-                          <a href="#" class="btn-secondary btn sm">바로가기</a>
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
                         </td>
+
                       </tr>
 
                     </tbody>
@@ -1137,6 +1576,32 @@
                   </table>
 
                 </div>
+
+                <nav
+                  class="preinfo-pagination"
+                  aria-label="행정지원과 사전정보공표 목록 페이지">
+
+                  <a class="preinfo-pagination__button is-disabled" role="link" aria-label="첫 페이지" aria-disabled="true">
+                    <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
+                  </a>
+
+                  <a class="preinfo-pagination__button is-disabled" role="link" aria-label="이전 페이지" aria-disabled="true">
+                    <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                  </a>
+
+                  <a href="#" class="preinfo-pagination__page is-active" aria-current="page">1</a>
+                  <a href="#" class="preinfo-pagination__page">2</a>
+
+                  <a href="#" class="preinfo-pagination__button" aria-label="다음 페이지">
+                    <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                  </a>
+
+                  <a href="#" class="preinfo-pagination__button" aria-label="마지막 페이지">
+                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                  </a>
+
+                </nav>
+
 
               </div>
 
@@ -1159,22 +1624,24 @@
                   <table class="preinfo-table preinfo-table--board preinfo-table--disclosure">
 
                     <caption class="sr-only">
-                      기획협력과 사전정보공표 목록
+                      기획협력과 사전정보공표 목록 - 연번, 정보목록, 공표항목, 공표시기, 공표주기, 바로가기 정보 제공
                     </caption>
 
                     <colgroup>
+                      <col style="width: 7%;">
                       <col style="width: 18%;">
-                      <col style="width: 39%;">
-                      <col style="width: 16%;">
-                      <col style="width: 11%;">
+                      <col style="width: 34%;">
+                      <col style="width: 17%;">
+                      <col style="width: 12%;">
                       <col style="width: 12%;">
                     </colgroup>
 
                     <thead>
 
                       <tr>
-                        <th scope="col" class="preinfo-table__cate">구분</th>
-                        <th scope="col" class="preinfo-table__title">공표내용</th>
+                        <th scope="col" class="preinfo-table__num">연번</th>
+                        <th scope="col" class="preinfo-table__cate">정보목록</th>
+                        <th scope="col" class="preinfo-table__title">공표항목</th>
                         <th scope="col" class="preinfo-table__period">공표시기</th>
                         <th scope="col" class="preinfo-table__cycle">공표주기</th>
                         <th scope="col" class="preinfo-table__link">바로가기</th>
@@ -1183,7 +1650,391 @@
                     </thead>
 
                     <tbody>
-                      <!-- 기획협력과 데이터 -->
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          12
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          시책교육운영계획
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">시책교육연간운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          11
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          연보발간
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">연보 발간 자료</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생후 20일
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          10
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          지방공무원 교육용 공통교재 발간
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">공통교재 결과물</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          9
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          자치인재원 홍보물 제작
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">자치인재원 브로슈어</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          8
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          자치인재원 베스트 강의
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">자치인재원 베스트 강의 동영상</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          7
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          지역 상생발전을 위한 과제 추진 및 협의체 구성, 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">지역상생발전 7대과제 실적</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          1월, 4월, 7월, 10월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          분기
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          6
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          지방공무원 정책연구 발표대회 개최
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">정책연구 발표대회 우수 보고서</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          10~11월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          5
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          지방공무원 교육발전협의회 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">교육발전협의회 결과</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          5월, 10월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          반기
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          4
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          도서관리
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">일반도서 관리</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          3
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          자치인재원 조직관리
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">지방자치인재개발원 직급, 부서별 정원현황</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          11월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          2
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          보도자료/언론보도
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">보도자료</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          1
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          훈령,예규 제·개정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">훈령·예규 목록</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
                     </tbody>
 
                   </table>
@@ -1211,43 +2062,45 @@
                   <table class="preinfo-table preinfo-table--board preinfo-table--disclosure">
 
                     <caption class="sr-only">
-                      국제교육협력과 사전정보공표 목록
+                      국제교육협력과 사전정보공표 목록 - 연번, 정보목록, 공표항목, 공표시기, 공표주기, 바로가기 정보 제공
                     </caption>
 
                     <colgroup>
+                      <col style="width: 7%;">
                       <col style="width: 18%;">
-                      <col style="width: 39%;">
-                      <col style="width: 20%;">
-                      <col style="width: 11%;">
+                      <col style="width: 34%;">
+                      <col style="width: 17%;">
+                      <col style="width: 12%;">
                       <col style="width: 12%;">
                     </colgroup>
 
                     <thead>
+
                       <tr>
-                        <th scope="col" class="preinfo-table__cate">구분</th>
-                        <th scope="col" class="preinfo-table__title">공표내용</th>
+                        <th scope="col" class="preinfo-table__num">연번</th>
+                        <th scope="col" class="preinfo-table__cate">정보목록</th>
+                        <th scope="col" class="preinfo-table__title">공표항목</th>
                         <th scope="col" class="preinfo-table__period">공표시기</th>
                         <th scope="col" class="preinfo-table__cycle">공표주기</th>
                         <th scope="col" class="preinfo-table__link">바로가기</th>
                       </tr>
+
                     </thead>
 
                     <tbody>
 
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
+                        <td data-label="연번" class="preinfo-table__num">
+                          7
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
                           LOGODI 글로벌 포럼
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
-
-                          <a href="#" class="preinfo-table__content-text">
-                            결과보고
-                          </a>
-
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">결과보고</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
@@ -1268,25 +2121,182 @@
 
                       </tr>
 
-
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
+                        <td data-label="연번" class="preinfo-table__num">
+                          6
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
                           국제전문과정
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
-
-                          <a href="#" class="preinfo-table__content-text">
-                            기본운영계획
-                          </a>
-
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본운영계획</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
-                          1월
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          5
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          외국공무원 교육과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          4
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          글로벌리더과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          3
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          개발도상국 지방행정과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          2
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          한ㆍ중세미나
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">결과보고</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          1
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          한ㆍ중세미나
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          자료발생시
                         </td>
 
                         <td data-label="공표주기" class="preinfo-table__cycle">
@@ -1330,22 +2340,24 @@
                   <table class="preinfo-table preinfo-table--board preinfo-table--disclosure">
 
                     <caption class="sr-only">
-                      교육총괄과 사전정보공표 목록
+                      교육총괄과 사전정보공표 목록 - 연번, 정보목록, 공표항목, 공표시기, 공표주기, 바로가기 정보 제공
                     </caption>
 
                     <colgroup>
+                      <col style="width: 7%;">
                       <col style="width: 18%;">
-                      <col style="width: 39%;">
-                      <col style="width: 16%;">
-                      <col style="width: 11%;">
+                      <col style="width: 34%;">
+                      <col style="width: 17%;">
+                      <col style="width: 12%;">
                       <col style="width: 12%;">
                     </colgroup>
 
                     <thead>
 
                       <tr>
-                        <th scope="col" class="preinfo-table__cate">구분</th>
-                        <th scope="col" class="preinfo-table__title">공표내용</th>
+                        <th scope="col" class="preinfo-table__num">연번</th>
+                        <th scope="col" class="preinfo-table__cate">정보목록</th>
+                        <th scope="col" class="preinfo-table__title">공표항목</th>
                         <th scope="col" class="preinfo-table__period">공표시기</th>
                         <th scope="col" class="preinfo-table__cycle">공표주기</th>
                         <th scope="col" class="preinfo-table__link">바로가기</th>
@@ -1354,7 +2366,359 @@
                     </thead>
 
                     <tbody>
-                      <!-- 교육총괄과 데이터 -->
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          11
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          5급승진리더과정 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본계획 수립</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          분기
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          10
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          5급승진리더과정 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">교육 입교 및 과정안내</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          9
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          5급승진리더과정 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">교육과정운영</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          8
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          지방의회 아카데미 과정운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본계획 수립</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          7
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          지방의회 아카데미 과정운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">지방의회 아카데미 운영결과</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          교육종료후
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          6
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          단체장 비젼포럼 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">기본계획 수립</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          5
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          공무원교육상기금 운용
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">공무원교육상기금 운영규정</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          개정시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          4
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          교육기자재 운영지원
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">시청각 교육기자재 운영계획 수립</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          3
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          교육기자재 운영지원
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">시청각 교육시설유지 관리, 보수</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          12월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          2
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          교육운영지원
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">강사수당 및 원고료 지급기준</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          개정시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          1
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          교육시설 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">지방자치인재개발원 시설물 사용료 징수규정</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          개정시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
                     </tbody>
 
                   </table>
@@ -1382,22 +2746,24 @@
                   <table class="preinfo-table preinfo-table--board preinfo-table--disclosure">
 
                     <caption class="sr-only">
-                      정책리더양성과 사전정보공표 목록
+                      정책리더양성과 사전정보공표 목록 - 연번, 정보목록, 공표항목, 공표시기, 공표주기, 바로가기 정보 제공
                     </caption>
 
                     <colgroup>
+                      <col style="width: 7%;">
                       <col style="width: 18%;">
-                      <col style="width: 39%;">
-                      <col style="width: 16%;">
-                      <col style="width: 11%;">
+                      <col style="width: 34%;">
+                      <col style="width: 17%;">
+                      <col style="width: 12%;">
                       <col style="width: 12%;">
                     </colgroup>
 
                     <thead>
 
                       <tr>
-                        <th scope="col" class="preinfo-table__cate">구분</th>
-                        <th scope="col" class="preinfo-table__title">공표내용</th>
+                        <th scope="col" class="preinfo-table__num">연번</th>
+                        <th scope="col" class="preinfo-table__cate">정보목록</th>
+                        <th scope="col" class="preinfo-table__title">공표항목</th>
                         <th scope="col" class="preinfo-table__period">공표시기</th>
                         <th scope="col" class="preinfo-table__cycle">공표주기</th>
                         <th scope="col" class="preinfo-table__link">바로가기</th>
@@ -1406,12 +2772,422 @@
                     </thead>
 
                     <tbody>
-                      <!-- 정책리더양성과 데이터 -->
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          14
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          고급리더과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고급리더과정 기본운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          1월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          13
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          고급리더과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고급리더과정 차수별 운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월, 4월, 6월, 8월, 10월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          12
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          국외정책과제연수
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고급리더과정 국외정책과제연수 기본계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          11
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          국외정책과제연수
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고위정책과정 국외정책과제연수 기본계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          10
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          국외정책과제연수
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">중견리더과정 국외정책과제연수 기본계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          9
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          장기과정 체육교과 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">장기과정 체육교과 운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          8
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          장기과정 체육교과 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">장기과정체육대회 및 등산운영</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          7
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          장기과정 체육교과 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">장기과정 기초체력검진 운영</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          6
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          장기과정 체육교과 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">체력단련실 운영 및 관리</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          5
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          장기과정 체육교과 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">장기과정 체력증진프로그램 운영</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          4
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          고위정책과정 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고위정책과정 기본운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          1월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          3
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          고위정책과정 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">고위정책과정 차수별 운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월, 4월, 6월, 8월, 10월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
                     </tbody>
 
                   </table>
 
                 </div>
+
+                <nav
+                  class="preinfo-pagination"
+                  aria-label="정책리더양성과 사전정보공표 목록 페이지">
+
+                  <a class="preinfo-pagination__button is-disabled" role="link" aria-label="첫 페이지" aria-disabled="true">
+                    <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
+                  </a>
+
+                  <a class="preinfo-pagination__button is-disabled" role="link" aria-label="이전 페이지" aria-disabled="true">
+                    <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                  </a>
+
+                  <a href="#" class="preinfo-pagination__page is-active" aria-current="page">1</a>
+                  <a href="#" class="preinfo-pagination__page">2</a>
+
+                  <a href="#" class="preinfo-pagination__button" aria-label="다음 페이지">
+                    <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                  </a>
+
+                  <a href="#" class="preinfo-pagination__button" aria-label="마지막 페이지">
+                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                  </a>
+
+                </nav>
+
 
               </div>
 
@@ -1434,22 +3210,24 @@
                   <table class="preinfo-table preinfo-table--board preinfo-table--disclosure">
 
                     <caption class="sr-only">
-                      전문역량교육과 사전정보공표 목록
+                      전문역량교육과 사전정보공표 목록 - 연번, 정보목록, 공표항목, 공표시기, 공표주기, 바로가기 정보 제공
                     </caption>
 
                     <colgroup>
+                      <col style="width: 7%;">
                       <col style="width: 18%;">
-                      <col style="width: 39%;">
-                      <col style="width: 16%;">
-                      <col style="width: 11%;">
+                      <col style="width: 34%;">
+                      <col style="width: 17%;">
+                      <col style="width: 12%;">
                       <col style="width: 12%;">
                     </colgroup>
 
                     <thead>
 
                       <tr>
-                        <th scope="col" class="preinfo-table__cate">구분</th>
-                        <th scope="col" class="preinfo-table__title">공표내용</th>
+                        <th scope="col" class="preinfo-table__num">연번</th>
+                        <th scope="col" class="preinfo-table__cate">정보목록</th>
+                        <th scope="col" class="preinfo-table__title">공표항목</th>
                         <th scope="col" class="preinfo-table__period">공표시기</th>
                         <th scope="col" class="preinfo-table__cycle">공표주기</th>
                         <th scope="col" class="preinfo-table__link">바로가기</th>
@@ -1458,7 +3236,263 @@
                     </thead>
 
                     <tbody>
-                      <!-- 전문역량교육과 데이터 -->
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          8
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          여성리더양성과정 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">여성리더과정 월별교육운영 계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          전월 중순
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          월별
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          7
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          여성리더양성과정 운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">여성리더과정 교육훈련 운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          6
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          사이버교육과정운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">연간 사이버교육과정 계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          5
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          사이버교육과정운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">사이버교육과정 운영안내</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          계획수립시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          4
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          지방공기업과정운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">지방공기업과정 입교안내</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          과정별 교육대상자 확정 시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          3
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          지방공기업과정운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">연간 교육운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          2
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          전문교육과정운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">전문교육과정 입교안내</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          과정별 교육대상자 확정 시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          1
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          전문교육과정운영
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">연간 교육운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          2월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
                     </tbody>
 
                   </table>
@@ -1486,22 +3520,24 @@
                   <table class="preinfo-table preinfo-table--board preinfo-table--disclosure">
 
                     <caption class="sr-only">
-                      지방의정연수센터 사전정보공표 목록
+                      지방의정연수센터 사전정보공표 목록 - 연번, 정보목록, 공표항목, 공표시기, 공표주기, 바로가기 정보 제공
                     </caption>
 
                     <colgroup>
+                      <col style="width: 7%;">
                       <col style="width: 18%;">
-                      <col style="width: 39%;">
-                      <col style="width: 16%;">
-                      <col style="width: 11%;">
+                      <col style="width: 34%;">
+                      <col style="width: 17%;">
+                      <col style="width: 12%;">
                       <col style="width: 12%;">
                     </colgroup>
 
                     <thead>
 
                       <tr>
-                        <th scope="col" class="preinfo-table__cate">구분</th>
-                        <th scope="col" class="preinfo-table__title">공표내용</th>
+                        <th scope="col" class="preinfo-table__num">연번</th>
+                        <th scope="col" class="preinfo-table__cate">정보목록</th>
+                        <th scope="col" class="preinfo-table__title">공표항목</th>
                         <th scope="col" class="preinfo-table__period">공표시기</th>
                         <th scope="col" class="preinfo-table__cycle">공표주기</th>
                         <th scope="col" class="preinfo-table__link">바로가기</th>
@@ -1510,7 +3546,39 @@
                     </thead>
 
                     <tbody>
-                      <!-- 지방의정연수센터 데이터 -->
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          1
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          의정연수과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">의정연수과정 기본운영계획</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          1월
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          매년
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
                     </tbody>
 
                   </table>
@@ -1538,22 +3606,24 @@
                   <table class="preinfo-table preinfo-table--board preinfo-table--disclosure">
 
                     <caption class="sr-only">
-                      지방자치역량센터 사전정보공표 목록
+                      지방자치역량센터 사전정보공표 목록 - 연번, 정보목록, 공표항목, 공표시기, 공표주기, 바로가기 정보 제공
                     </caption>
 
                     <colgroup>
+                      <col style="width: 7%;">
                       <col style="width: 18%;">
-                      <col style="width: 39%;">
-                      <col style="width: 16%;">
-                      <col style="width: 11%;">
+                      <col style="width: 34%;">
+                      <col style="width: 17%;">
+                      <col style="width: 12%;">
                       <col style="width: 12%;">
                     </colgroup>
 
                     <thead>
 
                       <tr>
-                        <th scope="col" class="preinfo-table__cate">구분</th>
-                        <th scope="col" class="preinfo-table__title">공표내용</th>
+                        <th scope="col" class="preinfo-table__num">연번</th>
+                        <th scope="col" class="preinfo-table__cate">정보목록</th>
+                        <th scope="col" class="preinfo-table__title">공표항목</th>
                         <th scope="col" class="preinfo-table__period">공표시기</th>
                         <th scope="col" class="preinfo-table__cycle">공표주기</th>
                         <th scope="col" class="preinfo-table__link">바로가기</th>
@@ -1565,18 +3635,16 @@
 
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
+                        <td data-label="연번" class="preinfo-table__num">
+                          4
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
                           역량교육과정
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
-
-                          <a href="#" class="preinfo-table__content-text">
-                            시군구 과장 후보자 역량교육과정 입교 안내
-                          </a>
-
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">시군구 과장 후보자 역량교육과정 입교 안내</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
@@ -1597,21 +3665,18 @@
 
                       </tr>
 
-
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
+                        <td data-label="연번" class="preinfo-table__num">
+                          3
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
                           역량교육과정
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
-
-                          <a href="#" class="preinfo-table__content-text">
-                            특례시 과장 후보자 역량교육과정 입교 안내
-                          </a>
-
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">특례시 과장 후보자 역량교육과정 입교 안내</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
@@ -1632,25 +3697,54 @@
 
                       </tr>
 
-
                       <tr>
 
-                        <td data-label="구분" class="preinfo-table__cate">
-                          외국공무원 교육과정
+                        <td data-label="연번" class="preinfo-table__num">
+                          2
                         </td>
 
-                        <td
-                          data-label="공표내용"
-                          class="preinfo-table__title preinfo-table__content-cell">
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          역량교육과정
+                        </td>
 
-                          <a href="#" class="preinfo-table__content-text">
-                            시·도 과장급 후보자 역량교육과정 입교 안내
-                          </a>
-
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">시·도 과장급 후보자 역량교육과정 입교 안내</span>
                         </td>
 
                         <td data-label="공표시기" class="preinfo-table__period">
-                          2월, 4월, 6월, 8월, 10월
+                          기수별 교육대상자 확정 시
+                        </td>
+
+                        <td data-label="공표주기" class="preinfo-table__cycle">
+                          수시
+                        </td>
+
+                        <td data-label="바로가기" class="preinfo-table__link">
+                          <a
+                            href="#"
+                            class="btn-secondary btn sm">
+                            바로가기
+                          </a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td data-label="연번" class="preinfo-table__num">
+                          1
+                        </td>
+
+                        <td data-label="정보목록" class="preinfo-table__cate">
+                          역량교육과정
+                        </td>
+
+                        <td data-label="공표항목" class="preinfo-table__title">
+                          <span class="preinfo-table__content-text">시·도 국장급 후보자 역량교육과정 입교 안내</span>
+                        </td>
+
+                        <td data-label="공표시기" class="preinfo-table__period">
+                          기수별 교육대상자 확정 시
                         </td>
 
                         <td data-label="공표주기" class="preinfo-table__cycle">
@@ -1707,7 +3801,7 @@
               </span>
 
               <strong>
-                기획협력과
+              
               </strong>
 
             </div>
@@ -1726,7 +3820,7 @@
               </span>
 
               <strong>
-                063-907-5044
+             
               </strong>
 
             </div>

@@ -47,7 +47,7 @@
         "header 추가"
       ],
       status: "done",
-      date: "2026-09-30"
+      date: "2026-10-15"
     },
 
     {
@@ -79,7 +79,7 @@
         "키보드 접근성 개선"
       ],
       status: "done",
-      date: "2026-09-30"
+      date: "2026-10-15"
     },
 
     {
@@ -111,7 +111,7 @@
       path: "pages/info-disclosure/board-action05.html",
       note: [],
       status: "done",
-      date: "2026-10-01"
+      date: "2026-10-15"
     },
 
     {
@@ -167,7 +167,7 @@
       path: "pages/about/content-action02.html",
       note: [],
       status: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -183,7 +183,7 @@
       path: "pages/about/content-action04.html",
       note: [],
       status: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -200,7 +200,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -209,7 +209,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -227,7 +227,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -245,7 +245,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -263,7 +263,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -281,7 +281,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -290,7 +290,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -299,7 +299,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -308,7 +308,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -317,7 +317,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -335,7 +335,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -425,7 +425,7 @@
       path: "pages/about/content-action10.html",
       note: [],
       status: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
     {
@@ -441,7 +441,7 @@
       path: "pages/about/content-action12.html",
       note: [],
       status: "done",
-      date: "2026-10-07"
+      date: "2026-10-15"
     },
 
 
@@ -506,7 +506,7 @@
       path: "pages/education/content-action35.html",
       note: [],
       status: "done",
-      date: "2026-10-12"
+      date: "2026-10-15"
     },
 
     {
@@ -522,7 +522,7 @@
       path: "pages/education/content-action37.html",
       note: [],
       status: "done",
-      date: "2026-10-12"
+      date: "2026-10-15"
     },
 
     {
@@ -625,7 +625,8 @@
       name: "정보공개 - 정보공개목록(문서공개목록 > 이전목록자료)",
       path: "pages/info-disclosure/board-action21.html",
       note: [],
-      status: "progress",
+      status: "done",
+      a11y: "done",
       date: "2026-10-15"
     },
 
@@ -633,7 +634,8 @@
       name: "정보공개 - 정보공개목록(문서공개목록 > 이전목록자료 상세)",
       path: "pages/info-disclosure/board-view01.html",
       note: [],
-      status: "progress",
+      status: "done",
+      a11y: "done",
       date: "2026-10-15"
     },
 

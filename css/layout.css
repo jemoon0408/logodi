@@ -1501,7 +1501,6 @@ textarea {
 	overflow-x: auto;
 	overflow-y: hidden;
 
-	border-bottom: 1.5px solid #d2d4dd;
 	border-radius: 8px 8px 0 0;
 	background: #edf3ff;
 
@@ -2455,9 +2454,10 @@ overflow-wrap: normal;
 
 /* =========================================================
    사전정보공표 목록 (.preinfo-table--board.preinfo-table--disclosure)
-   sample02 게시판 표 + 바로가기 버튼 (번호/연번 열 없음)
+   sample02 게시판 표 + 바로가기 버튼
 
    열 클래스
+   - preinfo-table__num    : 연번 (모바일 숨김)
    - preinfo-table__cate   : 구분 / 정보목록
    - preinfo-table__title  : 공표내용 / 공표항목
    - preinfo-table__period : 공표시기
@@ -2475,7 +2475,7 @@ overflow-wrap: normal;
 @media (max-width: 768px) {
 
 	.preinfo-table--disclosure col:nth-child(2) {
-		width: 39% !important;
+		width: 18% !important;
 	}
 
 	.preinfo-table--disclosure col:nth-child(5) {
