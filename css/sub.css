@@ -4209,14 +4209,30 @@ display: none;
   margin-top: 0;
 }
 
-/* 탭 상단 고정 (앵커 이동 페이지, 예: 공공기관 협력)
-   - 섹션 위치 보정 / 스크롤 시 활성 탭 : js/sub-location-common.js */
+/* 2차 탭 상단 고정 (앵커 이동 페이지, 예: 공공기관 협력)
+   - 탭 묶음을 박스 없이(display: contents) 만들어 2차 탭이 본문 영역 기준으로 고정
+   - 섹션 위치 보정 / 스크롤 시 활성 탭 : js/sticky-tabs.js */
 .sub-tab-wrap--sticky {
+  display: contents;
+}
+
+/* 묶음 여백(margin-top) 대신 1차 탭에 적용 */
+.sub-tab-wrap--sticky > .preinfo__tabs.sub-page-tabs {
+  margin-top: 35px;
+}
+
+.sub-tab-wrap--sticky > .sub-tab2 {
   position: sticky;
-  top: var(--header-h, 0px);
+  top: calc(var(--header-h, 0px) + 10px);
   z-index: 20;
-  padding: 10px 0;
-  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+/* 고정된 상태 (js/sticky-tabs.js 에서 .is-stuck 부여) : 헤더와 떨어진 박스 + 하단 그림자 */
+.sub-tab-wrap--sticky > .sub-tab2.is-stuck {
+  border-top: 2px solid rgba(210, 212, 221, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0, 27, 96, 0.12);
 }
 
 .sub-tab2 {
@@ -4297,6 +4313,10 @@ display: none;
 @media (max-width: 768px) {
 
   .sub-tab-wrap {
+    margin-top: 25px;
+  }
+
+  .sub-tab-wrap--sticky > .preinfo__tabs.sub-page-tabs {
     margin-top: 25px;
   }
 

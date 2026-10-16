@@ -53,9 +53,13 @@
         setActive(list, link);
       }
 
+      /* 고정되는 요소 : 2차 탭 (묶음은 display: contents) */
+      var bar = wrap.querySelector(".sub-tab2") || wrap;
+
+      /* 고정 헤더(sticky top) + 2차 탭 높이 + 여유 */
       function getOffset() {
-        var top = parseFloat(window.getComputedStyle(wrap).top) || 0;
-        return top + wrap.offsetHeight + 20;
+        var top = parseFloat(window.getComputedStyle(bar).top) || 0;
+        return top + bar.offsetHeight + 20;
       }
 
       function updateOffset() {
@@ -65,7 +69,15 @@
         });
       }
 
+      /* 실제로 고정된 상태인지 (현재 위치 = sticky top) → 그림자 등 */
+      function updateStuck() {
+        var top = parseFloat(window.getComputedStyle(bar).top) || 0;
+        var stuck = Math.abs(bar.getBoundingClientRect().top - top) < 1;
+        bar.classList.toggle("is-stuck", stuck);
+      }
+
       function updateActive() {
+        updateStuck();
         var line = getOffset() + 10;
         var active = items[0];
 
