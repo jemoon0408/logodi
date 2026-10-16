@@ -298,6 +298,34 @@
 
 
   /* =========================================================
+     본문 바로가기 (서브 페이지)
+     LNB·탭을 건너뛰고 본문 영역(.sub-content__main)으로 이동 + 포커스
+  ========================================================= */
+
+  function initSubSkipLink() {
+    const skipLink = document.querySelector(".skip-link");
+    const target = document.querySelector(".sub-content__main");
+
+    if (!skipLink || !target) {
+      return;
+    }
+
+    if (!target.id) {
+      target.id = "sub-content-main";
+    }
+
+    target.setAttribute("tabindex", "-1");
+    skipLink.setAttribute("href", "#" + target.id);
+
+    skipLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      target.focus({ preventScroll: true });
+      target.scrollIntoView();
+    });
+  }
+
+
+  /* =========================================================
      COMMON SCRIPT
   ========================================================= */
 
@@ -355,6 +383,10 @@
 
       /* 고정 헤더 실제 높이 → CSS 변수 --header-h (상단 고정 탭 위치 기준) */
       syncHeaderHeight();
+
+
+      /* 서브 페이지 : 본문 바로가기 → .sub-content__main */
+      initSubSkipLink();
 
 
       /* header.js / main.js 실행 */

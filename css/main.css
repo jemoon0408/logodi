@@ -230,8 +230,14 @@ button {
 }
 
 /* 본문 바로가기 이동 시 고정 헤더에 가리지 않게 */
-#main-content {
+#main-content,
+.sub-content__main {
   scroll-margin-top: var(--header-h);
+}
+
+/* 본문 바로가기 대상 : 포커스만 받는 영역이라 외곽선 없음 */
+.sub-content__main:focus {
+  outline: none;
 }
 
 .header {
