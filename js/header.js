@@ -200,6 +200,14 @@
         link.addEventListener("mouseenter", function () {
           if (!isDesktop()) return;
 
+          var focusedLink = document.activeElement;
+          if (
+            focusedLink !== link &&
+            Array.prototype.indexOf.call(topLinks, focusedLink) !== -1
+          ) {
+            focusedLink.blur();
+          }
+
           openMegaMenu(link.getAttribute("data-menu-index"));
         });
 
