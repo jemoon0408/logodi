@@ -4254,7 +4254,7 @@ display: none;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px 1px;
+  /* gap: 10px 1px; */
 }
 
 .sub-tab2__list li {
