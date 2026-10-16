@@ -2169,7 +2169,13 @@ overflow-wrap: normal;
   .government-award-search__buttons .btn {
     width: 100%;
   }
-
+	.board-search-controls>.btn {
+		grid-column: 1 / -1;
+		width: 100%;
+		padding-right: 0.75rem;
+		padding-left: 0.75rem;
+		white-space: nowrap;
+	}
 }
 
 @media (max-width: 580px) {
@@ -2227,13 +2233,6 @@ overflow-wrap: normal;
 		max-width: none;
 	}
 
-	.board-search-controls>.btn {
-		grid-column: 1 / -1;
-		width: 100%;
-		padding-right: 0.75rem;
-		padding-left: 0.75rem;
-		white-space: nowrap;
-	}
 
 	.preinfo-table:not(.preinfo-table--board) tbody td {
 		grid-template-columns: 86px minmax(0, 1fr);
