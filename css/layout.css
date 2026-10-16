@@ -2322,8 +2322,8 @@ overflow-wrap: normal;
    - preinfo-table__desc   : 설명 (담당업무 등, 모바일에서 마지막 줄 전체 폭)
 
    반응형 (지방자치인재개발원 게시판과 동일)
-   - 561px 이상 : 전체 열 표 형태
-   - 560px 이하 : 머리글 / 번호 / 조회 숨김
+   - 769px 이상 : 전체 열 표 형태
+   - 768px 이하 : 머리글 / 번호 / 조회 숨김
                   1줄 제목, 2줄 작성자 | 작성일 + 첨부(오른쪽)
 ========================================================= */
 
@@ -2339,8 +2339,8 @@ overflow-wrap: normal;
 	white-space: nowrap;
 }
 
-/* 태블릿 : 작성일이 칸을 넘지 않도록 열 너비 보정 (col 인라인 width 덮어씀) */
-@media (max-width: 768px) {
+/* 태블릿(769~875px) : 작성일이 칸을 넘지 않도록 열 너비 보정 (col 인라인 width 덮어씀) */
+@media (min-width: 769px) and (max-width: 875px) {
 
 	.preinfo-table--board col:nth-child(2) {
 		width: 39% !important;
@@ -2357,7 +2357,7 @@ overflow-wrap: normal;
 	}
 }
 
-@media (max-width: 560px) {
+@media (max-width: 768px) {
 
 	.preinfo-table-wrap:has(.preinfo-table--board) {
 		overflow: visible;
@@ -2464,15 +2464,24 @@ overflow-wrap: normal;
    - preinfo-table__cycle  : 공표주기
    - preinfo-table__link   : 바로가기
 
-   560px 이하 : 1줄 공표내용, 2줄 구분 | 공표시기 | 공표주기, 맨 아래 버튼
+   768px 이하 : 1줄 공표내용, 2줄 구분 | 공표시기 | 공표주기, 맨 아래 버튼
 ========================================================= */
 
 .preinfo-table--disclosure tbody td.preinfo-table__link {
 	white-space: nowrap;
 }
 
-/* 태블릿 : 게시판용 열 너비 보정 대신 이 표의 col 너비 유지 */
-@media (max-width: 768px) {
+/* 공표항목 : 말줄임 없이 전체 표시 (줄바꿈) */
+.preinfo-table--disclosure .preinfo-table__content-text {
+	overflow: visible;
+	white-space: normal;
+	text-overflow: clip;
+	word-break: keep-all;
+	overflow-wrap: anywhere;
+}
+
+/* 태블릿(769~875px) : 게시판용 열 너비 보정 대신 이 표의 col 너비 유지 */
+@media (min-width: 769px) and (max-width: 875px) {
 
 	.preinfo-table--disclosure col:nth-child(2) {
 		width: 18% !important;
@@ -2483,7 +2492,7 @@ overflow-wrap: normal;
 	}
 }
 
-@media (max-width: 560px) {
+@media (max-width: 768px) {
 
 	/* 2줄 : 구분 | 공표시기 | 공표주기 (항목명 함께 표시) */
 	.preinfo-table--disclosure tbody td.preinfo-table__period,
