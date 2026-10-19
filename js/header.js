@@ -8,7 +8,9 @@
       var menu = document.getElementById("megaMenu");
       var toggle = header && header.querySelector(".menu-toggle");
       var mobileClose = menu && menu.querySelector(".mobile-menu-close");
+      var sitemapContent = document.querySelector(".sitemap-page-content");
       var backdrop = document.querySelector(".menu-backdrop");
+      var sitemapLink = document.querySelector(".sitemap-link");
       var topLinks = header && header.querySelectorAll(".gnb a[data-menu-index]");
       var mobileMenuButtons = menu && menu.querySelectorAll("[data-mobile-menu-index]");
       var panels = menu && menu.querySelectorAll("[data-menu-panel]");
@@ -20,9 +22,33 @@
       var closeTimer = null;
 
       if (!header || !menu || !toggle) return;
+      renderSitemap();
 
       function isDesktop() {
         return desktopMedia.matches;
+      }
+
+      function updateSitemapToggle() {
+        var sitemapIsOpen = isDesktop() && !!sitemapContent;
+        var icon = toggle.querySelector("i");
+
+        if (icon) {
+          icon.classList.toggle("fa-xmark", sitemapIsOpen);
+          icon.classList.toggle("fa-bars", !sitemapIsOpen);
+        }
+
+        if (isDesktop()) {
+          toggle.setAttribute("aria-expanded", sitemapIsOpen ? "true" : "false");
+          toggle.setAttribute(
+            "aria-label",
+            sitemapIsOpen ? "사이트맵 닫기" : "사이트맵"
+          );
+          toggle.setAttribute("aria-controls", "sitemap-page-content");
+        } else {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "전체메뉴 열기");
+          toggle.setAttribute("aria-controls", "megaMenu");
+        }
       }
 
       function clearCloseTimer() {
@@ -121,6 +147,45 @@
         });
       }
 
+      function renderSitemap() {
+        if (!sitemapContent) return;
+
+        var fragment = document.createDocumentFragment();
+
+        panels.forEach(function (panel, index) {
+          var section = document.createElement("section");
+          var title = document.createElement("h2");
+          var groups = document.createElement("div");
+
+          section.className = "sitemap-page-section";
+          section.setAttribute("aria-label", labels[index]);
+          title.textContent = labels[index];
+          groups.className = "sitemap-page-section-groups";
+
+          Array.prototype.forEach.call(
+            panel.querySelectorAll(".mega-menu-group"),
+            function (group) {
+              var clonedGroup = group.cloneNode(true);
+              var groupToggleButtons = clonedGroup.querySelectorAll(
+                ".mega-menu-group-toggle"
+              );
+
+              clonedGroup.classList.remove("is-open");
+              groupToggleButtons.forEach(function (button) {
+                button.remove();
+              });
+              groups.appendChild(clonedGroup);
+            }
+          );
+
+          section.appendChild(title);
+          section.appendChild(groups);
+          fragment.appendChild(section);
+        });
+
+        sitemapContent.appendChild(fragment);
+      }
+
       function openMegaMenu(index) {
         clearCloseTimer();
 
@@ -137,8 +202,8 @@
           showBackdrop();
 
           toggle.setAttribute("aria-expanded", "false");
-          toggle.setAttribute("aria-label", "전체메뉴");
-          toggle.removeAttribute("aria-controls");
+          toggle.setAttribute("aria-label", "사이트맵");
+          toggle.setAttribute("aria-controls", "sitemap-page-content");
         } else {
           document.body.classList.add("menu-is-open");
           hideBackdrop();
@@ -167,8 +232,8 @@
 
         if (isDesktop()) {
           toggle.setAttribute("aria-expanded", "false");
-          toggle.setAttribute("aria-label", "전체메뉴");
-          toggle.removeAttribute("aria-controls");
+          toggle.setAttribute("aria-label", "사이트맵");
+          toggle.setAttribute("aria-controls", "sitemap-page-content");
         } else {
           toggle.setAttribute("aria-expanded", "false");
           toggle.setAttribute("aria-label", "전체메뉴 열기");
@@ -348,13 +413,19 @@
         }, 0);
       });
 
-      /*
-       * PC: 햄버거는 현재 아이콘만 유지하고 클릭 동작 없음.
-       * MO: 기존 모바일 전체메뉴는 그대로 동작.
-       */
       toggle.addEventListener("click", function () {
         if (isDesktop()) {
-          closeMegaMenu(false);
+          if (sitemapContent) {
+            var homeLink = header.querySelector(".logo a");
+            if (homeLink) window.location.assign(homeLink.href);
+            return;
+          }
+
+          if (!sitemapLink) {
+            return;
+          }
+
+          window.location.assign(sitemapLink.href);
           return;
         }
 
@@ -425,23 +496,10 @@
       desktopMedia.addEventListener("change", function () {
         closeMegaMenu(false);
         selectMenu(0);
-
-        if (isDesktop()) {
-          toggle.removeAttribute("aria-controls");
-          toggle.setAttribute("aria-label", "전체메뉴");
-        } else {
-          toggle.setAttribute("aria-controls", "megaMenu");
-          toggle.setAttribute("aria-label", "전체메뉴 열기");
-        }
+        updateSitemapToggle();
       });
 
-      if (isDesktop()) {
-        toggle.removeAttribute("aria-controls");
-        toggle.setAttribute("aria-label", "전체메뉴");
-      } else {
-        toggle.setAttribute("aria-controls", "megaMenu");
-        toggle.setAttribute("aria-label", "전체메뉴 열기");
-      }
+      updateSitemapToggle();
 
       selectMenu(0);
     }());
