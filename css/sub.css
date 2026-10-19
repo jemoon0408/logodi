@@ -2516,19 +2516,43 @@ display: none;
   display: block;
   width: 100%;
   margin: 0;
-  /* 스크롤 컨테이너에 원 상·하단이 잘리지 않도록 여유 */
-  padding: 2px 0;
+  /* 스크롤 컨테이너에 원 상·하단이 잘리지 않도록 여유 (하단 : 스크롤바 공간) */
+  padding: 2px 0 10px;
   overflow-x: auto;
   overflow-y: hidden;
   border: 0;
   border-radius: 0;
   background: none;
-  scrollbar-width: none;
+  /* 공통 .preinfo__tabs 의 scrollbar-width 해제 → 아래 ::-webkit-scrollbar 적용 */
+  scrollbar-width: auto;
   -webkit-overflow-scrolling: touch;
 }
 
+/* 탭이 더 있는지 알 수 있도록 가로 스크롤바 항상 표시
+   (Chrome은 scrollbar-* 지정 시 ::-webkit-scrollbar 무시 → Firefox 등에만 적용) */
+@supports not selector(::-webkit-scrollbar) {
+  .sub-history__tabs.preinfo__tabs {
+    scrollbar-width: thin;
+    scrollbar-color: #9aabc4 #e8edf5;
+  }
+}
+
 .sub-history__tabs.preinfo__tabs::-webkit-scrollbar {
+  height: 6px;
+}
+
+.sub-history__tabs.preinfo__tabs::-webkit-scrollbar-button {
   display: none;
+}
+
+.sub-history__tabs.preinfo__tabs::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: #e8edf5;
+}
+
+.sub-history__tabs.preinfo__tabs::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #9aabc4;
 }
 
 .sub-history__track {
