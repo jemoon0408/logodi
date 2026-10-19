@@ -2331,6 +2331,14 @@ overflow-wrap: normal;
 	text-align: start;
 }
 
+/* 직원검색 : 웹에서 성명 가운데 정렬 */
+@media (min-width: 769px) {
+
+	.preinfo-table--staff tbody td.preinfo-table__title {
+		text-align: center;
+	}
+}
+
 /* 번호 / 작성일 / 조회 : 줄바꿈 없이 한 줄 */
 .preinfo-table--board tbody td.preinfo-table__num,
 .preinfo-table--board tbody td.preinfo-table__date,
