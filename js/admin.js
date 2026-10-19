@@ -47,6 +47,7 @@
         "header 추가"
       ],
       status: "done",
+      a11y: "done",
       date: "2026-10-15"
     },
 
@@ -65,7 +66,8 @@
       name: "정보공개 - 정보공개목록(정부포상 공개검증)",
       path: "pages/info-disclosure/board-action01.html",
       note: [
-        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다."
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
       ],
       status: "done",
       a11y: "done",
@@ -126,6 +128,7 @@
       path: "pages/communication/board-action06.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-06"
     },
 
@@ -134,6 +137,7 @@
       path: "pages/communication/board-action07.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-06"
     },
 
@@ -142,6 +146,7 @@
       path: "pages/communication/board-action08.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-06"
     },
 
@@ -150,6 +155,7 @@
       path: "pages/communication/board-action09.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-06"
     },
 
@@ -158,6 +164,7 @@
       path: "pages/communication/board-action10.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-06"
     },
 
@@ -166,6 +173,7 @@
       path: "pages/communication/content-action01.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-06"
     },
 
@@ -183,6 +191,7 @@
       path: "pages/about/content-action03.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -191,6 +200,7 @@
       path: "pages/about/content-action04.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-15"
     },
 
@@ -199,6 +209,7 @@
       path: "pages/about/content-action05.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -223,7 +234,10 @@
     {
       name: "교류협력 - 시도 교육원협력 > 교육발전협의회(협의회자료)",
       path: "pages/exchange/board-action11.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-07"
@@ -241,7 +255,10 @@
     {
       name: "교류협력 - 시도 교육원협력 > 교육컨설팅",
       path: "pages/exchange/board-action12.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-07"
@@ -259,7 +276,10 @@
     {
       name: "교류협력 - HRD/발표대회 > HRD콘테스트(발표논문 및 교안)",
       path: "pages/exchange/board-action13.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-07"
@@ -277,7 +297,10 @@
     {
       name: "교류협력 - HRD/발표대회 > 정책연구 발표대회(개최결과)",
       path: "pages/exchange/board-action14.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-07"
@@ -343,7 +366,10 @@
     {
       name: "교류협력 - 국제교류협력 > 국제기구활동(자료실)",
       path: "pages/exchange/board-action15.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-07"
@@ -361,7 +387,10 @@
     {
       name: "교류협력 - 국제교류협력 > 세미나(한·중 세미나 개최결과)",
       path: "pages/exchange/board-action16.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-07"
@@ -370,7 +399,10 @@
     {
       name: "교류협력 - 국제교류협력 > 세미나(LOGODI 글로벌 포럼)",
       path: "pages/exchange/board-action17.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-07"
@@ -381,6 +413,7 @@
       path: "pages/about/content-action13.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -389,6 +422,7 @@
       path: "pages/about/content-action14.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -397,6 +431,7 @@
       path: "pages/about/content-action15.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -405,6 +440,7 @@
       path: "pages/about/content-action16.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -413,6 +449,7 @@
       path: "pages/about/content-action06.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -421,6 +458,7 @@
       path: "pages/about/content-action07.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -429,6 +467,7 @@
       path: "pages/about/content-action08.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-07"
     },
 
@@ -437,6 +476,7 @@
       path: "pages/about/content-action09.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-19"
     },
 
@@ -463,6 +503,7 @@
       path: "pages/about/content-action12.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-15"
     },
 
@@ -550,7 +591,10 @@
     {
       name: "교육과정 - 선발/입교안내 > 과정별 입교안내",
       path: "pages/education/board-action18.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       date: "2026-10-12"
     },
@@ -566,7 +610,10 @@
     {
       name: "교육과정 - 교육훈련계획 > 주간 교육훈련계획",
       path: "pages/education/board-action19.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       date: "2026-10-12"
     },
@@ -582,8 +629,12 @@
     {
       name: "교육과정 - 의정연수 > 자료실",
       path: "pages/education/board-action20.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
+      a11y: "done",
       date: "2026-10-12"
     },
 
@@ -592,6 +643,7 @@
       path: "pages/about/content-action40.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-14"
     },
 
@@ -609,7 +661,6 @@
       path: "pages/about/content-action42.html",
       note: [],
       status: "progress",
-      a11y: "done",
       date: "2026-10-19"
     },
 
@@ -681,6 +732,7 @@
       path: "pages/about/content-action44.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-14"
     },
 
@@ -689,6 +741,7 @@
       path: "pages/about/content-action45.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-10-14"
     },
 
@@ -704,7 +757,10 @@
     {
       name: "정보공개 - 정보공개목록(문서공개목록 > 이전목록자료)",
       path: "pages/info-disclosure/board-action21.html",
-      note: [],
+      note: [
+        "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
+        { text: "개발쪽 검토 필요", type: "dev" }
+      ],
       status: "done",
       a11y: "done",
       date: "2026-10-15"
@@ -887,7 +943,9 @@
         ) {
 
           noteText =
-            item.note.join(" ");
+            item.note.map(function (text) {
+              return typeof text === "object" ? text.text : text;
+            }).join(" ");
 
         } else {
 
@@ -1081,14 +1139,39 @@
               index
             ) {
 
-              var textNode =
-                document.createTextNode(
-                  text
+              /*
+               * { text: "...", type: "dev" } 형태면
+               * 개발 검토 필요 항목으로 빨간 글씨 표시
+               */
+              if (
+                text &&
+                typeof text === "object"
+              ) {
+
+                var noteMark =
+                  document.createElement(
+                    "span"
+                  );
+
+                noteMark.className =
+                  text.type === "dev" ? "note-dev" : "";
+
+                noteMark.textContent =
+                  text.text;
+
+                container.appendChild(
+                  noteMark
                 );
 
-              container.appendChild(
-                textNode
-              );
+              } else {
+
+                container.appendChild(
+                  document.createTextNode(
+                    text
+                  )
+                );
+
+              }
 
 
               if (

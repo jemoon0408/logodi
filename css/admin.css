@@ -296,6 +296,12 @@ html.kbd-nav .page-cell a:focus-visible {
   overflow-wrap: anywhere;
 }
 
+/* 개발 검토 필요 메모 (note: { text, type: "dev" }) */
+.note-dev {
+  color: #d32f2f;
+  font-weight: 700;
+}
+
 .date-cell {
   white-space: nowrap;
   color: var(--gray-1);
