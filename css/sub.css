@@ -2712,6 +2712,11 @@ display: none;
   letter-spacing: -1.25px;
 }
 
+/* 같은 날짜에 여러 항목 : dd 안에 p로 나열 */
+.sub-history__event dd p + p {
+  margin-top: 15px;
+}
+
 .sub-history__event dd {
   min-width: 0;
   margin: 0;
