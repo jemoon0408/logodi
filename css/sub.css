@@ -4134,6 +4134,19 @@ display: none;
   margin-top: 0;
 }
 
+/* 안내박스 불릿 + 항목명 강조 (지방행정역사관 개요) */
+.preinfo__intro--bullet ul {
+  list-style: disc;
+}
+
+.preinfo__intro--bullet li::marker {
+  color: #3c4655;
+}
+
+.preinfo__intro--bullet li strong {
+  font-weight: 700;
+}
+
 /* 강의실대관 안내 문구 */
 .sub-page-lead {
   margin: 0 0 40px;
