@@ -5924,6 +5924,11 @@ display: none;
     display: none;
   }
 
+  /* 전체 폭으로 커지지 않도록 최대 너비 제한 (비율 유지) */
+  .sub-facility__photo {
+    max-width: 400px;
+  }
+
   .sub-facility__photo img {
     border-radius: 30px;
   }
