@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>소강의실 | 지방자치인재개발원</title>
+
+  <link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+
+  <!-- ========================= 공통 HEADER START ========================= -->
+  <div id="include-header"></div>
+  <!-- ========================= 공통 HEADER END ========================= -->
+
+
+  <!-- ========================= 공통 QUICK MENU START ========================= -->
+  <div id="include-quick-menu"></div>
+  <!-- ========================= 공통 QUICK MENU END ========================= -->
+
+
+  <main id="main-content" class="sub-page" tabindex="-1" data-page-label="소강의실">
+
+    <!-- ========================= SUB VISUAL START ========================= -->
+    <section class="sub-visual">
+
+      <div class="sub-visual__inner">
+
+        <nav class="sub-visual__breadcrumb" aria-label="현재 위치">
+
+          <ol>
+
+            <li class="sub-visual__breadcrumb-home">
+              <img
+                src="../../img/icons/breadcrumb-home-icon.png"
+                alt="홈">
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 1DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--1">
+              기관소개
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 2DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--2">
+
+              <span class="sub-visual__breadcrumb-depth-text">
+                시설안내
+              </span>
+
+              <span
+                class="sub-visual__breadcrumb-depth-ellipsis"
+                aria-hidden="true">
+                ...
+              </span>
+
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 3DEPTH -->
+            <li
+              class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--3"
+              aria-current="page">
+              소강의실
+            </li>
+
+          </ol>
+
+        </nav>
+
+
+        <h1 class="sub-visual__title">
+          기관소개
+        </h1>
+
+      </div>
+
+    </section>
+    <!-- ========================= SUB VISUAL END ========================= -->
+
+
+    <!-- ========================= LOCATION NAV START ========================= -->
+    <nav class="sub-location" aria-label="서브 메뉴 경로">
+
+      <div class="sub-location__inner">
+
+        <!-- 홈 버튼 (768px 이하 숨김) -->
+        <a href="../main-ko.html" class="sub-location__home">
+          <img src="../../img/icons/sub-location-home.png" alt="">
+          <span class="sr-only">홈으로 이동</span>
+        </a>
+
+
+        <div class="sub-location__menus">
+
+          <!-- 1DEPTH : 사이드 메뉴와 동일한 1Depth -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth1" class="sr-only">
+              1단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth1"
+              class="sub-location-select__native"
+              data-sub-location-depth="1"
+              data-selected="facility"
+              aria-label="1단계 메뉴 선택">
+            </select>
+
+          </div>
+
+
+          <!-- 2DEPTH : 선택한 1Depth의 하위메뉴 -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth2" class="sr-only">
+              2단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth2"
+              class="sub-location-select__native"
+              data-sub-location-depth="2"
+              data-selected="facility-status"
+              aria-label="2단계 메뉴 선택">
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="sub-location__print"
+          id="subPrintBtn">
+
+          <img
+            src="../../img/icons/print.png"
+            alt="">
+
+          <span class="sr-only">
+            현재 페이지 인쇄
+          </span>
+
+        </button>
+
+      </div>
+
+    </nav>
+    <!-- ========================= LOCATION NAV END ========================= -->
+
+
+    <!-- ========================= SUB CONTENT START ========================= -->
+    <div class="sub-layout">
+
+      <!-- ========================= LEFT MENU START ========================= -->
+      <aside class="sub-lnb" aria-label="기관소개 메뉴">
+
+        <div class="sub-lnb__head">
+          <h2>기관소개</h2>
+        </div>
+
+        <nav
+          class="sub-lnb__menu"
+          aria-label="기관소개 1단계 메뉴">
+
+          <ul>
+
+            <li>
+              <a
+                href="content-action13.html"
+                data-sub-lnb-value="intro">
+                기관소개
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action06.html"
+                data-sub-lnb-value="pr">
+                홍보관
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action09.html"
+                data-sub-lnb-value="organization">
+                조직안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action41.html"
+                data-sub-lnb-value="facility"
+                class="is-active"
+                aria-current="page">
+                시설안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action45.html"
+                data-sub-lnb-value="directions">
+                오시는 길
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                data-sub-lnb-value="weekly-menu">
+                주간식단
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </aside>
+      <!-- ========================= LEFT MENU END ========================= -->
+
+
+      <!-- ========================= RIGHT CONTENT START ========================= -->
+      <div class="sub-content">
+
+        <div class="sub-content__main">
+
+          <div class="sub-page-title">
+
+            <h2>
+              소강의실
+            </h2>
+
+            <span aria-hidden="true"></span>
+
+          </div>
+
+
+          <div class="sub-tab-wrap">
+
+            <!-- ========================= 페이지 내 탭 ========================= -->
+            <nav class="preinfo__tabs sub-page-tabs" aria-label="시설현황 메뉴">
+              <a href="content-action41.html" class="preinfo__tab is-active" aria-current="page">강의시설</a>
+              <a href="content-action51.html" class="preinfo__tab">교육지원시설</a>
+              <a href="content-action42.html" class="preinfo__tab">도서관</a>
+              <a href="content-action52.html" class="preinfo__tab">건강/편의시설</a>
+              <a href="content-action10.html" class="preinfo__tab">강의실대관</a>
+              <a href="content-action11.html" class="preinfo__tab">지방행정역사관</a>
+              <a href="content-action43.html" class="preinfo__tab">인비전 스튜디오</a>
+            </nav>
+
+            <!-- 2차 탭 -->
+            <nav class="sub-tab2" aria-label="강의시설 메뉴">
+              <ul class="sub-tab2__list">
+                <li><a href="content-action41.html" class="sub-tab2__item">대강의실</a></li>
+                <li><a href="content-action47.html" class="sub-tab2__item">중강의실</a></li>
+                <li><a href="content-action48.html" class="sub-tab2__item is-active" aria-current="page">소강의실</a></li>
+                <li><a href="content-action49.html" class="sub-tab2__item">국제교육협력센터</a></li>
+                <li><a href="content-action50.html" class="sub-tab2__item">기타</a></li>
+              </ul>
+            </nav>
+
+          </div>
+
+          <!-- ========================= 소강의실 START ========================= -->
+          <section class="sub-section sub-page-body" aria-label="소강의실">
+
+            <div class="sub-section__contents">
+
+              <div class="sub-contact-line">
+                <h3 class="sub-contact-line__title">
+                  <img src="../../img/about/facility-phone.png" alt="">
+                  사용문의 및 신청
+                </h3>
+                <p class="sub-contact-line__text">교육총괄과 교육총괄팀 063-907-5156</p>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-haeundae.png" alt="해운대 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">해운대 <span>612호</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>80석 <small>(본관 6층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>198.8㎡</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>5급승진리더과정, 전문교육과정 강의실</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>스크린, 강단, 전자교탁, 유·무선 마이크, 빔 프로젝트</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-yeongsan.png" alt="영산강 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">영산강 <span>508호</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>64석 <small>(본관 5층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>208.6㎡</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>여성리더양성과정 강의실, 강연 등</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>전자교탁, 빔 프로젝터, 유·무선 마이크, 스크린, 디지털TV</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-sejong.png" alt="세종 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">세종 <span>415호</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>50석 <small>(본관 4층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>148.9㎡</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>고위정책과정 강의실, 강연 등</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>전자교탁, 빔 프로젝터, 유·무선 마이크, 스크린, 디지털TV</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-halla.png" alt="한라 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">한라 <span>701호</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>50석 <small>(본관 7층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>142.8㎡</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>전문교육과정, 5급승진리더과정 강의실, 강연 등</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>전자교탁, 빔 프로젝터, 유·무선 마이크, 스크린, 디지털TV</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-seorabeol.png" alt="서라벌, 덕유, 가야 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">서라벌, 덕유, 가야 <span>서라벌(416호), 덕유(604호), 가야(605호)</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>45석 <small>(본관 4층, 6층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>103.8㎡(416호), 124.1㎡(덕유), 122.4㎡(가야)</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>중견리더과정 강의실</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>전자교탁, 빔 프로젝터, 유·무선 마이크, 스크린, 디지털TV</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-hwaseong.png" alt="화성, 설악 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">화성, 설악 <span>515호, 516호</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>45석 <small>(본관 5층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>151.4㎡(화성), 144.6㎡(설악)</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>고급리더과정 강의실</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>전자교탁, 빔 프로젝터, 유·무선 마이크, 스크린, 디지털TV</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-songni.png" alt="속리 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">속리 <span>603호</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>45석 <small>(본관 6층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>143.6㎡</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>전문교육과정 강의실</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>전자교탁, 빔 프로젝터, 유·무선 마이크, 스크린, 디지털TV</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-tamna.png" alt="탐라 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">탐라 <span>308호</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>40석 <small>(본관 3층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>94.9㎡</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>국정시책과정 강의실</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>전자교탁, 빔 프로젝터, 유·무선 마이크, 스크린, 디지털TV</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-dalgubeol.png" alt="달구벌 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">달구벌 <span>401호</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>40석 <small>(본관 4층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>144.5㎡</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>지방공기업과정 강의실</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>전자교탁, 빔 프로젝터, 유·무선 마이크, 스크린, 디지털TV</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="sub-facility">
+                <div class="sub-facility__photo">
+                  <img src="../../img/about/facility-mudeung.png" alt="무등, 한밭 내부 전경">
+                </div>
+                <div class="sub-facility__info">
+                  <h4 class="sub-facility__title">무등, 한밭 <span>505호, 506호</span></h4>
+                  <dl class="sub-facility__list">
+                    <div>
+                      <dt>규모</dt>
+                      <dd>30석 <small>(본관 5층)</small></dd>
+                    </div>
+                    <div>
+                      <dt>면적</dt>
+                      <dd>72.2㎡(무등), 73.1㎡(한밭)</dd>
+                    </div>
+                    <div>
+                      <dt>주요용도</dt>
+                      <dd>여성리더양성과정 강의실</dd>
+                    </div>
+                    <div>
+                      <dt>설치장비</dt>
+                      <dd>전자교탁, 빔 프로젝터, 유·무선 마이크, 스크린, 디지털TV</dd>
+                    </div>
+                    <div>
+                      <dt>사용료</dt>
+                      <dd>50,000원 <small>(1일 사용기준)</small></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+          <!-- ========================= 소강의실 END ========================= -->
+
+        </div>
+
+
+        <!-- ========================= SATISFACTION START ========================= -->
+        <section class="sub-satisfaction">
+
+          <h2 class="sr-only">
+            페이지 만족도 및 담당부서 안내
+          </h2>
+
+
+          <div class="sub-satisfaction__contact">
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/department.png"
+                  alt="">
+
+                담당부서 안내
+
+              </span>
+
+              <strong>
+                교육총괄과
+              </strong>
+
+            </div>
+
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/contact.png"
+                  alt="">
+
+                문의전화
+
+              </span>
+
+              <strong>
+                063-907-5156
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="sub-satisfaction__survey">
+
+            <div class="sub-satisfaction__question">
+
+              <img
+                class="sub-satisfaction__illustration"
+                src="../../img/icons/survey.png"
+                alt="">
+
+              <div>
+
+                <strong>
+                  현재 페이지에 만족하십니까?
+                </strong>
+
+                <p>
+                  페이지 내용과 사용 편의성에 대한 의견을 들려주세요.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <form class="sub-satisfaction__form">
+
+              <fieldset>
+
+                <legend class="sr-only">
+                  페이지 만족도 선택
+                </legend>
+
+                <div class="sub-satisfaction__radios">
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="5"
+                      checked>
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="4">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="3">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        보통
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="2">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="1">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+                </div>
+
+
+                <button
+                  type="button"
+                  class="btn-tertiary btn sm">
+                  확인
+                </button>
+
+              </fieldset>
+
+            </form>
+
+          </div>
+
+        </section>
+        <!-- ========================= SATISFACTION END ========================= -->
+
+      </div>
+      <!-- ========================= RIGHT CONTENT END ========================= -->
+
+    </div>
+    <!-- ========================= SUB CONTENT END ========================= -->
+
+  </main>
+
+
+  <!-- ========================= 공통 FOOTER START ========================= -->
+  <div id="include-footer"></div>
+  <!-- ========================= 공통 FOOTER END ========================= -->
+
+
+  <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/keyboardfocusing.js"></script>
+
+  <!-- 퍼블리싱용 sub-location 가데이터 -->
+  <script src="../../js/sub-location-data.js"></script>
+
+  <!-- sub-location 공통 UI -->
+  <script src="../../js/sub-location-common.js"></script>
+
+</body>
+
+</html>

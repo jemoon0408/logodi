@@ -5237,6 +5237,18 @@ display: none;
   margin-top: 5px;
 }
 
+/* 항목명 너비 고정 (사용문의 및 신청 등 긴 항목명 줄바꿈) */
+.sub-facility__list dt {
+  flex-basis: 5em;
+  word-break: keep-all;
+}
+
+/* 보조 설명 (본관 6층, 1일 사용기준 등) */
+.sub-facility__list small {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
 .sub-facility__guide {
   margin: 0;
   padding: 0;
