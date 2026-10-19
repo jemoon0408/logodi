@@ -591,7 +591,7 @@
       name: "기관소개 - 조직안내 > 교수진",
       path: "pages/about/content-action40.html",
       note: [],
-      status: "progress",
+      status: "done",
       date: "2026-10-14"
     },
 
@@ -599,7 +599,7 @@
       name: "기관소개 - 시설안내 > 시설현황(강의시설 > 대강의실)",
       path: "pages/about/content-action41.html",
       note: [],
-      status: "progress",
+      status: "done",
       a11y: "done",
       date: "2026-10-19"
     },
@@ -617,7 +617,7 @@
       name: "기관소개 - 시설안내 > 시설현황(인비전 스튜디오)",
       path: "pages/about/content-action43.html",
       note: [],
-      status: "progress",
+      status: "done",
       a11y: "done",
       date: "2026-10-19"
     },
@@ -626,7 +626,7 @@
       name: "기관소개 - 시설안내 > 시설현황(강의시설 > 중강의실)",
       path: "pages/about/content-action47.html",
       note: [],
-      status: "progress",
+      status: "done",
       a11y: "done",
       date: "2026-10-19"
     },
@@ -635,7 +635,7 @@
       name: "기관소개 - 시설안내 > 시설현황(강의시설 > 소강의실)",
       path: "pages/about/content-action48.html",
       note: [],
-      status: "progress",
+      status: "done",
       a11y: "done",
       date: "2026-10-19"
     },
@@ -644,7 +644,7 @@
       name: "기관소개 - 시설안내 > 시설현황(강의시설 > 국제교육협력센터)",
       path: "pages/about/content-action49.html",
       note: [],
-      status: "progress",
+      status: "done",
       a11y: "done",
       date: "2026-10-19"
     },
@@ -653,7 +653,7 @@
       name: "기관소개 - 시설안내 > 시설현황(강의시설 > 기타)",
       path: "pages/about/content-action50.html",
       note: [],
-      status: "progress",
+      status: "done",
       a11y: "done",
       date: "2026-10-19"
     },
@@ -662,7 +662,7 @@
       name: "기관소개 - 시설안내 > 시설현황(교육지원시설)",
       path: "pages/about/content-action51.html",
       note: [],
-      status: "progress",
+      status: "done",
       a11y: "done",
       date: "2026-10-19"
     },
@@ -671,7 +671,7 @@
       name: "기관소개 - 시설안내 > 시설현황(건강/편의시설)",
       path: "pages/about/content-action52.html",
       note: [],
-      status: "progress",
+      status: "done",
       a11y: "done",
       date: "2026-10-19"
     },
@@ -680,7 +680,7 @@
       name: "기관소개 - 시설안내 > 주변안내(주변안내)",
       path: "pages/about/content-action44.html",
       note: [],
-      status: "progress",
+      status: "done",
       date: "2026-10-14"
     },
 
@@ -688,7 +688,7 @@
       name: "기관소개 - 오시는 길",
       path: "pages/about/content-action45.html",
       note: [],
-      status: "progress",
+      status: "done",
       date: "2026-10-14"
     },
 
