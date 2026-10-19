@@ -1102,11 +1102,11 @@
       }
     });
 
-    scrollTab2IntoView(list, link);
+    scrollTabIntoView(list, link, "smooth");
   }
 
   /* 모바일 가로 스크롤일 때 활성 탭을 가운데로 이동 */
-  function scrollTab2IntoView(list, link) {
+  function scrollTabIntoView(list, link, behavior) {
     if (list.scrollWidth <= list.clientWidth) {
       return;
     }
@@ -1118,7 +1118,34 @@
       list.scrollLeft + (linkRect.left - listRect.left) -
       (list.clientWidth - linkRect.width) / 2;
 
-    list.scrollTo({ left: Math.max(0, target), behavior: "smooth" });
+    list.scrollTo({ left: Math.max(0, target), behavior: behavior });
+  }
+
+  /*
+   * 페이지 진입 / 화면 크기 변경 시
+   * 1차 탭(.sub-page-tabs), 2차 탭(.sub-tab2__list)의
+   * 활성 탭이 보이도록 가로 스크롤 이동
+   */
+  function scrollActiveTabs() {
+    document
+      .querySelectorAll(".preinfo__tabs.sub-page-tabs")
+      .forEach(function (list) {
+        var active = list.querySelector(".preinfo__tab.is-active");
+
+        if (active) {
+          scrollTabIntoView(list, active, "instant");
+        }
+      });
+
+    document
+      .querySelectorAll(".sub-tab2__list")
+      .forEach(function (list) {
+        var active = list.querySelector(".sub-tab2__item.is-active");
+
+        if (active) {
+          scrollTabIntoView(list, active, "instant");
+        }
+      });
   }
 
   var tab2Timer;
@@ -1130,14 +1157,20 @@
 
   window.addEventListener(
     "load",
-    markTab2RowStart
+    function () {
+      markTab2RowStart();
+      scrollActiveTabs();
+    }
   );
 
   window.addEventListener(
     "resize",
     function () {
       clearTimeout(tab2Timer);
-      tab2Timer = setTimeout(markTab2RowStart, 100);
+      tab2Timer = setTimeout(function () {
+        markTab2RowStart();
+        scrollActiveTabs();
+      }, 100);
     }
   );
 })();
