@@ -2460,6 +2460,60 @@ overflow-wrap: normal;
 
 
 /* =========================================================
+   월간 교육훈련계획 목록 (.preinfo-table--board.preinfo-table--monthly)
+
+   열 클래스
+   - preinfo-table__cate  : 교육구분
+   - preinfo-table__title : 교육과정명
+   - (기수 / 인원)
+   - preinfo-table__date  : 교육일정
+   - (담당자번호)
+
+   768px 이하 : 1줄 교육과정명, 2줄 교육구분 | 기수 | 인원 | 교육일정 | 담당자번호
+                값이 없는 칸은 숨김
+========================================================= */
+
+.preinfo-table--monthly tbody td.preinfo-table__cate {
+	white-space: nowrap;
+}
+
+/* 교육일정 : 칸이 좁아지면 "~" 앞뒤에서 줄바꿈 (날짜는 끊기지 않음, 칸 밖으로 넘치지 않게) */
+.preinfo-table--monthly tbody td.preinfo-table__date {
+	white-space: normal;
+	word-break: keep-all;
+}
+
+/* 태블릿(769~875px) : 게시판 공통 열 너비 보정 대신 월간 표 비율 사용 */
+@media (min-width: 769px) and (max-width: 875px) {
+
+	.preinfo-table--monthly col:nth-child(2) {
+		width: 30% !important;
+	}
+
+	.preinfo-table--monthly col:nth-child(5) {
+		width: 30% !important;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.preinfo-table--monthly tbody td:empty {
+		display: none;
+	}
+
+	.preinfo-table--monthly tbody td:not(.preinfo-table__cate):not(.preinfo-table__title)::before {
+		content: "";
+		display: inline-block;
+		width: 1px;
+		height: 10px;
+		margin: 0 8px;
+		background: #d9d9d9;
+		vertical-align: middle;
+	}
+}
+
+
+/* =========================================================
    사전정보공표 목록 (.preinfo-table--board.preinfo-table--disclosure)
    sample02 게시판 표 + 바로가기 버튼
 

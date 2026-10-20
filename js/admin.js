@@ -512,7 +512,8 @@
       name: "교육과정 - 교육과정유형 > 장기과정(고위정책과정)",
       path: "pages/education/content-action28.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
     },
 
@@ -520,7 +521,8 @@
       name: "교육과정 - 교육과정유형 > 장기과정(고급리더과정)",
       path: "pages/education/content-action29.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
     },
 
@@ -528,7 +530,8 @@
       name: "교육과정 - 교육과정유형 > 장기과정(중견리더과정)",
       path: "pages/education/content-action30.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
     },
 
@@ -536,7 +539,8 @@
       name: "교육과정 - 교육과정유형 > 장기과정(글로벌리더과정)",
       path: "pages/education/content-action31.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
     },
 
@@ -544,23 +548,27 @@
       name: "교육과정 - 교육과정유형 > 장기과정(여성리더양성과정)",
       path: "pages/education/content-action32.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
     },
 
     {
       name: "교육과정 - 교육과정유형 > 기본과정",
       path: "pages/education/content-action33.html",
-      note: [],
-      status: "done",
-      date: "2026-10-12"
+      note: [
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-20"
     },
 
     {
       name: "교육과정 - 교육과정유형 > 의정연수",
       path: "pages/education/content-action34.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
     },
 
@@ -568,7 +576,8 @@
       name: "교육과정 - 교육과정유형 > 외국공무원과정",
       path: "pages/education/content-action35.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-15"
     },
 
@@ -576,15 +585,38 @@
       name: "교육과정 - 교육과정유형 > 사이버교육",
       path: "pages/education/content-action36.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
+    },
+
+    {
+      name: "교육과정 - 교육과정유형 > 시책/전문교육",
+      path: "pages/education/content-action53.html",
+      note: [
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-20"
+    },
+
+    {
+      name: "교육과정 - 교육과정유형 > 역량교육",
+      path: "pages/education/content-action54.html",
+      note: [
+       
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-20"
     },
 
     {
       name: "교육과정 - 선발/입교안내 > 교육생선발",
       path: "pages/education/content-action37.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-15"
     },
 
@@ -595,16 +627,28 @@
         "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
         { text: "개발쪽 검토 필요", type: "dev" }
       ],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
+    },
+
+    {
+      name: "교육과정 - 교육훈련계획 > 월간 교육훈련계획",
+      path: "pages/education/board-action22.html",
+      note: [
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-19"
     },
 
     {
       name: "교육과정 - 교육훈련계획 > 월간 교육훈련계획(과정 상세)",
       path: "pages/education/content-action38.html",
       note: [],
-      status: "done",
-      date: "2026-10-12"
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-19"
     },
 
     {
@@ -614,7 +658,8 @@
         "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
         { text: "개발쪽 검토 필요", type: "dev" }
       ],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
     },
 
@@ -622,7 +667,8 @@
       name: "교육과정 - 역량평가/역량교육 > 안내자료",
       path: "pages/education/content-action39.html",
       note: [],
-      status: "done",
+      status: "progress",
+      a11y: "done",
       date: "2026-10-12"
     },
 
@@ -633,7 +679,7 @@
         "기존 사이트에 검색 바 옆에 있던 전체보기 왼쪽 셀렉트의 옵션으로 넣었습니다. 해당 전체보기 버튼이 필터링에서 제목, 내용을 포함한 전체 검색으로 생각되어 옵션안으로 넣는 방식으로 변경하였습니다.",
         { text: "개발쪽 검토 필요", type: "dev" }
       ],
-      status: "done",
+      status: "progress",
       a11y: "done",
       date: "2026-10-12"
     },

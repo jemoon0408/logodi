@@ -4423,6 +4423,81 @@ display: none;
 }
 
 /* =========================================================
+   연도 / 월 선택 (월간 교육훈련계획)
+
+   <div class="sub-month-nav">
+     <div class="sub-month-nav__year"> 이전 · 2026년 · 다음 </div>
+     <nav class="sub-tab2"> 1월 ~ 12월 </nav>   2차 탭 재사용
+   </div>
+========================================================= */
+
+.sub-month-nav {
+  margin: 30px 0 20px;
+}
+
+.sub-month-nav__year {
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border: 2px solid rgba(210, 212, 221, 0.3);
+  border-radius: 8px 8px 0 0;
+  background: #f6f8fb;
+}
+
+.sub-month-nav__title {
+  margin: 0;
+  color: #111;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+.sub-month-nav__arrow {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d2d4dd;
+  border-radius: 50%;
+  background: #fff;
+  color: #3c4655;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.sub-month-nav__arrow:hover,
+.sub-month-nav__arrow:focus-visible {
+  border-color: #1155d0;
+  color: #1155d0;
+}
+
+@media (max-width: 768px) {
+
+  .sub-month-nav {
+    margin: 24px 0 16px;
+  }
+
+  .sub-month-nav__year {
+    padding: 12px 16px;
+    gap: 18px;
+  }
+
+  .sub-month-nav__title {
+    font-size: 1.25rem;
+  }
+
+  .sub-month-nav__arrow {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+/* =========================================================
    교류협력 콘텐츠 공통
 ========================================================= */
 
