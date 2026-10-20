@@ -5402,12 +5402,13 @@ display: none;
 /* ---------- 도서관 인사말 ---------- */
 .sub-quote {
   position: relative;
+  z-index: 0;
   margin: 0 auto;
   padding: 0 40px;
   color: #3c4655;
-  font-size: 2.625rem;
+  font-size: 1.875rem;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.35;
   letter-spacing: -1.26px;
   text-align: center;
   word-break: keep-all;
@@ -5426,7 +5427,8 @@ display: none;
 .sub-quote::after {
   content: "";
   position: absolute;
-  width: 114px;
+  z-index: -1;
+  width: 84px;
   height: 76px;
   background: url("../img/about/quote-open.png") no-repeat center / contain;
 }
