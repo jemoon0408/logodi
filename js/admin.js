@@ -169,6 +169,16 @@
     },
 
     {
+      name: "소통마당 - 학습자료실(책으로 읽는 명강의)",
+      path: "pages/communication/content-action56.html",
+      note: [
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-20"
+    },
+
+    {
       name: "소통마당 - 지역상생발전",
       path: "pages/communication/content-action01.html",
       note: [],
@@ -469,6 +479,15 @@
       status: "done",
       a11y: "done",
       date: "2026-10-07"
+    },
+
+    {
+      name: "기관소개 - 홍보관 > 연보",
+      path: "pages/about/content-action55.html",
+      note: [],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-20"
     },
 
     {

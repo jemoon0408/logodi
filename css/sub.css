@@ -4965,6 +4965,24 @@ display: none;
   gap: 32px;
 }
 
+.sub-books--annual-report {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: stretch;
+  gap: 24px;
+}
+
+/* 전자책 표지 목록 (책으로 읽는 명강의) : 3열 */
+.sub-books--ebook {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.sub-books--ebook > .sub-book {
+  width: 100%;
+}
+
 .sub-book {
   width: 300px;
   max-width: 100%;
@@ -5089,6 +5107,23 @@ display: none;
     gap: 16px;
   }
 
+  .sub-books--annual-report {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sub-books--annual-report > .sub-book {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sub-books--ebook {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sub-books--ebook > .sub-book {
+    width: 100%;
+  }
+
   .sub-book,
   .sub-book--wide {
     width: calc(50% - 8px);
@@ -5105,6 +5140,14 @@ display: none;
 }
 
 @media (max-width: 360px) {
+
+  .sub-books--annual-report > .sub-book {
+    width: 100%;
+  }
+
+  .sub-books--ebook {
+    grid-template-columns: minmax(0, 1fr);
+  }
 
   .sub-book,
   .sub-book--wide {

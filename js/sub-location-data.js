@@ -449,7 +449,7 @@
           label:
             "책으로 읽는 명강의",
 
-          url: ""
+          url: "pages/communication/content-action56.html"
         },
 
 
@@ -707,7 +707,7 @@
         {
           value: "annual-report",
           label: "연보",
-          url: ""
+          url: "pages/about/content-action55.html"
         }
 
       ]
