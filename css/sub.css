@@ -4488,6 +4488,16 @@ display: none;
   word-break: break-all;
 }
 
+/* 표 안 글자 링크 · 강조 글자 링크 : hover 밑줄 */
+.sub-table td a:not([class]):hover,
+.sub-table td a:not([class]):focus-visible,
+.sub-table th a:not([class]):hover,
+.sub-table th a:not([class]):focus-visible,
+a.sub-text-accent:hover,
+a.sub-text-accent:focus-visible {
+  text-decoration: underline;
+}
+
 /* 기관 섹션 : 2차 탭 바로가기 위치 보정 */
 .sub-anchor-block {
   scroll-margin-top: 140px;

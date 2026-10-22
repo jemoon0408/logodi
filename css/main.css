@@ -1012,6 +1012,7 @@ html.kbd-nav .notice-board li a:focus-visible {
 
 .notice-board li a:hover .title,
 html.kbd-nav .notice-board li a:focus-visible .title {
+  text-decoration: underline;
   color: var(--blue);
 }
 
@@ -1096,6 +1097,14 @@ html.kbd-nav .news-list a:focus-visible,
 html.kbd-nav .news-swiper .swiper-slide a:focus-visible {
   outline: 2px solid #0051D3;
   outline-offset: 4px;
+}
+
+/* 뉴스 제목 : hover 밑줄 */
+.news-list a:hover p,
+.news-swiper .swiper-slide a:hover p,
+html.kbd-nav .news-list a:focus-visible p,
+html.kbd-nav .news-swiper .swiper-slide a:focus-visible p {
+  text-decoration: underline;
 }
 
 .news-list .thumb,
@@ -1286,6 +1295,12 @@ html.kbd-nav .sns-links a:focus-visible {
 html.kbd-nav .brochure-card a:focus-visible {
   outline: 2px solid #0051D3;
   outline-offset: -4px;
+}
+
+/* 브로슈어 제목 : hover 밑줄 */
+.brochure-card a:hover p,
+html.kbd-nav .brochure-card a:focus-visible p {
+  text-decoration: underline;
 }
 
 .thumb-brochure {
