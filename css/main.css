@@ -1648,7 +1648,12 @@ html.kbd-nav .service-card:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 35px 0;
+}
+
+/* 위아래 여백 : .inner(반응형 좌우 여백)보다 우선 적용, 좌우는 .inner 값 유지 */
+.footer-main .footer-top {
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .footer-info strong {
@@ -1691,7 +1696,8 @@ html.kbd-nav .service-card:focus-visible {
   justify-content: space-between;
   gap: 40px;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 0.9375rem;
   color: #1e2124;
   border-top: 1px solid #ddd;
@@ -1833,8 +1839,9 @@ html.kbd-nav .top-btn:focus-visible {
 }
 
 @media (max-width:876px) {
-  .footer-top {
-    padding: 20px;
+  .footer-main .footer-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 
   .footer-mark img {
@@ -2260,9 +2267,11 @@ html.kbd-nav .top-btn:focus-visible {
     margin-bottom: 14px;
   }
 
+  /* 하단 : 위아래 여백 확보, 맨 아래는 TOP 버튼에 가리지 않도록 여유 */
   .footer-bottom .inner {
-    gap: 20px;
-    padding: 20px;
+    gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 40px;
   }
 
   .news {
@@ -2426,7 +2435,8 @@ html.kbd-nav .top-btn:focus-visible {
 
 @media (max-width:360px) {
   .footer-main .footer-top {
-    padding: 12px 14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .banner-logo img {

@@ -173,9 +173,7 @@
       name: "소통마당 - 학습자료실(베스트강의)",
       path: "pages/communication/content-action64.html",
       note: [
-        "홍보 동영상(content-action15) 디자인(sub-video) 재사용, 내용은 기존 사이트 베스트강의 기준",
-        "W3C 검사 오류·경고 0건",
-        "기존 사이트 영상 연동(cmsid=101040202000) : 3개 강의 영상 재생(js/video-player.js), 썸네일 영상 원본(853×480) 캡처로 고화질 교체"
+       
       ],
       status: "progress",
       a11y: "done",
@@ -196,8 +194,6 @@
       name: "소통마당 - 학습자료실(학술자료실 & 연구용역)",
       path: "pages/communication/board-action23.html",
       note: [
-        "기존 사이트 실제 콘텐츠 반영(cmsid=101040203000) : 목록 10건, Total 117 / 12페이지, 담당부서 교육총괄과 063-907-5156",
-        "공통교재 게시판(board-action10) 공통 구조 재사용, 메뉴 연결(header, sub-location-data)"
       ],
       status: "progress",
       a11y: "done",
