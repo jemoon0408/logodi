@@ -4461,6 +4461,7 @@ display: none;
   width: 18px;
   height: 18px;
   margin: 0 4px 0 2px;
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4473,6 +4474,11 @@ display: none;
 }
 
 /* 목록 안에서는 li gap 으로 간격 */
+/* 원문자 번호와 바로 뒤 단어가 줄 끝에서 떨어지지 않도록 묶음 */
+.sub-nowrap {
+  white-space: nowrap;
+}
+
 .sub-org-list .sub-circle-num {
   margin: 0;
 }
