@@ -462,7 +462,7 @@
           label:
             "학술자료실 & 연구용역",
 
-          url: ""
+          url: "pages/communication/board-action23.html"
         }
 
 

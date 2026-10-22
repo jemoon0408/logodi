@@ -260,8 +260,10 @@
           </div>
 
 
-          <!-- ========================= 베스트강의 START ========================= -->
-          <section class="sub-video" aria-label="베스트강의">
+          <!-- ========================= 베스트강의 START =========================
+               - 썸네일 클릭 시 같은 자리에서 영상 재생, 목록 클릭 시 대표 영상 교체 후 재생 (js/video-player.js)
+               - 영상 주소 : 기존 사이트 영상 서버 -->
+          <section class="sub-video" aria-label="베스트강의" data-video-player>
 
             <div class="sub-video__feature">
 
@@ -271,7 +273,7 @@
               </div>
 
               <div class="sub-video__main">
-                <a href="#" class="sub-video__link">
+                <a href="https://www.logodi.go.kr:8092/vod/http/o_1jsqrju9h1lf1e8r10f5vlgk74b/101040202000" class="sub-video__link" data-video-src="https://www.logodi.go.kr:8092/vod/http/o_1jsqrju9h1lf1e8r10f5vlgk74b/101040202000" data-poster="../../img/communication/best-lecture-01.png">
                   <span class="sub-video__thumb">
                     <img src="../../img/communication/best-lecture-01.png" alt="">
                     <img class="sub-video__play" src="../../img/about/video-play-lg.png" alt="">
@@ -285,7 +287,7 @@
             <ul class="sub-video__list">
 
               <li>
-                <a href="#" class="sub-video__link">
+                <a href="https://www.logodi.go.kr:8092/vod/http/o_1jsqrju9h1lf1e8r10f5vlgk74b/101040202000" class="sub-video__link" data-video-src="https://www.logodi.go.kr:8092/vod/http/o_1jsqrju9h1lf1e8r10f5vlgk74b/101040202000" data-poster="../../img/communication/best-lecture-01.png" data-title="천체사진가의 우주먼지 이야기(1)" data-desc="천체사진가의 우주먼지 이야기(1)">
                   <span class="sub-video__thumb">
                     <img src="../../img/communication/best-lecture-01.png" alt="">
                     <img class="sub-video__play" src="../../img/about/video-play-sm.png" alt="">
@@ -296,7 +298,7 @@
               </li>
 
               <li>
-                <a href="#" class="sub-video__link">
+                <a href="https://www.logodi.go.kr:8092/vod/http/o_1jsqqv3lv9gesis1uqe1rcd1gmmb/101040202000" class="sub-video__link" data-video-src="https://www.logodi.go.kr:8092/vod/http/o_1jsqqv3lv9gesis1uqe1rcd1gmmb/101040202000" data-poster="../../img/communication/best-lecture-02.png" data-title="천체사진가의 우주먼지 이야기(2)" data-desc="천체사진가의 우주먼지 이야기(2)">
                   <span class="sub-video__thumb">
                     <img src="../../img/communication/best-lecture-02.png" alt="">
                     <img class="sub-video__play" src="../../img/about/video-play-sm.png" alt="">
@@ -307,7 +309,7 @@
               </li>
 
               <li>
-                <a href="#" class="sub-video__link">
+                <a href="https://www.logodi.go.kr:8092/vod/http/o_1jsqqj2ss66l1rhn17r4vmkcmnb/101040202000" class="sub-video__link" data-video-src="https://www.logodi.go.kr:8092/vod/http/o_1jsqqj2ss66l1rhn17r4vmkcmnb/101040202000" data-poster="../../img/communication/best-lecture-03.png" data-title="천체사진가의 우주먼지 이야기(3)" data-desc="천체사진가의 우주먼지 이야기(3)">
                   <span class="sub-video__thumb">
                     <img src="../../img/communication/best-lecture-03.png" alt="">
                     <img class="sub-video__play" src="../../img/about/video-play-sm.png" alt="">
@@ -574,6 +576,9 @@
 
   <!-- sub-location 공통 UI -->
   <script src="../../js/sub-location-common.js"></script>
+
+  <!-- 영상 재생 -->
+  <script src="../../js/video-player.js"></script>
 
 </body>
 
