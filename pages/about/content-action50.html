@@ -204,7 +204,7 @@
 
             <li>
               <a
-                href="content-action06.html"
+                href="content-action15.html"
                 data-sub-lnb-value="pr">
                 홍보관
               </a>
@@ -212,7 +212,7 @@
 
             <li>
               <a
-                href="content-action09.html"
+                href="content-action16.html"
                 data-sub-lnb-value="organization">
                 조직안내
               </a>
@@ -238,7 +238,7 @@
 
             <li>
               <a
-                href="#"
+                href="content-action62.html"
                 data-sub-lnb-value="weekly-menu">
                 주간식단
               </a>
@@ -299,9 +299,25 @@
 
             <div class="sub-section__contents">
 
-              <div class="sub-facility">
+              <div class="sub-facility sub-facility--room">
                 <div class="sub-facility__photo">
-                  <img src="../../img/about/facility-it-room.png" alt="정보화강의실 내부 전경">
+                  <div class="swiper sub-facility__swiper" role="region" aria-label="정보화강의실 사진 슬라이드">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="../../img/about/rooms/it-room-1.png" alt="정보화강의실 내부 전경 1"></div>
+                      <div class="swiper-slide"><img src="../../img/about/rooms/it-room-2.png" alt="정보화강의실 내부 전경 2"></div>
+                    </div>
+                    <div class="sub-facility__swiper-ctrl">
+                      <button type="button" class="sub-facility__swiper-btn sub-facility__swiper-prev">
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                        <span class="sr-only">이전 사진</span>
+                      </button>
+                      <span class="sub-facility__swiper-page"></span>
+                      <button type="button" class="sub-facility__swiper-btn sub-facility__swiper-next">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        <span class="sr-only">다음 사진</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div class="sub-facility__info">
                   <h3 class="sub-facility__title">정보화강의실 <span>414호, 510호, 606호, 712호</span></h3>
@@ -324,7 +340,7 @@
                     </div>
                     <div>
                       <dt>사용문의 및 신청</dt>
-                      <dd>교육총괄과 교육총괄팀(063-907-5156)</dd>
+                      <dd>교육총괄과 교육총괄팀(<span class="sub-tel">☎ 063-907-5156</span>)</dd>
                     </div>
                     <div>
                       <dt>사용료</dt>
@@ -562,6 +578,9 @@
 
   <!-- sub-location 공통 UI -->
   <script src="../../js/sub-location-common.js"></script>
+
+  <!-- 시설 사진 슬라이드 -->
+  <script src="../../js/facility-swiper.js"></script>
 
 </body>
 

@@ -289,7 +289,7 @@
       /*
        * 실제 파일명 전달받지 않음
        */
-      url: "",
+      url: "pages/info-disclosure/content-action63.html",
 
       children: []
     }
@@ -436,7 +436,7 @@
           /*
            * 실제 파일명 전달받지 않음
            */
-          url: ""
+          url: "pages/communication/content-action64.html"
         },
 
 
@@ -683,25 +683,25 @@
     {
       value: "pr",
       label: "홍보관",
-      url: "pages/about/content-action06.html",
+      url: "pages/about/content-action15.html",
       children: [
 
         {
           value: "pr-materials",
           label: "홍보자료",
-          url: "pages/about/content-action06.html"
+          url: "pages/about/content-action15.html"
         },
 
         {
           value: "photo-gallery",
           label: "포토갤러리",
-          url: ""
+          url: "pages/about/content-action60.html"
         },
 
         {
           value: "newsletter",
           label: "소식지",
-          url: ""
+          url: "pages/about/content-action61.html"
         },
 
         {
@@ -723,13 +723,13 @@
     {
       value: "organization",
       label: "조직안내",
-      url: "pages/about/content-action09.html",
+      url: "pages/about/content-action16.html",
       children: [
 
         {
           value: "org-staff",
           label: "조직 및 직원",
-          url: "pages/about/content-action09.html"
+          url: "pages/about/content-action16.html"
         },
 
         {
@@ -786,7 +786,7 @@
     {
       value: "weekly-menu",
       label: "주간식단",
-      url: "",
+      url: "pages/about/content-action62.html",
       children: []
     }
 
@@ -831,10 +831,10 @@
     {
       value: "edu-competency",
       label: "역량평가/역량교육",
-      url: "pages/education/content-action39.html",
+      url: "pages/education/content-action57.html",
       children: [
-        { value: "understand", label: "역량에 대한 이해", url: "" },
-        { value: "assessment", label: "역량평가",         url: "" },
+        { value: "understand", label: "역량에 대한 이해", url: "pages/education/content-action57.html" },
+        { value: "assessment", label: "역량평가",         url: "pages/education/content-action58.html" },
         { value: "competency", label: "역량교육",         url: "" },
         { value: "guide",      label: "안내자료",         url: "pages/education/content-action39.html" }
       ]
@@ -873,7 +873,7 @@
       url: "pages/exchange/content-action17.html",
       children: [
         { value: "sido",    label: "시도 교육원협력", url: "pages/exchange/content-action17.html" },
-        { value: "hrd",     label: "HRD/발표대회",   url: "pages/exchange/content-action20.html" },
+        { value: "hrd",     label: "HRD/발표대회",   url: "pages/exchange/content-action59.html" },
         { value: "pp",      label: "민관협력",       url: "pages/exchange/content-action22.html" }
       ]
     },

@@ -44,11 +44,12 @@
       path: "pages/main-ko.html",
       note: [
         "퍼블리싱 및 키보드 접근성 개선 완료",
-        "header 추가"
+        "header 추가",
+        "반응형 : 메가메뉴 1200px 이하 왼쪽 배경·이미지 잘림 수정, 바로가기 카드 제목 줄바꿈 수정"
       ],
       status: "done",
       a11y: "done",
-      date: "2026-10-15"
+      date: "2026-10-22"
     },
 
     {
@@ -169,6 +170,19 @@
     },
 
     {
+      name: "소통마당 - 학습자료실(베스트강의)",
+      path: "pages/communication/content-action64.html",
+      note: [
+        "홍보 동영상(content-action15) 디자인(sub-video) 재사용, 내용은 기존 사이트 베스트강의 기준",
+        { text: "썸네일 기존 사이트 이미지 200x150 저해상도 → 실제 영상 썸네일 교체 및 영상 재생 연결 개발쪽 검토 필요", type: "dev" },
+        "W3C 검사 오류·경고 0건"
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-21"
+    },
+
+    {
       name: "소통마당 - 학습자료실(책으로 읽는 명강의)",
       path: "pages/communication/content-action56.html",
       note: [
@@ -202,7 +216,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-22"
     },
 
     {
@@ -211,7 +225,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-15"
+      date: "2026-10-22"
     },
 
     {
@@ -272,6 +286,17 @@
       status: "done",
       a11y: "done",
       date: "2026-10-07"
+    },
+
+    {
+      name: "교류협력 - HRD/발표대회 > HRD콘테스트(대회개요)",
+      path: "pages/exchange/content-action59.html",
+      note: [
+       
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-21"
     },
 
     {
@@ -424,7 +449,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-21"
     },
 
     {
@@ -433,7 +458,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-22"
     },
 
     {
@@ -442,7 +467,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-22"
     },
 
     {
@@ -451,7 +476,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-22"
     },
 
     {
@@ -460,7 +485,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-07"
+      date: "2026-10-22"
     },
 
     {
@@ -491,6 +516,24 @@
     },
 
     {
+      name: "기관소개 - 홍보관 > 포토갤러리",
+      path: "pages/about/content-action60.html",
+      note: [],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-21"
+    },
+
+    {
+      name: "기관소개 - 홍보관 > 소식지",
+      path: "pages/about/content-action61.html",
+      note: [],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-21"
+    },
+
+    {
       name: "기관소개 - 조직안내 > 조직 및 직원(직원검색)",
       path: "pages/about/content-action09.html",
       note: [],
@@ -505,7 +548,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-22"
     },
 
     {
@@ -514,7 +557,16 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-22"
+    },
+
+    {
+      name: "기관소개 - 시설안내 > 시설현황(지방행정역사관 > 전시관소개)",
+      path: "pages/about/content-action65.html",
+      note: [],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-22"
     },
 
     {
@@ -523,7 +575,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-15"
+      date: "2026-10-22"
     },
 
 
@@ -623,11 +675,10 @@
       name: "교육과정 - 교육과정유형 > 역량교육",
       path: "pages/education/content-action54.html",
       note: [
-       
       ],
       status: "progress",
       a11y: "done",
-      date: "2026-10-20"
+      date: "2026-10-21"
     },
 
     {
@@ -683,6 +734,26 @@
     },
 
     {
+      name: "교육과정 - 역량평가/역량교육 > 역량에 대한 이해",
+      path: "pages/education/content-action57.html",
+      note: [
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-21"
+    },
+
+    {
+      name: "교육과정 - 역량평가/역량교육 > 역량평가",
+      path: "pages/education/content-action58.html",
+      note: [
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-22"
+    },
+
+    {
       name: "교육과정 - 역량평가/역량교육 > 안내자료",
       path: "pages/education/content-action39.html",
       note: [],
@@ -709,7 +780,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-14"
+      date: "2026-10-22"
     },
 
     {
@@ -718,7 +789,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-22"
     },
 
     {
@@ -726,7 +797,7 @@
       path: "pages/about/content-action42.html",
       note: [],
       status: "progress",
-      date: "2026-10-19"
+      date: "2026-10-22"
     },
 
     {
@@ -735,7 +806,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-22"
     },
 
     {
@@ -744,7 +815,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-22"
     },
 
     {
@@ -753,7 +824,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-22"
     },
 
     {
@@ -762,7 +833,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-21"
     },
 
     {
@@ -771,7 +842,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-22"
     },
 
     {
@@ -780,7 +851,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-22"
     },
 
     {
@@ -789,7 +860,7 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-19"
+      date: "2026-10-22"
     },
 
     {
@@ -807,7 +878,16 @@
       note: [],
       status: "done",
       a11y: "done",
-      date: "2026-10-14"
+      date: "2026-10-22"
+    },
+
+    {
+      name: "기관소개 - 주간식단",
+      path: "pages/about/content-action62.html",
+      note: [],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-22"
     },
 
     {
@@ -817,6 +897,16 @@
       status: "done",
       a11y: "done",
       date: "2026-10-15"
+    },
+
+    {
+      name: "정보공개 - 정보공개청구",
+      path: "pages/info-disclosure/content-action63.html",
+      note: [
+      ],
+      status: "progress",
+      a11y: "done",
+      date: "2026-10-21"
     },
 
     {

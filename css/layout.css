@@ -1482,6 +1482,63 @@ textarea {
 	padding-left: 25px;
 }
 
+/* 가운데 정렬형 (정보공개청구) : 일러스트 + 설명 + 버튼 */
+.preinfo__intro--center {
+	padding: 30px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	text-align: center;
+}
+
+.preinfo__intro--center p {
+	margin: 0;
+	color: #3c4655;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	letter-spacing: -1px;
+	word-break: keep-all;
+}
+
+/* 일러스트 : 디자인 프레임(265 x 183) 그대로 채움 */
+.preinfo__intro-illust {
+	width: 265px;
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 265 / 183;
+}
+
+/* 박스 안 버튼 : 디자인 수치(높이 36 / 15px 굵게 / 테두리 #58616a) */
+.preinfo__intro--center .btn {
+	height: 36px;
+	padding: 0 15px;
+	gap: 6px;
+	border-color: #58616a;
+	border-radius: 5px;
+	color: #1e2124;
+	font-size: 0.9375rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+
+.preinfo__intro--center .btn img {
+	width: 16px;
+	height: 16px;
+}
+
+/* 정보공개청구 : 박스 → 담당부서 15px, 담당부서 → 바로가기 버튼 50px */
+/* 페이지 제목 밑줄 → 박스 60px */
+.public-data--request .preinfo__intro {
+	margin-top: 60px;
+}
+
+.public-data--request .public-data__content {
+	margin-top: 15px;
+	gap: 50px;
+}
+
 .preinfo__intro li {
 	color: #3c4655;
 	font-size: 1.0625rem;
@@ -1734,6 +1791,32 @@ overflow-wrap: normal;
 	height: 4px;
 	border-radius: 50%;
 	background: #1652be;
+}
+
+/* 전화 아이콘형 (정보공개청구 담당부서) : 점 대신 전화 아이콘, 검정 제목 */
+.public-data__contact--phone {
+	gap: 15px;
+}
+
+.public-data__contact--phone .public-data__contact-title {
+	flex: none;
+	padding-left: 37px;
+	color: #111;
+	font-size: 1.0625rem;
+}
+
+.public-data__contact--phone .public-data__contact-title::before {
+	top: 50%;
+	left: 5px;
+	width: 24px;
+	height: 25px;
+	border-radius: 0;
+	background: url("../img/info-disclosure/icon-phone.png") no-repeat center / contain;
+	transform: translateY(-50%);
+}
+
+.public-data__contact--phone .public-data__contact-info {
+	color: #111;
 }
 
 .public-data__contact-info {
@@ -2134,6 +2217,28 @@ overflow-wrap: normal;
 	.public-data__contact-info {
 		padding-left: 18px;
 		font-size: 16px;
+	}
+
+	.public-data--request .preinfo__intro {
+		margin-top: 40px;
+	}
+
+	/* 정보공개청구 : 전화 아이콘 너비만큼 들여쓰기 */
+	.public-data__contact--phone .public-data__contact-info {
+		padding-left: 37px;
+	}
+
+	.preinfo__intro--center {
+		padding: 25px 18px;
+	}
+
+	.preinfo__intro--center p {
+		font-size: 1rem;
+	}
+
+	/* 좁은 화면에서는 강제 줄바꿈 대신 자연스럽게 이어서 */
+	.preinfo__intro--center p br {
+		display: none;
 	}
 	 /* 검색조건 + 검색어 영역은 첫 줄 전체 사용 */
   .government-award-search {

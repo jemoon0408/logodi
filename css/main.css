@@ -1752,6 +1752,17 @@ html.kbd-nav .top-btn:focus-visible {
   .two-col {
     gap: 39px;
   }
+
+  /* 바로가기 카드 : 제목이 쪼개지지 않도록 여백·글자 축소 */
+  .service-card {
+    gap: 14px;
+    padding: 2rem 4.75rem 2rem 1.5rem;
+  }
+
+  .service-card strong {
+    font-size: 1.25rem;
+    word-break: keep-all;
+  }
 }
 
 @media(max-width:1180px) {
@@ -2674,6 +2685,30 @@ html.kbd-nav .top-btn:focus-visible {
 }
 
 @media (max-width:1200px) and (min-width:877px) {
+  /* 1200px 이하 : 좌우 여백을 두고 왼쪽 배경을 화면 왼쪽 끝부터 제목 영역까지 채움 */
+  .mega-menu-inner {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .mega-menu-inner::before {
+    left: 0;
+    width: 240px;
+    background-size: 220px auto;
+    border-radius: 0 0 80px 0;
+  }
+
+  .mega-menu-heading-title {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+
+  .mega-menu-heading-caption {
+    font-size: 0.9375rem;
+  }
+
   .mega-menu-panel.is-active {
     gap: 24px 14px;
   }
@@ -3198,6 +3233,13 @@ html.kbd-nav .top-btn:focus-visible {
 .sitemap-page-section .mega-menu-group:has(> ul a:hover) > .mega-menu-group-head a,
 .sitemap-page-section .mega-menu-group:has(> ul:focus-within) > .mega-menu-group-head a {
   color: #2257b4;
+}
+
+@media (max-width: 1240px) {
+  .sitemap-page-inner {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 877px) {

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>주간식단 | 지방자치인재개발원</title>
+
+  <link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+
+  <!-- ========================= 공통 HEADER START ========================= -->
+  <div id="include-header"></div>
+  <!-- ========================= 공통 HEADER END ========================= -->
+
+
+  <!-- ========================= 공통 QUICK MENU START ========================= -->
+  <div id="include-quick-menu"></div>
+  <!-- ========================= 공통 QUICK MENU END ========================= -->
+
+
+  <main id="main-content" class="sub-page" tabindex="-1" data-page-label="주간식단">
+
+    <!-- ========================= SUB VISUAL START ========================= -->
+    <section class="sub-visual">
+
+      <div class="sub-visual__inner">
+
+        <nav class="sub-visual__breadcrumb" aria-label="현재 위치">
+
+          <ol>
+
+            <li class="sub-visual__breadcrumb-home">
+              <img
+                src="../../img/icons/breadcrumb-home-icon.png"
+                alt="홈">
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 1DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--1">
+              기관소개
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 2DEPTH -->
+            <li class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--2">
+
+              <span class="sub-visual__breadcrumb-depth-text">
+                주간식단
+              </span>
+
+              <span
+                class="sub-visual__breadcrumb-depth-ellipsis"
+                aria-hidden="true">
+                ...
+              </span>
+
+            </li>
+
+            <li
+              class="sub-visual__breadcrumb-arrow"
+              aria-hidden="true">
+              <img
+                src="../../img/icons/breadcrumb-arrow-right.png"
+                alt="">
+            </li>
+
+            <!-- 3DEPTH -->
+            <li
+              class="sub-visual__breadcrumb-depth sub-visual__breadcrumb-depth--3"
+              aria-current="page">
+              주간식단
+            </li>
+
+          </ol>
+
+        </nav>
+
+
+        <h1 class="sub-visual__title">
+          기관소개
+        </h1>
+
+      </div>
+
+    </section>
+    <!-- ========================= SUB VISUAL END ========================= -->
+
+
+    <!-- ========================= LOCATION NAV START ========================= -->
+    <nav class="sub-location" aria-label="서브 메뉴 경로">
+
+      <div class="sub-location__inner">
+
+        <!-- 홈 버튼 (768px 이하 숨김) -->
+        <a href="../main-ko.html" class="sub-location__home">
+          <img src="../../img/icons/sub-location-home.png" alt="">
+          <span class="sr-only">홈으로 이동</span>
+        </a>
+
+
+        <div class="sub-location__menus">
+
+          <!-- 1DEPTH : 사이드 메뉴와 동일한 1Depth -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth1" class="sr-only">
+              1단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth1"
+              class="sub-location-select__native"
+              data-sub-location-depth="1"
+              data-selected="weekly-menu"
+              aria-label="1단계 메뉴 선택">
+            </select>
+
+          </div>
+
+
+          <!-- 2DEPTH : 선택한 1Depth의 하위메뉴 -->
+          <div class="sub-location-select" data-sub-location-select>
+
+            <label for="subLocationDepth2" class="sr-only">
+              2단계 메뉴 선택
+            </label>
+
+            <select
+              id="subLocationDepth2"
+              class="sub-location-select__native"
+              data-sub-location-depth="2"
+              data-selected=""
+              aria-label="2단계 메뉴 선택">
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="sub-location__print"
+          id="subPrintBtn">
+
+          <img
+            src="../../img/icons/print.png"
+            alt="">
+
+          <span class="sr-only">
+            현재 페이지 인쇄
+          </span>
+
+        </button>
+
+      </div>
+
+    </nav>
+    <!-- ========================= LOCATION NAV END ========================= -->
+
+
+    <!-- ========================= SUB CONTENT START ========================= -->
+    <div class="sub-layout">
+
+      <!-- ========================= LEFT MENU START ========================= -->
+      <aside class="sub-lnb" aria-label="기관소개 메뉴">
+
+        <div class="sub-lnb__head">
+          <h2>기관소개</h2>
+        </div>
+
+        <nav
+          class="sub-lnb__menu"
+          aria-label="기관소개 1단계 메뉴">
+
+          <ul>
+
+            <li>
+              <a
+                href="content-action13.html"
+                data-sub-lnb-value="intro">
+                기관소개
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action15.html"
+                data-sub-lnb-value="pr">
+                홍보관
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action16.html"
+                data-sub-lnb-value="organization">
+                조직안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action41.html"
+                data-sub-lnb-value="facility">
+                시설안내
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action45.html"
+                data-sub-lnb-value="directions">
+                오시는 길
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="content-action62.html"
+                data-sub-lnb-value="weekly-menu"
+                class="is-active"
+                aria-current="page">
+                주간식단
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </aside>
+      <!-- ========================= LEFT MENU END ========================= -->
+
+
+      <!-- ========================= RIGHT CONTENT START ========================= -->
+      <div class="sub-content">
+
+        <div class="sub-content__main">
+
+          <div class="sub-page-title">
+
+            <h2>
+              주간식단
+            </h2>
+
+            <span aria-hidden="true"></span>
+
+          </div>
+
+
+          <!-- ========================= 주간식단 START ========================= -->
+          <section class="sub-section sub-page-body" aria-label="주간식단">
+
+            <h3 class="sr-only">주간식단</h3>
+
+            <!-- 검색 : 공통 박스 + 공통 셀렉트 + 공통 검색 버튼 -->
+            <div class="sub-info-box sub-meal-search">
+              <form class="sub-meal-search__form">
+
+                <div class="text-field__wrap md">
+                  <div class="text-field__box md">
+                    <label for="mealYear" class="sr-only">년도 선택</label>
+                    <div class="custom-select md">
+                      <button type="button" class="custom-select__button md" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="custom-select__text">2026년</span>
+                        <img src="../../img/arrow-down.png" alt="" class="custom-select__arrow" aria-hidden="true">
+                      </button>
+                      <ul class="custom-select__list md" role="listbox">
+                        <li><button type="button" class="custom-select__option is-selected" data-value="2026">2026년</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="2025">2025년</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="2024">2024년</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="2023">2023년</button></li>
+                      </ul>
+                      <select id="mealYear" class="custom-select__native" name="year">
+                        <option value="2026" selected>2026년</option>
+                        <option value="2025">2025년</option>
+                        <option value="2024">2024년</option>
+                        <option value="2023">2023년</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-field__wrap md">
+                  <div class="text-field__box md">
+                    <label for="mealMonth" class="sr-only">월 선택</label>
+                    <div class="custom-select md">
+                      <button type="button" class="custom-select__button md" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="custom-select__text">10월</span>
+                        <img src="../../img/arrow-down.png" alt="" class="custom-select__arrow" aria-hidden="true">
+                      </button>
+                      <ul class="custom-select__list md" role="listbox">
+                        <li><button type="button" class="custom-select__option" data-value="1">1월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="2">2월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="3">3월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="4">4월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="5">5월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="6">6월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="7">7월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="8">8월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="9">9월</button></li>
+                        <li><button type="button" class="custom-select__option is-selected" data-value="10">10월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="11">11월</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="12">12월</button></li>
+                      </ul>
+                      <select id="mealMonth" class="custom-select__native" name="month">
+                        <option value="1">1월</option>
+                        <option value="2">2월</option>
+                        <option value="3">3월</option>
+                        <option value="4">4월</option>
+                        <option value="5">5월</option>
+                        <option value="6">6월</option>
+                        <option value="7">7월</option>
+                        <option value="8">8월</option>
+                        <option value="9">9월</option>
+                        <option value="10" selected>10월</option>
+                        <option value="11">11월</option>
+                        <option value="12">12월</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-field__wrap md">
+                  <div class="text-field__box md">
+                    <label for="mealWeek" class="sr-only">주 선택</label>
+                    <div class="custom-select md">
+                      <button type="button" class="custom-select__button md" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="custom-select__text">3째 주</span>
+                        <img src="../../img/arrow-down.png" alt="" class="custom-select__arrow" aria-hidden="true">
+                      </button>
+                      <ul class="custom-select__list md" role="listbox">
+                        <li><button type="button" class="custom-select__option" data-value="1">1째 주</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="2">2째 주</button></li>
+                        <li><button type="button" class="custom-select__option is-selected" data-value="3">3째 주</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="4">4째 주</button></li>
+                        <li><button type="button" class="custom-select__option" data-value="5">5째 주</button></li>
+                      </ul>
+                      <select id="mealWeek" class="custom-select__native" name="week">
+                        <option value="1">1째 주</option>
+                        <option value="2">2째 주</option>
+                        <option value="3" selected>3째 주</option>
+                        <option value="4">4째 주</option>
+                        <option value="5">5째 주</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-tertiary btn md">검색</button>
+
+              </form>
+            </div>
+
+            <ul class="sub-meals">
+              <li class="sub-meal">
+                <div class="sub-meal__card">
+                  <h4 class="sub-meal__date">2026.10.<strong>19(월)</strong></h4>
+                  <dl class="sub-meal__list">
+                    <div>
+                      <dt>아침</dt>
+                      <dd>누룽지 / 셀프라면&amp;공기밥 / 사과주스</dd>
+                    </div>
+                    <div>
+                      <dt>점심</dt>
+                      <dd>(A) 김치두루치기, 무청된장국<br>(B) 꼬막살채소비빔밥, 계란찜 / 결명자차</dd>
+                    </div>
+                    <div>
+                      <dt>저녁</dt>
+                      <dd>시래기영양밥&amp;양념장, 배춧국<br>(TO-GO)불고기비빔포케샐러드</dd>
+                    </div>
+                  </dl>
+                </div>
+              </li>
+              <li class="sub-meal">
+                <div class="sub-meal__card">
+                  <h4 class="sub-meal__date">2026.10.<strong>20(화)</strong></h4>
+                  <dl class="sub-meal__list">
+                    <div>
+                      <dt>아침</dt>
+                      <dd>단호박죽 / 셀프라면&amp;잡곡밥 / 오렌지주스</dd>
+                    </div>
+                    <div>
+                      <dt>점심</dt>
+                      <dd>(A) 돈폭찹, 순두부국<br>(B) 닭갈비볶음밥&amp;계란프라이, 타코야끼 / 숭늉</dd>
+                    </div>
+                    <div>
+                      <dt>저녁</dt>
+                      <dd>오징어볶음&amp;소면, 수제비국<br>(TO-GO)치킨로제로텔레샐러드</dd>
+                    </div>
+                  </dl>
+                </div>
+              </li>
+              <li class="sub-meal">
+                <div class="sub-meal__card">
+                  <h4 class="sub-meal__date">2026.10.<strong>21(수)</strong></h4>
+                  <dl class="sub-meal__list">
+                    <div>
+                      <dt>아침</dt>
+                      <dd>뚝배기만두떡국 / 셀프라면&amp;공기밥 / 당근주스</dd>
+                    </div>
+                    <div>
+                      <dt>점심</dt>
+                      <dd>(A) 돈육채소볶음, 콩나물국<br>(B) 카레덮밥, 양배추샐러드 / 옥수수차 (셀프국: 사골국)</dd>
+                    </div>
+                    <div>
+                      <dt>저녁</dt>
+                      <dd>뚝배기황태국, 고등어무조림<br>(TO-GO)두부고구마샐러드</dd>
+                    </div>
+                  </dl>
+                </div>
+              </li>
+              <li class="sub-meal">
+                <div class="sub-meal__card">
+                  <h4 class="sub-meal__date">2026.10.<strong>22(목)</strong></h4>
+                  <dl class="sub-meal__list">
+                    <div>
+                      <dt>아침</dt>
+                      <dd>불고기볶음밥 / 셀프라면&amp;잡곡밥 / 토마토주스</dd>
+                    </div>
+                    <div>
+                      <dt>점심</dt>
+                      <dd>(A) 매콤두부조림, 미역국<br>(B) 쑥갓우동, 돈카츠&amp;소스 / 숭늉</dd>
+                    </div>
+                    <div>
+                      <dt>저녁</dt>
+                      <dd>김치찌개, 소세지&amp;완자전<br>(TO-GO)보코치니단호박샐러드</dd>
+                    </div>
+                  </dl>
+                </div>
+              </li>
+              <li class="sub-meal">
+                <div class="sub-meal__card">
+                  <h4 class="sub-meal__date">2026.10.<strong>23(금)</strong></h4>
+                  <dl class="sub-meal__list">
+                    <div>
+                      <dt>아침</dt>
+                      <dd>뚝배기국밥 / 셀프라면&amp;공기밥 / 커피</dd>
+                    </div>
+                    <div>
+                      <dt>점심</dt>
+                      <dd>매콤제육덮밥, 계란유부국, 한식잡채 / 유자차</dd>
+                    </div>
+                    <div>
+                      <dt>저녁</dt>
+                      <dd></dd>
+                    </div>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+
+          </section>
+          <!-- ========================= 주간식단 END ========================= -->
+
+
+        </div>
+
+
+        <!-- ========================= SATISFACTION START ========================= -->
+        <section class="sub-satisfaction">
+
+          <h2 class="sr-only">
+            페이지 만족도 및 담당부서 안내
+          </h2>
+
+
+          <div class="sub-satisfaction__contact">
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/department.png"
+                  alt="">
+
+                담당부서 안내
+
+              </span>
+
+              <strong>
+                -
+              </strong>
+
+            </div>
+
+
+            <div class="sub-satisfaction__contact-item">
+
+              <span class="sub-satisfaction__label">
+
+                <img
+                  src="../../img/icons/contact.png"
+                  alt="">
+
+                문의전화
+
+              </span>
+
+              <strong>
+                -
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="sub-satisfaction__survey">
+
+            <div class="sub-satisfaction__question">
+
+              <img
+                class="sub-satisfaction__illustration"
+                src="../../img/icons/survey.png"
+                alt="">
+
+              <div>
+
+                <strong>
+                  현재 페이지에 만족하십니까?
+                </strong>
+
+                <p>
+                  페이지 내용과 사용 편의성에 대한 의견을 들려주세요.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <form class="sub-satisfaction__form">
+
+              <fieldset>
+
+                <legend class="sr-only">
+                  페이지 만족도 선택
+                </legend>
+
+                <div class="sub-satisfaction__radios">
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="5"
+                      checked>
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="4">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="3">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        보통
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="2">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+
+                  <label class="radio radio--md">
+
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="satisfaction"
+                      value="1">
+
+                    <span class="radio__text">
+
+                      <span class="radio__label">
+                        매우불만족
+                      </span>
+
+                    </span>
+
+                  </label>
+
+                </div>
+
+
+                <button
+                  type="button"
+                  class="btn-tertiary btn sm">
+                  확인
+                </button>
+
+              </fieldset>
+
+            </form>
+
+          </div>
+
+        </section>
+        <!-- ========================= SATISFACTION END ========================= -->
+
+      </div>
+      <!-- ========================= RIGHT CONTENT END ========================= -->
+
+    </div>
+    <!-- ========================= SUB CONTENT END ========================= -->
+
+  </main>
+
+
+  <!-- ========================= 공통 FOOTER START ========================= -->
+  <div id="include-footer"></div>
+  <!-- ========================= 공통 FOOTER END ========================= -->
+
+
+  <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/keyboardfocusing.js"></script>
+  <script src="../../js/customSelect.js"></script>
+
+  <!-- 퍼블리싱용 sub-location 가데이터 -->
+  <script src="../../js/sub-location-data.js"></script>
+
+  <!-- sub-location 공통 UI -->
+  <script src="../../js/sub-location-common.js"></script>
+
+</body>
+
+</html>

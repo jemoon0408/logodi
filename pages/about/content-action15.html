@@ -204,7 +204,7 @@
 
             <li>
               <a
-                href="content-action06.html"
+                href="content-action15.html"
                 data-sub-lnb-value="pr"
                 class="is-active"
                 aria-current="page">
@@ -214,7 +214,7 @@
 
             <li>
               <a
-                href="content-action09.html"
+                href="content-action16.html"
                 data-sub-lnb-value="organization">
                 조직안내
               </a>
@@ -238,7 +238,7 @@
 
             <li>
               <a
-                href="#"
+                href="content-action62.html"
                 data-sub-lnb-value="weekly-menu">
                 주간식단
               </a>
@@ -277,8 +277,10 @@
           </nav>
 
 
-          <!-- ========================= 홍보 동영상 START ========================= -->
-          <section class="sub-video" aria-label="홍보 동영상">
+          <!-- ========================= 홍보 동영상 START =========================
+               - 썸네일 클릭 시 같은 자리에서 영상 재생, 목록 클릭 시 대표 영상 교체 후 재생 (js/video-player.js)
+               - 영상 주소 : 기존 사이트 영상 서버 -->
+          <section class="sub-video" aria-label="홍보 동영상" data-video-player>
 
             <div class="sub-video__feature">
 
@@ -288,7 +290,7 @@
               </div>
 
               <div class="sub-video__main">
-                <a href="#" class="sub-video__link">
+                <a href="https://www.logodi.go.kr:8092/vod/http/o_1jbd3aba8d6mc6e1g0i1do16v9b/101050201010" class="sub-video__link" data-video-src="https://www.logodi.go.kr:8092/vod/http/o_1jbd3aba8d6mc6e1g0i1do16v9b/101050201010" data-poster="../../img/about/video-thumb-01.png">
                   <span class="sub-video__thumb">
                     <img src="../../img/about/video-thumb-01.png" alt="">
                     <img class="sub-video__play" src="../../img/about/video-play-lg.png" alt="">
@@ -302,7 +304,7 @@
             <ul class="sub-video__list">
 
               <li>
-                <a href="#" class="sub-video__link">
+                <a href="https://www.logodi.go.kr:8092/vod/http/o_1jbd3aba8d6mc6e1g0i1do16v9b/101050201010" class="sub-video__link" data-video-src="https://www.logodi.go.kr:8092/vod/http/o_1jbd3aba8d6mc6e1g0i1do16v9b/101050201010" data-poster="../../img/about/video-thumb-01.png" data-title="지방자치인재개발원 홍보 영상" data-desc="공직자 한 사람 한 사람이 지역의 변화를 선도하는 문제해결형 실용인재로 성장하도록 배움과 실천이 만나는 교육의 중심 지방자치인재개발원이 되겠습니다.">
                   <span class="sub-video__thumb">
                     <img src="../../img/about/video-thumb-01.png" alt="">
                     <img class="sub-video__play" src="../../img/about/video-play-sm.png" alt="">
@@ -313,7 +315,7 @@
               </li>
 
               <li>
-                <a href="#" class="sub-video__link">
+                <a href="https://www.logodi.go.kr:8092/vod/http/o_1j4mghn2d1t6m3leei112ac8db/101050201010" class="sub-video__link" data-video-src="https://www.logodi.go.kr:8092/vod/http/o_1j4mghn2d1t6m3leei112ac8db/101050201010" data-poster="../../img/about/video-thumb-02.png" data-title="지방자치인재개발원 개원 60주년 기념 영상" data-desc="지방자치인재개발원 개원 60주년 &#10;기념 영상&#10;지역의 변화를 선도한 60년, 대한민국의 미래를 여는 100년">
                   <span class="sub-video__thumb">
                     <img src="../../img/about/video-thumb-02.png" alt="">
                     <img class="sub-video__play" src="../../img/about/video-play-sm.png" alt="">
@@ -324,7 +326,7 @@
               </li>
 
               <li>
-                <a href="#" class="sub-video__link">
+                <a href="https://www.logodi.go.kr:8092/vod/http/o_1ffhc4bd31sqc5livj619af601b/101050201010" class="sub-video__link" data-video-src="https://www.logodi.go.kr:8092/vod/http/o_1ffhc4bd31sqc5livj619af601b/101050201010" data-poster="../../img/about/video-thumb-03.png" data-title="리더십 교육연극 영상" data-desc="">
                   <span class="sub-video__thumb">
                     <img src="../../img/about/video-thumb-03.png" alt="">
                     <img class="sub-video__play" src="../../img/about/video-play-sm.png" alt="">
@@ -337,29 +339,19 @@
             </ul>
 
             <nav class="preinfo-pagination" aria-label="홍보 동영상 목록 페이지">
-
               <a class="preinfo-pagination__button is-disabled" role="link" aria-label="첫 페이지" aria-disabled="true">
                 <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
               </a>
-
               <a class="preinfo-pagination__button is-disabled" role="link" aria-label="이전 페이지" aria-disabled="true">
                 <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
               </a>
-
               <a href="#" class="preinfo-pagination__page is-active" aria-current="page">1</a>
-              <a href="#" class="preinfo-pagination__page">2</a>
-              <a href="#" class="preinfo-pagination__page">3</a>
-              <a href="#" class="preinfo-pagination__page">4</a>
-              <a href="#" class="preinfo-pagination__page">5</a>
-
-              <a href="#" class="preinfo-pagination__button" aria-label="다음 페이지">
+              <a class="preinfo-pagination__button is-disabled" role="link" aria-label="다음 페이지" aria-disabled="true">
                 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
               </a>
-
-              <a href="#" class="preinfo-pagination__button" aria-label="마지막 페이지">
+              <a class="preinfo-pagination__button is-disabled" role="link" aria-label="마지막 페이지" aria-disabled="true">
                 <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
               </a>
-
             </nav>
 
           </section>
@@ -410,7 +402,7 @@
               </span>
 
               <strong>
-                063-907-5044
+                063-907-5048
               </strong>
 
             </div>
@@ -588,6 +580,9 @@
 
   <!-- sub-location 공통 UI -->
   <script src="../../js/sub-location-common.js"></script>
+
+  <!-- 홍보 동영상 재생 -->
+  <script src="../../js/video-player.js"></script>
 
 </body>
 

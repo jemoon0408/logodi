@@ -51,6 +51,30 @@
         }
       }
 
+      /* 페이지 이동 후 햄버거(X) 버튼 포커스 유지 (sessionStorage 사용 불가 시 무시) */
+      var TOGGLE_FOCUS_KEY = "logodiMenuToggleFocus";
+
+      function keepToggleFocus() {
+        try {
+          window.sessionStorage.setItem(TOGGLE_FOCUS_KEY, "1");
+        } catch (error) {}
+      }
+
+      function restoreToggleFocus() {
+        var shouldFocus = false;
+
+        try {
+          shouldFocus = window.sessionStorage.getItem(TOGGLE_FOCUS_KEY) === "1";
+          window.sessionStorage.removeItem(TOGGLE_FOCUS_KEY);
+        } catch (error) {}
+
+        if (shouldFocus && isDesktop()) {
+          /* 키보드 사용 중 표시(kbd-nav) : 포커스 테두리가 보이도록 */
+          document.documentElement.classList.add("kbd-nav");
+          toggle.focus();
+        }
+      }
+
       function clearCloseTimer() {
         if (closeTimer) {
           window.clearTimeout(closeTimer);
@@ -413,8 +437,17 @@
         }, 0);
       });
 
-      toggle.addEventListener("click", function () {
+      toggle.addEventListener("click", function (event) {
         if (isDesktop()) {
+          /*
+           * 키보드(Enter / Space)로 누른 경우(event.detail === 0)
+           * 이동한 페이지에서도 같은 버튼(햄버거 ↔ X)에 포커스를 유지한다.
+           * → 사이트맵이 열린 뒤 Tab 이동 없이 바로 Enter 로 닫을 수 있음
+           */
+          if (event.detail === 0) {
+            keepToggleFocus();
+          }
+
           if (sitemapContent) {
             var homeLink = header.querySelector(".logo a");
             if (homeLink) window.location.assign(homeLink.href);
@@ -502,4 +535,6 @@
       updateSitemapToggle();
 
       selectMenu(0);
+
+      restoreToggleFocus();
     }());

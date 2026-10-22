@@ -204,7 +204,7 @@
 
             <li>
               <a
-                href="content-action06.html"
+                href="content-action15.html"
                 data-sub-lnb-value="pr">
                 홍보관
               </a>
@@ -212,7 +212,7 @@
 
             <li>
               <a
-                href="content-action09.html"
+                href="content-action16.html"
                 data-sub-lnb-value="organization">
                 조직안내
               </a>
@@ -238,7 +238,7 @@
 
             <li>
               <a
-                href="#"
+                href="content-action62.html"
                 data-sub-lnb-value="weekly-menu">
                 주간식단
               </a>
@@ -299,16 +299,33 @@
 
             <div class="sub-section__contents">
 
-              <div class="sub-facility">
+              <div class="sub-facility sub-facility--room">
                 <div class="sub-facility__photo">
-                  <img src="../../img/about/facility-conference.png" alt="컨퍼런스룸 내부 전경">
+                  <div class="swiper sub-facility__swiper" role="region" aria-label="컨퍼런스룸 사진 슬라이드">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="../../img/about/rooms/conference-1.png" alt="컨퍼런스룸 내부 전경 1"></div>
+                      <div class="swiper-slide"><img src="../../img/about/rooms/conference-2.png" alt="컨퍼런스룸 내부 전경 2"></div>
+                      <div class="swiper-slide"><img src="../../img/about/rooms/conference-3.png" alt="컨퍼런스룸 내부 전경 3"></div>
+                    </div>
+                    <div class="sub-facility__swiper-ctrl">
+                      <button type="button" class="sub-facility__swiper-btn sub-facility__swiper-prev">
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                        <span class="sr-only">이전 사진</span>
+                      </button>
+                      <span class="sub-facility__swiper-page"></span>
+                      <button type="button" class="sub-facility__swiper-btn sub-facility__swiper-next">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        <span class="sr-only">다음 사진</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div class="sub-facility__info">
                   <h3 class="sub-facility__title">컨퍼런스룸 <span>국제교류협력센터</span></h3>
                   <dl class="sub-facility__list">
                     <div>
                       <dt>규모</dt>
-                      <dd>24석 <small>(본관 310호)</small></dd>
+                      <dd>24석(본관 310호)</dd>
                     </div>
                     <div>
                       <dt>면적</dt>
@@ -320,22 +337,42 @@
                     </div>
                     <div>
                       <dt>설치장비</dt>
-                      <dd>스크린, 전자교탁, 유·무선 마이크, 회의용 마이크시스템, 빔 프로젝트, 동시통역 시스템</dd>
+                      <dd>스크린, 전자교탁, 유‧무선 마이크, 회의용 마이크시스템, 빔 프로젝트, 동시통역 시스템</dd>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
                     </div>
                   </dl>
                 </div>
               </div>
 
-              <div class="sub-facility">
+              <div class="sub-facility sub-facility--room">
                 <div class="sub-facility__photo">
-                  <img src="../../img/about/facility-intl-hall.png" alt="국제회의실 내부 전경">
+                  <div class="swiper sub-facility__swiper" role="region" aria-label="국제회의실 사진 슬라이드">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="../../img/about/rooms/intl-hall-1.png" alt="국제회의실 내부 전경 1"></div>
+                      <div class="swiper-slide"><img src="../../img/about/rooms/intl-hall-2.png" alt="국제회의실 내부 전경 2"></div>
+                    </div>
+                    <div class="sub-facility__swiper-ctrl">
+                      <button type="button" class="sub-facility__swiper-btn sub-facility__swiper-prev">
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                        <span class="sr-only">이전 사진</span>
+                      </button>
+                      <span class="sub-facility__swiper-page"></span>
+                      <button type="button" class="sub-facility__swiper-btn sub-facility__swiper-next">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        <span class="sr-only">다음 사진</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div class="sub-facility__info">
                   <h3 class="sub-facility__title">국제회의실 <span>국제교육협력센터</span></h3>
                   <dl class="sub-facility__list">
                     <div>
                       <dt>규모</dt>
-                      <dd>50석 <small>(본관 3층)</small></dd>
+                      <dd>50석(본관 3층)</dd>
                     </div>
                     <div>
                       <dt>면적</dt>
@@ -348,6 +385,10 @@
                     <div>
                       <dt>설치장비</dt>
                       <dd>동시통역시스템</dd>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
                     </div>
                   </dl>
                 </div>
@@ -581,6 +622,9 @@
 
   <!-- sub-location 공통 UI -->
   <script src="../../js/sub-location-common.js"></script>
+
+  <!-- 시설 사진 슬라이드 -->
+  <script src="../../js/facility-swiper.js"></script>
 
 </body>
 

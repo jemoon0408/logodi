@@ -1091,6 +1091,13 @@
   margin-right: 5px;
 }
 
+/* 목록 다음 ※ 안내 문구 : 목록과 같은 들여쓰기·글자 */
+.sub-info-box .sub-course-list + p {
+  padding-left: 23px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
 
 /* =========================================================
    BULLET LIST (3단계 : • → - → *)
@@ -1321,6 +1328,19 @@
   border-radius: 0 8px 0 0;
 }
 
+.sub-course-table--gray thead th {
+  background: #8994ae;
+  color: #fff;
+}
+
+.sub-course-table--gray thead th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.sub-course-table--gray thead th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
 .sub-course-table tbody th {
   padding: 14px 12px;
   border-right: 1px solid #ddd;
@@ -1351,65 +1371,6 @@
   vertical-align: middle;
   word-break: keep-all;
   overflow-wrap: break-word;
-}
-
-
-/* =========================================================
-   TECHNIQUE TABLE
-========================================================= */
-
-.sub-technique-table-wrap {
-  overflow: visible;
-}
-
-.sub-technique-table {
-  width: 100%;
-  min-width: 0;
-}
-
-.sub-technique-table thead th {
-  height: 40px;
-  padding: 6px 10px;
-  background: #8994ae;
-  color: #fff;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.sub-technique-table thead th:first-child {
-  border-right: 1px solid #ddd;
-  border-radius: 8px 0 0 8px;
-}
-
-.sub-technique-table thead th:last-child {
-  border-radius: 0 8px 8px 0;
-}
-
-.sub-technique-table tbody td {
-  padding: 15px 12px;
-  border-bottom: 1px solid #ddd;
-  background: #fff;
-  color: #3c4655;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5;
-  vertical-align: middle;
-  word-break: keep-all;
-  overflow-wrap: break-word;
-}
-
-.sub-technique-table tbody td:first-child {
-  border-right: 1px solid #ddd;
-}
-
-.sub-technique-table__mobile-title {
-  display: none;
-}
-
-.sub-technique-table__text {
-  display: block;
 }
 
 
@@ -1584,6 +1545,7 @@
   width: 15px;
   height: 15px;
 }
+
 
 
 /* =========================================================
@@ -1993,89 +1955,6 @@ display: none;
   }
 
 
-  /* =========================================================
-     TECHNIQUE TABLE MOBILE
-  ========================================================= */
-
-  .sub-technique-table-wrap {
-    overflow: visible;
-  }
-
-  .sub-technique-table {
-    width: 100%;
-    min-width: 0;
-    table-layout: fixed;
-  }
-
-  .sub-technique-table colgroup {
-    display: none;
-  }
-
-  .sub-technique-table thead {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  .sub-technique-table tbody,
-  .sub-technique-table tr {
-    display: block;
-    width: 100%;
-  }
-
-  .sub-technique-table tbody tr {
-    border: 0;
-  }
-
-  .sub-technique-table tbody td {
-    display: block;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #d9dfe8;
-    border-radius: 12px;
-    background: #fff;
-  }
-
-  .sub-technique-table tbody td:first-child {
-    border-right: 1px solid #d9dfe8;
-  }
-
-  .sub-technique-table tbody td + td {
-    margin-top: 15px;
-  }
-
-  .sub-technique-table__mobile-title {
-    display: block;
-    width: 100%;
-    padding: 11px 15px;
-    background: #8994ae;
-    color: #fff;
-    font-size: 1.0625rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-align: left;
-  }
-
-  .sub-technique-table__text {
-    display: block;
-    padding: 15px;
-    color: #3c4655;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.6;
-    word-break: keep-all;
-    overflow-wrap: break-word;
-  }
-
-
   /* ---------------------------------------------------------
      SATISFACTION
   --------------------------------------------------------- */
@@ -2214,16 +2093,6 @@ display: none;
 
 
   /* ---------------------------------------------------------
-     TECHNIQUE TABLE
-  --------------------------------------------------------- */
-
-  .sub-technique-table {
-    width: 100%;
-    min-width: 0;
-  }
-
-
-  /* ---------------------------------------------------------
      REVIEW
   --------------------------------------------------------- */
 
@@ -2321,21 +2190,6 @@ display: none;
 
   .sub-info-box {
     padding: 16px;
-  }
-
-
-  /* ---------------------------------------------------------
-     TECHNIQUE TABLE
-  --------------------------------------------------------- */
-
-  .sub-technique-table__mobile-title {
-    padding: 10px 13px;
-    font-size: 1rem;
-  }
-
-  .sub-technique-table__text {
-    padding: 14px 13px;
-    font-size: 0.9375rem;
   }
 
 
@@ -2991,6 +2845,7 @@ display: none;
 .sub-mi-color__spec dt {
   flex: none;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .sub-mi-color__spec dd {
@@ -3175,6 +3030,15 @@ display: none;
   }
 }
 
+/* MI 색상표 : 4열이 좁아지는 구간부터 2열 */
+@media (max-width: 1100px) {
+
+  .sub-mi-colors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 16px;
+  }
+}
+
 @media (max-width: 876px) {
 
   .sub-history__year {
@@ -3252,7 +3116,7 @@ display: none;
   .sub-vision__core {
     position: relative;
     left: auto;
-    width: min(100%, 340px);
+    width: min(calc(100% - 24px), 340px);
     justify-self: center;
   }
 
@@ -3462,6 +3326,17 @@ display: none;
   color: #111;
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+/* 서명 : 우측 하단 */
+.sub-greeting__sign {
+  margin: 50px 0 0;
+  color: #111;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  text-align: right;
 }
 
 
@@ -3723,6 +3598,27 @@ display: none;
 .sub-video__main .sub-video__play {
   width: 90px;
   height: 90px;
+}
+
+/* 재생 중 : 썸네일 자리를 그대로 쓰는 <video> (js/video-player.js) */
+.sub-video__player {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  object-fit: contain;
+}
+
+.sub-video__player:focus-visible {
+  outline: 3px solid rgba(0, 81, 211, 0.6);
+  outline-offset: -3px;
+}
+
+/* 목록에서 현재 재생 중인 영상 */
+.sub-video__list .sub-video__link.is-active .sub-video__title {
+  color: #1652be;
 }
 
 .sub-video__list {
@@ -4053,6 +3949,11 @@ display: none;
 
   .sub-greeting__text p.is-strong {
     font-size: 1.0625rem;
+  }
+
+  .sub-greeting__sign {
+    margin-top: 35px;
+    font-size: 1.25rem;
   }
 
   .sub-former {
@@ -4432,7 +4333,12 @@ display: none;
 ========================================================= */
 
 .sub-month-nav {
-  margin: 30px 0 20px;
+  margin: 0 0 20px;
+}
+
+/* 연도·월 선택 아래 검색바 : 표와 간격 */
+.sub-month-nav + .board-search-controls {
+  margin-bottom: 20px;
 }
 
 .sub-month-nav__year {
@@ -4478,7 +4384,7 @@ display: none;
 @media (max-width: 768px) {
 
   .sub-month-nav {
-    margin: 24px 0 16px;
+    margin: 0 0 16px;
   }
 
   .sub-month-nav__year {
@@ -4552,15 +4458,15 @@ display: none;
 /* 원형 번호 (①② 대신 사용, 전체 페이지 공통) */
 .sub-circle-num {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px 0 2px;
+  width: 18px;
+  height: 18px;
+  margin: 0 4px 0 2px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #3c4655;
   border-radius: 50%;
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   font-weight: 600;
   line-height: 1;
   vertical-align: 0.1em;
@@ -5055,14 +4961,6 @@ display: none;
   line-height: 0;
 }
 
-.sub-table-note {
-  margin: 12px 0 0;
-  color: #111;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
 /* 시설명 링크 */
 .sub-place-link {
   color: #1652be;
@@ -5345,6 +5243,137 @@ display: none;
   z-index: 1;
 }
 
+/* 강의시설(대·중·소강의실, 국제교육협력센터) : 사진 영역 줄이고 정보 영역 넓게 */
+.sub-facility--room .sub-facility__photo {
+  flex-basis: 360px;
+  width: 360px;
+  height: 210px;
+}
+
+.sub-facility--room .sub-facility__photo::before {
+  top: 80px;
+  left: 250px;
+  width: 150px;
+  height: 150px;
+}
+
+/* 사진 여러 장 : Swiper (js/facility-swiper.js), 알약 모양 틀 유지 */
+.sub-facility__swiper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 200px;
+}
+
+.sub-facility__swiper .swiper-slide img {
+  border-radius: 0;
+}
+
+.sub-facility__swiper-ctrl {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  z-index: 2;
+  height: 30px;
+  padding: 0 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.55);
+  transform: translateX(-50%);
+}
+
+.sub-facility__swiper-btn {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.sub-facility__swiper-btn:hover,
+.sub-facility__swiper-btn:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sub-facility__swiper-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 1px;
+}
+
+/* Swiper 기본 pagination 위치값 초기화 후 1 / 3 표시 */
+.sub-facility__swiper-ctrl .sub-facility__swiper-page {
+  position: static;
+  width: auto;
+  min-width: 34px;
+  color: #fff;
+  font-size: 0.8125rem;
+  line-height: 1;
+  text-align: center;
+  transform: none;
+}
+
+@media (max-width: 1200px) {
+
+  .sub-facility--room .sub-facility__photo {
+    flex-basis: 300px;
+    width: 300px;
+    height: 175px;
+  }
+
+  .sub-facility--room .sub-facility__photo::before {
+    top: 65px;
+    left: 210px;
+    width: 125px;
+    height: 125px;
+  }
+}
+
+/* 1024px 이하 : 사진을 줄여 정보 영역 확보 */
+@media (max-width: 1024px) and (min-width: 769px) {
+
+  .sub-facility .sub-facility__photo,
+  .sub-facility--room .sub-facility__photo {
+    flex-basis: 260px;
+    width: 260px;
+    height: 152px;
+  }
+
+  .sub-facility .sub-facility__photo::before,
+  .sub-facility--room .sub-facility__photo::before {
+    top: 58px;
+    left: 182px;
+    width: 108px;
+    height: 108px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* 세로 배치 : 기존 시설 사진과 동일 (최대 400px, 450:263 비율) */
+  .sub-facility--room .sub-facility__photo {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 450 / 263;
+  }
+
+  .sub-facility__swiper {
+    border-radius: 30px;
+  }
+}
+
 .sub-facility__title {
   margin: 0 0 15px;
   display: flex;
@@ -5395,6 +5424,14 @@ display: none;
 
 .sub-facility__list .sub-note {
   margin-top: 5px;
+}
+
+/* 항목 없이 설명만 있는 시설 (전시관소개) : 표 대신 글머리 목록 */
+.sub-facility__info > .sub-bullet-list {
+  padding-top: 17px;
+  border-top: 1px solid #ddd;
+  color: #2f3747;
+  font-size: 1rem;
 }
 
 /* 항목명 너비 고정 (사용문의 및 신청 등 긴 항목명 줄바꿈) */
@@ -5763,23 +5800,29 @@ display: none;
   background: #f6f4f0;
 }
 
-.sub-flow-steps li {
+/* 단계 흐름 아래 안내 문구·박스 */
+.sub-flow-steps + .sub-note,
+.sub-flow-steps + .sub-info-box {
+  margin-top: 15px;
+}
+
+.sub-flow-steps > li {
   position: relative;
   min-height: 197px;
   padding: 25px 30px;
   border-right: 1px solid #dbd8d1;
 }
 
-.sub-flow-steps li:first-child {
+.sub-flow-steps > li:first-child {
   background: #efeadf;
 }
 
-.sub-flow-steps li:last-child {
+.sub-flow-steps > li:last-child {
   border-right: 0;
 }
 
 /* 단계 사이 화살표 */
-.sub-flow-steps li + li::before {
+.sub-flow-steps > li + li::before {
   content: "";
   position: absolute;
   top: 86px;
@@ -5808,10 +5851,44 @@ display: none;
   word-break: keep-all;
 }
 
+/* 전화번호는 중간에서 줄바꿈되지 않도록 (공통) */
+.sub-tel {
+  white-space: nowrap;
+}
+
 .sub-flow-steps a {
   color: #001f59;
   font-weight: 700;
   text-decoration: underline;
+}
+
+/* 칸 수 변형 (같은 너비) : 역량교육 3단계 / 역량평가 5단계 */
+.sub-flow-steps--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sub-flow-steps--5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+/* 단계 제목 아래 설명 */
+.sub-flow-steps p.sub-flow-steps__desc,
+.sub-flow-steps ul.sub-flow-steps__desc {
+  margin: 6px 0 0;
+  color: #3c4655;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.sub-flow-steps ul.sub-flow-steps__desc {
+  padding-left: 22px;
+  list-style: disc;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.sub-flow-steps__desc small {
+  font-size: 0.75rem;
 }
 
 /* ---------- 주변안내 링크 카드 ---------- */
@@ -5996,6 +6073,29 @@ display: none;
 /* ---------- 반응형 ---------- */
 @media (max-width: 1200px) {
 
+  .sub-flow-steps > li {
+    padding: 22px 20px;
+  }
+
+  .sub-flow-steps__num {
+    font-size: 1.25rem;
+  }
+
+  .sub-professor {
+    padding: 20px 24px;
+    gap: 20px;
+  }
+
+  .sub-professor__photo {
+    flex-basis: 110px;
+    width: 110px;
+    height: 152px;
+  }
+
+  .sub-professor__list > div {
+    gap: 14px;
+  }
+
   .sub-quote {
     font-size: 2rem;
   }
@@ -6017,6 +6117,41 @@ display: none;
     flex-basis: 320px;
     width: 320px;
     height: 176px;
+  }
+}
+
+/* 교수진·역대 원장 : 카드 2열이 좁아지는 구간부터 1열 */
+@media (max-width: 1024px) {
+
+  .sub-professors,
+  .sub-formers {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* 4·5단계 흐름 : 칸이 좁아지면 세로 배치 (3단계는 가로 유지) */
+  .sub-flow-steps:not(.sub-flow-steps--3) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sub-flow-steps:not(.sub-flow-steps--3) > li {
+    min-height: 0;
+    padding: 20px;
+    border-right: 0;
+    border-bottom: 1px solid #dbd8d1;
+  }
+
+  .sub-flow-steps:not(.sub-flow-steps--3) > li:last-child {
+    border-bottom: 0;
+  }
+
+  .sub-flow-steps:not(.sub-flow-steps--3) > li + li::before {
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .sub-flow-steps:not(.sub-flow-steps--3) .sub-flow-steps__num {
+    margin-bottom: 6px;
   }
 }
 
@@ -6153,18 +6288,18 @@ display: none;
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .sub-flow-steps li {
+  .sub-flow-steps > li {
     min-height: 0;
     padding: 20px;
     border-right: 0;
     border-bottom: 1px solid #dbd8d1;
   }
 
-  .sub-flow-steps li:last-child {
+  .sub-flow-steps > li:last-child {
     border-bottom: 0;
   }
 
-  .sub-flow-steps li + li::before {
+  .sub-flow-steps > li + li::before {
     top: -17px;
     left: 50%;
     transform: translateX(-50%) rotate(90deg);
@@ -6199,6 +6334,11 @@ display: none;
 
   .sub-way {
     flex-direction: column;
+  }
+
+  /* 세로 배치 시 본문이 표 너비만큼 늘어나지 않도록 */
+  .sub-way__body {
+    width: 100%;
   }
 
   .sub-guide-box {
@@ -6242,5 +6382,460 @@ display: none;
   .sub-content {
     width: 100%;
     max-width: none;
+  }
+}
+
+/* =========================================================
+   포토갤러리 카드 목록 (.sub-gallery)
+   - 3열 → 1024px 이하 2열 → 576px 이하 1열
+   - 자세히 보기 : 공통 버튼(.btn-basic.btn.sm)
+========================================================= */
+
+.sub-gallery {
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.sub-gallery__item {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.sub-gallery__thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sub-gallery__body {
+  flex: 1 1 auto;
+  padding: 15px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.sub-gallery__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 제목 : 2줄까지 표시 */
+.sub-gallery__title {
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  color: #111;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  /* 1줄 제목도 2줄 높이를 차지해 날짜 위치를 맞춤 */
+  min-height: 3em;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 날짜 (시계 아이콘) : 포토갤러리 / 소식지 공통 */
+.sub-card-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: #3c4655;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.sub-card-date::before {
+  content: "";
+  flex: none;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icons/icon-schedule.svg") no-repeat center / contain;
+}
+
+/* 자세히 보기 : 카드 높이와 관계없이 항상 왼쪽 맨 아래 */
+.sub-gallery__body > .btn {
+  margin-top: auto;
+}
+
+.sub-gallery__body .btn img {
+  width: 16px;
+  height: 16px;
+}
+
+
+/* =========================================================
+   소식지 카드 목록 (.sub-newsletter)
+   - 표지 이미지 위에 아래쪽 어두운 그라데이션, 내용은 카드 아래에 배치
+   - 호버(또는 키보드 포커스) : 어두운 푸른색 그라데이션 + 흰 바탕 버튼
+   - 다운로드 : 소식지 전용 버튼(.sub-newsletter__btn), 공통 버튼 사용 안 함 (PDF 다운로드, 새 창)
+========================================================= */
+
+.sub-newsletter {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.sub-newsletter__item {
+  position: relative;
+  min-width: 0;
+  height: 405px;
+  padding: 0 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 30px;
+  overflow: hidden;
+  border: 1px solid #ededed;
+  border-radius: 20px;
+  background: #0b2250;
+}
+
+.sub-newsletter__cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 기본 : 아래쪽 어두운 그라데이션 */
+.sub-newsletter__item::before,
+.sub-newsletter__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* 표지(img) 위에 깔리도록 */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.sub-newsletter__item::before {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.86) 15.6%, rgba(0, 0, 0, 0.43) 41.4%, rgba(0, 0, 0, 0) 60.7%);
+}
+
+/* 호버 : 어두운 푸른색 그라데이션이 위에 깔림 */
+.sub-newsletter__item::after {
+  background: linear-gradient(to top, #0b2250 28.6%, rgba(15, 52, 127, 0.5) 73.9%, rgba(15, 52, 127, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.sub-newsletter__item:hover::after,
+.sub-newsletter__item:focus-within::after {
+  opacity: 1;
+}
+
+.sub-newsletter__text,
+.sub-newsletter__btn {
+  position: relative;
+  z-index: 2;
+}
+
+.sub-newsletter__text {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.sub-newsletter__title {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sub-newsletter__title::before {
+  content: "";
+  flex: none;
+  width: 16px;
+  height: 16px;
+  background: url("../img/icons/icon-open-book-white.svg") no-repeat center / contain;
+}
+
+.sub-newsletter .sub-card-date {
+  color: #fff;
+}
+
+.sub-newsletter .sub-card-date::before {
+  background-image: url("../img/icons/icon-schedule-white.svg");
+}
+
+/* 다운로드 (소식지 전용) : 기본 흰 선 버튼 → 호버 시 흰 바탕 + 파란 글씨 */
+.sub-newsletter__btn {
+  height: 36px;
+  padding: 0 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* 다운로드 아이콘 : 글자색(currentColor)을 따라감 → 기본 흰색, 호버 시 파란색 */
+.sub-newsletter__btn::after {
+  content: "";
+  flex: none;
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  -webkit-mask: url("../img/about/icon-download.png") no-repeat center / contain;
+  mask: url("../img/about/icon-download.png") no-repeat center / contain;
+}
+
+.sub-newsletter__item:hover .sub-newsletter__btn,
+.sub-newsletter__item:focus-within .sub-newsletter__btn {
+  background: #fff;
+  color: #1155d0;
+  font-weight: 700;
+}
+
+.sub-newsletter__btn:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   주간식단
+   - 검색 : 공통 박스(.sub-info-box) + 공통 셀렉트 3개(같은 비율) + 공통 검색 버튼
+   - 날짜별 식단 카드 : 위쪽 고리 장식 2개, 아침 / 점심 / 저녁 3칸
+========================================================= */
+
+.sub-meal-search {
+  padding: 20px 40px;
+}
+
+.sub-meal-search__form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sub-meal-search__form > .text-field__wrap {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.sub-meal-search__form > .btn {
+  flex: none;
+  min-width: 70px;
+}
+
+.sub-meals {
+  margin: 60px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.sub-meal {
+  position: relative;
+}
+
+/* 고리 장식 */
+.sub-meal::before,
+.sub-meal::after {
+  content: "";
+  position: absolute;
+  top: -21px;
+  z-index: 1;
+  width: 14px;
+  height: 42px;
+  border-radius: 10px;
+  background: #0f283e;
+}
+
+.sub-meal::before {
+  left: 20.2%;
+}
+
+.sub-meal::after {
+  left: 78.3%;
+}
+
+.sub-meal__card {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 2px 2px 16px 3px rgba(0, 0, 0, 0.06);
+}
+
+.sub-meal__date {
+  margin: 0;
+  padding: 9px 10px;
+  background: linear-gradient(179deg, rgba(34, 87, 180, 0.2) 0%, rgba(99, 150, 237, 0.2) 68.9%);
+  color: #1155d0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.sub-meal__date strong {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.sub-meal__list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sub-meal__list > div {
+  min-width: 0;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.sub-meal__list > div + div {
+  border-left: 1px solid #ddd;
+}
+
+.sub-meal__list dt {
+  color: #111;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sub-meal__list dd {
+  margin: 0;
+  color: #3c4655;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+@media (max-width: 1024px) {
+
+  .sub-gallery,
+  .sub-newsletter {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .sub-meal-search {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .sub-gallery__title,
+  .sub-newsletter__title {
+    font-size: 1.125rem;
+  }
+
+  .sub-gallery__body {
+    gap: 24px;
+  }
+
+  .sub-newsletter__item {
+    height: 360px;
+  }
+
+  /* 검색 : 셀렉트 3개 한 줄, 검색 버튼은 아래 전체 폭 */
+  .sub-meal-search {
+    padding: 16px;
+  }
+
+  .sub-meal-search__form {
+    flex-wrap: wrap;
+  }
+
+  .sub-meal-search__form > .btn {
+    flex: 1 1 100%;
+  }
+
+  .sub-meals {
+    margin-top: 45px;
+    gap: 45px;
+  }
+
+  .sub-meal__date strong {
+    font-size: 1.25rem;
+  }
+
+  /* 아침 / 점심 / 저녁 : 세로로 쌓고 항목명 왼쪽 */
+  .sub-meal__list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sub-meal__list > div {
+    padding: 16px;
+    flex-direction: row;
+    gap: 14px;
+    text-align: left;
+  }
+
+  .sub-meal__list > div + div {
+    border-top: 1px solid #ddd;
+    border-left: 0;
+  }
+
+  .sub-meal__list dt {
+    flex: 0 0 40px;
+    font-size: 1rem;
+  }
+
+  .sub-meal__list dd {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .sub-gallery,
+  .sub-newsletter {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sub-newsletter__item {
+    height: 420px;
+  }
+
+  /* 검색 : 셀렉트도 한 줄에 하나 */
+  .sub-meal-search__form > .text-field__wrap {
+    flex: 1 1 100%;
   }
 }

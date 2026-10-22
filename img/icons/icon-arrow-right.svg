@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Arrow / Arrow_Right_LG">
+<g id="Vector">
+<use xlink:href="#stroke0_0_16" stroke="white"/>
+<use xlink:href="#stroke0_0_16" stroke="#111111"/>
+</g>
+</g>
+<defs>
+<path id="stroke0_0_16" d="M10.6667 11.3333L14 8L10.6667 4.66667M14 8H2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</defs>
+</svg>
