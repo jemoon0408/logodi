@@ -6415,9 +6415,19 @@ a.sub-text-accent:focus-visible {
   gap: 24px;
 }
 
-.sub-gallery__item {
+/* 카드 전체가 링크(a.sub-gallery__item) : li 높이를 꽉 채움 */
+.sub-gallery > li,
+.sub-newsletter > li {
   min-width: 0;
   display: flex;
+}
+
+.sub-gallery__item {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  color: inherit;
+  text-decoration: none;
   flex-direction: column;
   overflow: hidden;
   border: 1px solid #ccc;
@@ -6483,9 +6493,31 @@ a.sub-text-accent:focus-visible {
   background: url("../img/icons/icon-schedule.svg") no-repeat center / contain;
 }
 
-/* 자세히 보기 : 카드 높이와 관계없이 항상 왼쪽 맨 아래 */
+/* 자세히 보기 : 카드 높이와 관계없이 항상 왼쪽 맨 아래 (링크는 카드 전체, 버튼은 모양만) */
 .sub-gallery__body > .btn {
   margin-top: auto;
+}
+
+/* 카드 호버·포커스 : 제목 밑줄 + 버튼 강조(공통 btn-basic 호버와 동일) */
+.sub-gallery__item:hover .sub-gallery__title,
+.sub-gallery__item:focus-visible .sub-gallery__title,
+.sub-newsletter__item:hover .sub-newsletter__title,
+.sub-newsletter__item:focus-visible .sub-newsletter__title {
+  text-decoration: underline;
+}
+
+.sub-gallery__item:hover .btn-basic,
+.sub-gallery__item:focus-visible .btn-basic {
+  border: 1.5px solid #0B3460;
+  color: #0B3460;
+  background: #E3E8F5;
+  box-shadow: 3px 3px 10px 2px rgba(152, 167, 201, 0.40);
+}
+
+.sub-gallery__item:focus-visible,
+.sub-newsletter__item:focus-visible {
+  outline: 3px solid rgba(0, 81, 211, 0.5);
+  outline-offset: 3px;
 }
 
 .sub-gallery__body .btn img {
@@ -6512,7 +6544,10 @@ a.sub-text-accent:focus-visible {
 
 .sub-newsletter__item {
   position: relative;
+  flex: 1 1 auto;
   min-width: 0;
+  color: inherit;
+  text-decoration: none;
   height: 405px;
   padding: 0 15px 20px;
   display: flex;
@@ -6638,10 +6673,7 @@ a.sub-text-accent:focus-visible {
   font-weight: 700;
 }
 
-.sub-newsletter__btn:focus-visible {
-  outline: 3px solid rgba(255, 255, 255, 0.6);
-  outline-offset: 2px;
-}
+
 
 
 /* =========================================================
@@ -6840,13 +6872,40 @@ a.sub-text-accent:focus-visible {
 
 @media (max-width: 576px) {
 
-  .sub-gallery,
-  .sub-newsletter {
+  .sub-gallery {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  /* 소식지 : 모바일에서도 한 줄에 2개 */
+  .sub-newsletter {
+    gap: 12px;
+  }
+
   .sub-newsletter__item {
-    height: 420px;
+    height: 260px;
+    padding: 0 10px 14px;
+    gap: 14px;
+    border-radius: 14px;
+  }
+
+  .sub-newsletter__title {
+    gap: 6px;
+    font-size: 1rem;
+  }
+
+  .sub-newsletter .sub-card-date {
+    font-size: 0.8125rem;
+  }
+
+  .sub-newsletter__btn {
+    height: 32px;
+    padding: 0 10px;
+    font-size: 0.8125rem;
+  }
+
+  .sub-newsletter__btn::after {
+    width: 14px;
+    height: 14px;
   }
 
   /* 검색 : 셀렉트도 한 줄에 하나 */
