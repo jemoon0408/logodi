@@ -568,7 +568,7 @@ html.kbd-nav .sitemap-page a:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  /* 웹에서는 텍스트·아이콘 한 줄 유지, 1200px 이하에서만 세로로 떨어짐 */
+  /* 2026-10-27 수정 : 웹에서는 텍스트·아이콘 한 줄 유지, 1200px 이하에서만 세로로 떨어짐 */
   flex-wrap: nowrap;
 }
 
@@ -642,7 +642,7 @@ html.kbd-nav .sitemap-page a:focus-visible {
   line-height: 30px;
 }
 
-/* 시안 item-group : 라벨 폭만큼 + 간격 52px */
+/* 2026-10-27 수정 : 시안 item-group 기준 라벨 폭만큼 + 간격 52px (기존 5칸 grid → flex) */
 .hero-icons {
   display: flex;
   flex: none;
@@ -1755,7 +1755,7 @@ html.kbd-nav .top-btn:focus-visible {
     padding: 0 20px;
   }
 
-  /* 1201~1350 : 한 줄 유지되도록 간격 축소 */
+  /* 2026-10-27 수정 : 1201~1350 한 줄 유지되도록 간격 축소 */
   .hero .inner {
     gap: 24px;
   }
@@ -1770,7 +1770,7 @@ html.kbd-nav .top-btn:focus-visible {
     gap: 26px;
   }
 
-  /* 1200 이하 : 아이콘이 텍스트 아래로 떨어짐 */
+  /* 2026-10-27 수정 : 1200 이하 아이콘이 텍스트 아래로 떨어짐 (기존 876 구간에서 이동) */
   .hero .inner {
     flex-direction: column;
     align-items: flex-start;
@@ -2165,7 +2165,7 @@ html.kbd-nav .top-btn:focus-visible {
   }
 }
 
-/* 768 이하 : 한 줄 5개 유지, 화면 폭에 맞춰 축소 */
+/* 2026-10-27 수정 : 768 이하 한 줄 5개 유지, 화면 폭에 맞춰 축소 */
 @media (max-width:768px) {
   .hero-icons {
     display: grid;
@@ -2190,7 +2190,7 @@ html.kbd-nav .top-btn:focus-visible {
   }
 }
 
-/* 모바일 시안(116:11994) : 480 이하에서만 1줄 2개 + 2줄 3개 */
+/* 2026-10-27 수정 : 모바일 시안(116:11994) 480 이하에서만 1줄 2개 + 2줄 3개 (기존 480·360 구간 hero-icons 규칙 통합) */
 @media (max-width:480px) {
   .hero-icons {
     max-width: 340px;
