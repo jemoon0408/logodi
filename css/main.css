@@ -568,7 +568,8 @@ html.kbd-nav .sitemap-page a:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  flex-wrap: wrap;
+  /* 웹에서는 텍스트·아이콘 한 줄 유지, 1200px 이하에서만 세로로 떨어짐 */
+  flex-wrap: nowrap;
 }
 
 @keyframes hero-text-in {
@@ -641,10 +642,12 @@ html.kbd-nav .sitemap-page a:focus-visible {
   line-height: 30px;
 }
 
+/* 시안 item-group : 라벨 폭만큼 + 간격 52px */
 .hero-icons {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 42px;
+  display: flex;
+  flex: none;
+  justify-content: flex-end;
+  gap: 52px;
   padding-bottom: 30px;
 }
 
@@ -1751,6 +1754,15 @@ html.kbd-nav .top-btn:focus-visible {
   .inner {
     padding: 0 20px;
   }
+
+  /* 1201~1350 : 한 줄 유지되도록 간격 축소 */
+  .hero .inner {
+    gap: 24px;
+  }
+
+  .hero-icons {
+    gap: 16px;
+  }
 }
 
 @media (max-width:1200px) {
@@ -1758,8 +1770,16 @@ html.kbd-nav .top-btn:focus-visible {
     gap: 26px;
   }
 
+  /* 1200 이하 : 아이콘이 텍스트 아래로 떨어짐 */
+  .hero .inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
   .hero-icons {
-    gap: 16px;
+    justify-content: flex-start;
+    gap: 32px;
   }
 
   .hero .bg-deco {
@@ -1865,16 +1885,6 @@ html.kbd-nav .top-btn:focus-visible {
     height: 72px;
   }
 
-  .hero .inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-  }
-
-  .hero-icons {
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-  }
 
   .two-col {
     grid-template-columns: 1fr;
@@ -2155,7 +2165,69 @@ html.kbd-nav .top-btn:focus-visible {
   }
 }
 
-@media (max-width:768px) {}
+/* 768 이하 : 한 줄 5개 유지, 화면 폭에 맞춰 축소 */
+@media (max-width:768px) {
+  .hero-icons {
+    display: grid;
+    width: 100%;
+    max-width: 640px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: clamp(8px, 2vw, 16px);
+  }
+
+  .hero-icons a {
+    gap: 14px;
+    font-size: clamp(13px, 2.6vw, 1.1875rem);
+    white-space: nowrap;
+  }
+
+  .hero-icons .icon {
+    width: 100%;
+    max-width: 90px;
+    aspect-ratio: 1/1;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* 모바일 시안(116:11994) : 480 이하에서만 1줄 2개 + 2줄 3개 */
+@media (max-width:480px) {
+  .hero-icons {
+    max-width: 340px;
+    grid-template-columns: repeat(3, minmax(0, 97px));
+    justify-content: space-between;
+    gap: 22px 0;
+  }
+
+  .hero-icons li:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .hero-icons li:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .hero-icons li:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .hero-icons li:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .hero-icons li:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .hero-icons a {
+    font-size: 0.9375rem;
+  }
+}
 
 @media(max-width:700px) {
   .sns-bar {
@@ -2321,44 +2393,6 @@ html.kbd-nav .top-btn:focus-visible {
     padding: 44px 0;
   }
 
-  .hero-icons {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px 12px;
-  }
-
-  .hero-icons li:nth-child(1) {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .hero-icons li:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .hero-icons li:nth-child(3) {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .hero-icons li:nth-child(4) {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .hero-icons li:nth-child(5) {
-    grid-column: 3;
-    grid-row: 2;
-  }
-
-  .hero-icons .icon {
-    width: 100%;
-    max-width: 74px;
-    aspect-ratio: 1/1;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 16px;
-  }
 
   .popup-swiper .card a {
     min-height: 0;
@@ -2463,10 +2497,6 @@ html.kbd-nav .top-btn:focus-visible {
 
   .inner {
     padding: 0 14px;
-  }
-
-  .hero-icons {
-    gap: 8px;
   }
 
   .notice-board .tag {
@@ -2646,11 +2676,20 @@ html.kbd-nav .top-btn:focus-visible {
 
 /* PC에서는 hover 메뉴에 dim/스크롤 잠금을 사용하지 않음 */
 @media (min-width:877px) {
-  
+  /* 제목~하위메뉴 사이 여백을 ul 영역으로 옮겨, 이동 중 hover가 끊기지 않게 함 */
+  .mega-menu-group-head {
+    margin-bottom: 0;
+  }
+
+  .mega-menu-group ul {
+    padding-top: 17px;
+  }
+
+  /* 하위 링크(a)가 아닌 ul 기준으로 hover 판단 → li 사이 gap에서도 active 유지 */
   .mega-menu-group .mega-menu-group-head:hover,
   .mega-menu-group-head:focus-within,
-    .mega-menu-group:has(> ul a:hover) > .mega-menu-group-head,
-  .mega-menu-group:has(> ul:focus-within) > .mega-menu-group-head 
+  .mega-menu-group:has(> ul:hover) > .mega-menu-group-head,
+  .mega-menu-group:has(> ul:focus-within) > .mega-menu-group-head
   {
     border-color: transparent;
     background: #2257B4;
@@ -2661,7 +2700,7 @@ html.kbd-nav .top-btn:focus-visible {
 
   .mega-menu-group .mega-menu-group-head:hover a,
   .mega-menu-group .mega-menu-group-head:focus-within a,
-    .mega-menu-group:has(> ul a:hover) > .mega-menu-group-head a,
+  .mega-menu-group:has(> ul:hover) > .mega-menu-group-head a,
   .mega-menu-group:has(> ul:focus-within) > .mega-menu-group-head a {
     color: #fff;
     font-weight: 700;
