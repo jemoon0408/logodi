@@ -711,6 +711,16 @@
     },
 
     {
+      name: "교육과정 - 교육훈련계획 > 연간 교육훈련계획",
+      path: "pages/education/content-action67.html",
+      note: [
+      ],
+      status: "done",
+      a11y: "done",
+      date: "2026-10-28"
+    },
+
+    {
       name: "교육과정 - 교육훈련계획 > 월간 교육훈련계획",
       path: "pages/education/board-action22.html",
       note: [

@@ -7266,3 +7266,35 @@ a.sub-text-accent:focus-visible {
   justify-content: flex-end;
   margin-top: 20px;
 }
+
+
+/* =========================================================
+   교육훈련계획 > 연간 교육훈련계획
+   - 상단 버튼 : 공공데이터개방 버튼(public-data__actions) 그대로 사용
+========================================================= */
+/* 아이콘 이동 애니메이션 없음 (layout.css 보다 먼저 불러와 선택자 우선순위로 덮어씀) */
+.public-data__actions.sub-eduplan-actions .btn-accent .button__text img {
+  transform: none;
+  transition: none;
+}
+
+/* 새창 아이콘 : 글자색(currentColor)을 따라가 hover 시 함께 변경 */
+.sub-eduplan-actions__icon {
+  flex: none;
+  width: 19px;
+  height: 19px;
+  background: currentColor;
+  -webkit-mask: url("../img/icons/link-blue.png") no-repeat center / contain;
+  mask: url("../img/icons/link-blue.png") no-repeat center / contain;
+}
+
+.sub-eduplan-img {
+  max-width: 626px;
+  margin: 40px auto 0;
+}
+
+.sub-eduplan-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

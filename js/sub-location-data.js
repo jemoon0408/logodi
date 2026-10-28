@@ -822,7 +822,7 @@
       label: "교육훈련계획",
       url: "pages/education/board-action22.html",
       children: [
-        { value: "annual",  label: "연간 교육훈련계획", url: "" },
+        { value: "annual",  label: "연간 교육훈련계획", url: "pages/education/content-action67.html" },
         { value: "monthly", label: "월간 교육훈련계획", url: "pages/education/board-action22.html" },
         { value: "weekly",  label: "주간 교육훈련계획", url: "pages/education/board-action19.html" }
       ]
