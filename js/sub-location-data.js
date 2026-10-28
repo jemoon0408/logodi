@@ -835,7 +835,7 @@
       children: [
         { value: "understand", label: "역량에 대한 이해", url: "pages/education/content-action57.html" },
         { value: "assessment", label: "역량평가",         url: "pages/education/content-action58.html" },
-        { value: "competency", label: "역량교육",         url: "" },
+        { value: "competency", label: "역량교육",         url: "pages/education/content-action66.html" },
         { value: "guide",      label: "안내자료",         url: "pages/education/content-action39.html" }
       ]
     },

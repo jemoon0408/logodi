@@ -997,6 +997,11 @@
   background: none;
 }
 
+/* 박스 아래 이어지는 목록 (역량평가의 도입) */
+.sub-info-box + .sub-info-box--follow {
+  margin-top: 15px;
+}
+
 .sub-info-box p {
   margin: 0;
   color: #3c4655;
@@ -2061,6 +2066,7 @@ display: none;
 
   .sub-small-title {
     align-items: flex-start;
+    margin-bottom: 8px;
   }
 
   .sub-small-title h3,
@@ -5071,7 +5077,6 @@ a.sub-text-accent:focus-visible {
 
 /* =========================================================
    기관소개 : 교수진 / 시설현황 / 주변안내 / 오시는길
-   (Figma 694:16335 지방자치인재개발원_국문_05기관소개)
 ========================================================= */
 
 /* 파란 안내 문구 */
@@ -5877,13 +5882,17 @@ a.sub-text-accent:focus-visible {
   text-decoration: underline;
 }
 
-/* 칸 수 변형 (같은 너비) : 역량교육 3단계 / 역량평가 5단계 */
+/* 칸 수 변형 (같은 너비) : 역량교육 3단계 / 역량평가 5단계 / 역량교육 진행절차 6단계 */
 .sub-flow-steps--3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .sub-flow-steps--5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.sub-flow-steps--6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 /* 단계 제목 아래 설명 */
@@ -6055,6 +6064,16 @@ a.sub-text-accent:focus-visible {
   border-left: 1px solid #ddd;
 }
 
+/* 행 병합 표의 본문 머리칸(th) : td 와 같이 왼쪽 구분선, 첫 열(.is-first)만 제외 */
+.sub-table--grid tbody tr:not(.sub-course-table__sub-head) th {
+  border-right: 0;
+  border-left: 1px solid #ddd;
+}
+
+.sub-table--grid tbody tr:not(.sub-course-table__sub-head) th.is-first {
+  border-left: 0;
+}
+
 /* 두 번째 머리줄 : 본문 th(.sub-course-table tbody th) 스타일 사용
    구분선은 아래 td 와 같이 왼쪽 선으로 → 위아래 선 위치 일치 */
 .sub-course-table tbody .sub-course-table__sub-head th {
@@ -6081,7 +6100,8 @@ a.sub-text-accent:focus-visible {
 .sub-lead__desc strong,
 .sub-guide-box__item strong,
 .sub-dot-item p strong,
-.sub-table--center td strong {
+.sub-table--center td strong,
+.sub-info-box p strong {
   font-weight: 700;
 }
 
@@ -6912,4 +6932,337 @@ a.sub-text-accent:focus-visible {
   .sub-meal-search__form > .text-field__wrap {
     flex: 1 1 100%;
   }
+}
+
+
+/* =========================================================
+   역량평가/역량교육 > 역량교육
+   - 직위별 핵심역량 이미지 / 운영체계 / 진행절차 6단계
+========================================================= */
+
+/* ---------- 지방공무원 직위별 핵심역량 (통이미지) ---------- */
+.sub-competency-img {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.sub-competency-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* ---------- 역량교육 운영체계 ---------- */
+.sub-edu-system {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 20px;
+}
+
+/* 아이콘 / 단계 / 설명 / 내용 박스 줄을 세 칸이 함께 맞춤 */
+.sub-edu-system__item {
+  display: grid;
+  grid-row: span 4;
+  grid-template-rows: subgrid;
+  justify-items: center;
+}
+
+.sub-edu-system__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 156px;
+  height: 212px;
+  margin-bottom: 47px;
+  border-radius: 100px;
+}
+
+/* 아이콘 → 단계 막대 점선 */
+.sub-edu-system__icon::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 50%;
+  width: 3px;
+  height: 45px;
+  transform: translateX(-50%);
+  background: repeating-linear-gradient(to bottom, rgba(75, 89, 111, 0.7) 0 6px, transparent 6px 12px);
+}
+
+.sub-edu-system__img {
+  position: relative;
+  display: block;
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+}
+
+.sub-edu-system__img img {
+  position: absolute;
+  max-width: none;
+}
+
+.sub-edu-system__item:nth-child(1) .sub-edu-system__icon {
+  background: rgba(205, 234, 254, 0.26);
+}
+
+.sub-edu-system__item:nth-child(1) .sub-edu-system__img {
+  margin-top: -20px;
+}
+
+.sub-edu-system__item:nth-child(1) .sub-edu-system__img img {
+  top: 0.28%;
+  left: -9.15%;
+  width: 120%;
+  height: 100%;
+}
+
+.sub-edu-system__item:nth-child(2) .sub-edu-system__icon {
+  background: rgba(77, 173, 223, 0.1);
+}
+
+.sub-edu-system__item:nth-child(2) .sub-edu-system__img img {
+  top: 0;
+  left: -17.02%;
+  width: 134.05%;
+  height: 100%;
+}
+
+.sub-edu-system__item:nth-child(3) .sub-edu-system__icon {
+  background: rgba(12, 122, 180, 0.12);
+}
+
+.sub-edu-system__item:nth-child(3) .sub-edu-system__img {
+  margin-top: -8px;
+}
+
+.sub-edu-system__item:nth-child(3) .sub-edu-system__img img {
+  top: -5.27%;
+  left: -5.27%;
+  width: 110.54%;
+  height: 110.54%;
+}
+
+/* 단계 막대 : 옆 칸과 겹쳐 하나의 막대처럼 보이게
+   겹치는 폭(양쪽 margin 합 - column-gap 20px) = 막대 높이 → 겹친 부분이 정원 */
+.sub-edu-system__label {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: stretch;
+  height: 92px;
+  border-radius: 100px;
+  color: #111;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.sub-edu-system__item:nth-child(1) .sub-edu-system__label {
+  margin-right: -56px;
+  padding-right: 56px;
+  background: #d7f1f8;
+}
+
+.sub-edu-system__item:nth-child(2) .sub-edu-system__label {
+  margin: 0 -56px;
+  padding: 0 56px;
+  background: rgba(29, 181, 205, 0.38);
+}
+
+.sub-edu-system__item:nth-child(3) .sub-edu-system__label {
+  margin-left: -56px;
+  padding-left: 56px;
+  background: rgba(0, 141, 173, 0.56);
+  color: #fff;
+}
+
+/* 겹친 부분의 + 표시 */
+.sub-edu-system__item + .sub-edu-system__item .sub-edu-system__label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 26px;
+  width: 39px;
+  height: 39px;
+  transform: translateY(-50%);
+  background: url("../img/icons/plus-white.svg") no-repeat center / contain;
+}
+
+.sub-edu-system__desc {
+  margin: 15px 0 0;
+  color: #111;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.sub-edu-system__desc strong {
+  font-weight: 700;
+}
+
+.sub-edu-system__box {
+  justify-self: stretch;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(233, 244, 251, 0.74);
+  color: #3c4655;
+  font-size: 1rem;
+}
+
+.sub-edu-system__box .sub-bullet-list li {
+  line-height: 1.6;
+}
+
+
+/* ---------- 반응형 ---------- */
+@media (max-width: 1200px) {
+
+  /* 6단계 흐름 : 칸이 좁아 일찍 세로 배치 */
+  .sub-flow-steps--6 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sub-flow-steps--6 > li {
+    min-height: 0;
+    padding: 20px;
+    border-right: 0;
+    border-bottom: 1px solid #dbd8d1;
+  }
+
+  .sub-flow-steps--6 > li:last-child {
+    border-bottom: 0;
+  }
+
+  .sub-flow-steps--6 > li + li::before {
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .sub-flow-steps--6 .sub-flow-steps__num {
+    margin-bottom: 6px;
+  }
+
+  .sub-edu-system__label {
+    height: 80px;
+    font-size: 1.125rem;
+  }
+
+  /* 막대 높이 80px 에 맞춰 겹침 폭도 80px */
+  .sub-edu-system__item:nth-child(1) .sub-edu-system__label {
+    margin-right: -50px;
+    padding-right: 50px;
+  }
+
+  .sub-edu-system__item:nth-child(2) .sub-edu-system__label {
+    margin: 0 -50px;
+    padding: 0 50px;
+  }
+
+  .sub-edu-system__item:nth-child(3) .sub-edu-system__label {
+    margin-left: -50px;
+    padding-left: 50px;
+  }
+
+  .sub-edu-system__item + .sub-edu-system__item .sub-edu-system__label::before {
+    left: 20px;
+  }
+
+  .sub-edu-system__desc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* 직위별 핵심역량 이미지 : 글자가 작아지지 않게 가로 스크롤 */
+  .sub-competency-img img {
+    width: 760px;
+    max-width: none;
+  }
+
+  /* 운영체계 : 한 줄에 한 단계 */
+  .sub-edu-system {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sub-edu-system__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub-edu-system__item + .sub-edu-system__item {
+    margin-top: 20px;
+  }
+
+  /* 단계 사이 + 표시 */
+  .sub-edu-system__item + .sub-edu-system__item::before {
+    content: "";
+    width: 39px;
+    height: 39px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #1db5cd url("../img/icons/plus-white.svg") no-repeat center / 30px;
+  }
+
+  .sub-edu-system__icon {
+    width: 120px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  .sub-edu-system__icon::after {
+    height: 28px;
+  }
+
+  .sub-edu-system__img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .sub-edu-system__item:nth-child(1) .sub-edu-system__img {
+    margin-top: -12px;
+  }
+
+  .sub-edu-system__item:nth-child(n) .sub-edu-system__label {
+    align-self: stretch;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub-edu-system__item + .sub-edu-system__item .sub-edu-system__label::before {
+    display: none;
+  }
+
+  .sub-edu-system__desc {
+    margin-top: 12px;
+  }
+
+  .sub-edu-system__box {
+    align-self: stretch;
+    margin-top: 14px;
+    padding: 16px 18px;
+  }
+}
+
+/* ---------- 역량교육 운영과정 : 과정상세 버튼 (btn-accent btn lg) ---------- */
+.sub-btn-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
 }

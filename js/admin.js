@@ -758,7 +758,17 @@
       ],
       status: "done",
       a11y: "done",
-      date: "2026-10-22"
+      date: "2026-10-28"
+    },
+
+    {
+      name: "교육과정 - 역량평가/역량교육 > 역량교육",
+      path: "pages/education/content-action66.html",
+      note: [
+      ],
+      status: "done",
+      a11y: "done",
+      date: "2026-10-28"
     },
 
     {
