@@ -70,7 +70,7 @@
   position: relative;
   z-index: 1;
   width: calc(100% - 40px);
-  max-width: 1200px;
+  max-width: 1280px; /* 2026-11-04 수정 : 콘텐츠 폭 1200 → 1280 */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -171,7 +171,7 @@
 
 .sub-location__inner {
   width: calc(100% - 40px);
-  max-width: 1200px;
+  max-width: 1280px; /* 2026-11-04 수정 : 콘텐츠 폭 1200 → 1280 */
   min-height: 60px;
   margin: 0 auto;
   display: flex;
@@ -572,7 +572,7 @@
 
 .sub-layout {
   width: calc(100% - 40px);
-  max-width: 1200px;
+  max-width: 1280px; /* 2026-11-04 수정 : 콘텐츠 폭 1200 → 1280 */
   margin: 63px auto 0;
   padding-bottom: 160px;
   display: flex;

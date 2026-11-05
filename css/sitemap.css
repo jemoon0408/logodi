@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/* =========================================================
+   사이트맵 페이지 (pages/sitemap.html, en/sitemap.html 공용)
+   - 2026-11-05 : main.css 에서 분리 (내용 동일), common.css · en/css/sub-en.css 에서 불러옴
+========================================================= */
+
+.sitemap-page {
+  min-height: calc(100vh - var(--header-h));
+  background: #f7f9fc;
+}
+
+.sitemap-page-inner {
+  width: 100%;
+  max-width: 1280px; /* 2026-11-04 수정 : 콘텐츠 폭 1200 → 1280 */
+  margin: 0 auto;
+  padding: 64px 0 80px;
+}
+
+.sitemap-page-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dfe6ef;
+}
+
+.sitemap-page-eyebrow {
+  margin: 0 0 5px;
+  color: #52719b;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.sitemap-page-header h1 {
+  margin: 0;
+  color: #152f53;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.sitemap-page-content {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px;
+}
+
+.sitemap-page-section {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dce5f0;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.sitemap-page-section > h2 {
+  margin: 0;
+  padding: 16px 18px;
+  background: #2257b4;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.sitemap-page-section-groups {
+  padding: 6px 18px 18px;
+}
+
+.sitemap-page-section .mega-menu-group {
+  padding: 10px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.sitemap-page-section .mega-menu-group:last-child {
+  border-bottom: 0;
+}
+
+.sitemap-page-section .mega-menu-group-head {
+  min-height: 0;
+  margin: 0 0 6px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.sitemap-page-section .mega-menu-group-title {
+  display: block;
+  width: auto;
+  padding: 0;
+  color: #1b3455;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sitemap-page-section .mega-menu-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0;
+}
+
+.sitemap-page-section .mega-menu-group li a {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  color: #596574;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.2px;
+}
+
+.sitemap-page-section .mega-menu-group li a::before {
+  flex: 0 0 4px;
+  width: 4px;
+  height: 4px;
+  margin-top: 0.48em;
+  border-radius: 50%;
+  background: #8ba2bf;
+  content: "";
+}
+
+.sitemap-page-section .mega-menu-group a:hover,
+.sitemap-page-section .mega-menu-group a:focus-visible {
+  color: #2257b4;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sitemap-page-section .mega-menu-group .mega-menu-group-head:hover,
+.sitemap-page-section .mega-menu-group-head:focus-within,
+.sitemap-page-section .mega-menu-group:has(> ul a:hover) > .mega-menu-group-head,
+.sitemap-page-section .mega-menu-group:has(> ul:focus-within) > .mega-menu-group-head {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.sitemap-page-section .mega-menu-group .mega-menu-group-head:hover a,
+.sitemap-page-section .mega-menu-group-head:focus-within a,
+.sitemap-page-section .mega-menu-group:has(> ul a:hover) > .mega-menu-group-head a,
+.sitemap-page-section .mega-menu-group:has(> ul:focus-within) > .mega-menu-group-head a {
+  color: #2257b4;
+}
+
+@media (max-width: 1320px) { /* 2026-11-04 수정 : 1280 폭 기준 (1240 → 1320) */
+  .sitemap-page-inner {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 877px) {
+  .sitemap-page-content {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width:876px) {
+  .sitemap-page-inner {
+    padding: 48px 24px 64px;
+  }
+
+  .sitemap-page-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 560px) {
+  .sitemap-page-inner {
+    padding: 36px 16px 48px;
+  }
+
+  .sitemap-page-header {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+  }
+
+  .sitemap-page-header h1 {
+    font-size: 2rem;
+  }
+
+  .sitemap-page-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .sitemap-page-section > h2 {
+    padding: 14px 16px;
+  }
+
+  .sitemap-page-section-groups {
+    padding: 2px 16px 12px;
+  }
+}

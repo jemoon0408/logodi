@@ -79,6 +79,31 @@
       });
     }
 
+    /* 주소 ?idx= 와 같은 data-video-idx 영상을 대표 영상으로 표시 (재생은 클릭 시) */
+    var idx = new URLSearchParams(window.location.search).get("idx");
+    var preset = idx && section.querySelector('[data-video-idx="' + idx + '"]');
+
+    if (preset && mainLink) {
+      current = {
+        src: preset.getAttribute("data-video-src") || "",
+        poster: preset.getAttribute("data-poster") || "",
+        title: preset.getAttribute("data-title") || "",
+        desc: (preset.getAttribute("data-desc") || "").replace(/\\n/g, "\n")
+      };
+
+      mainLink.setAttribute("href", current.src);
+      mainLink.setAttribute("data-video-src", current.src);
+      mainLink.setAttribute("data-poster", current.poster);
+
+      var mainThumb = mainLink.querySelector(".sub-video__thumb img:not(.sub-video__play)");
+      if (mainThumb && current.poster) mainThumb.src = current.poster;
+
+      var mainLabel = mainLink.querySelector(".sr-only");
+      if (mainLabel) mainLabel.textContent = current.title + " 재생";
+
+      setIntro(current);
+    }
+
     listLinks.forEach(function (link) {
       link.addEventListener("click", function (event) {
         event.preventDefault();

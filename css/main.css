@@ -51,7 +51,7 @@ button {
 }
 
 .inner {
-  max-width: 1200px;
+  max-width: 1280px; /* 2026-11-04 수정 : 콘텐츠 폭 1200 → 1280 */
   margin: 0 auto;
 }
 
@@ -364,7 +364,7 @@ button {
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr);
   gap: 72px;
-  max-width: 1200px;
+  max-width: 1280px; /* 2026-11-04 수정 : 콘텐츠 폭 1200 → 1280 */
   min-height: 370px;
   margin: 0 auto;
   padding: 37px 0 36px;
@@ -375,9 +375,9 @@ button {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: calc((1200px - 100vw) / 2);
+  left: calc((1280px - 100vw) / 2); /* 2026-11-04 수정 : 1280 기준 */
   z-index: -1;
-  width: calc((100vw - 1280px) / 2 + 622px);
+  width: calc((100vw - 1280px) / 2 + 582px);
   min-height: 370px;
   border-radius: 0 0 100px 0;
   background: #f4fbff;
@@ -1488,22 +1488,45 @@ html.kbd-nav .promo-video-trigger:focus-visible .play-btn {
   align-items: center;
   gap: 1.25rem;
   height: 8.125rem;
-  border-radius: 1.25rem;
+  overflow: hidden;
+  border-radius: 1.25rem 1.25rem 0 1.25rem; /* 2026-11-05 수정 : 우하단은 홈(notch) */
   padding: 2rem 5.625rem 2rem 2rem;
   transition: transform .25s ease;
 }
 
-.service-card::after {
-  content: "";
-  display: block;
+/* 2026-11-05 수정 : 우하단 홈 이미지(notch-white.png) → Figma 116:14396 CSS 구현
+   - 흰 박스 63px(좌상단 30px 라운드) + 양옆 오목 곡선(왼쪽 30px, 위 20px) */
+.service-card .notch {
   position: absolute;
-  right: -0.0625rem;
-  bottom: 0;
+  right: -2px;
+  bottom: -1px;
   z-index: 1;
-  width: 6.25rem;
-  height: 5rem;
-  background: url('../img/notch-white.png') no-repeat 0 0 / 100% 100%;
+  width: 63px;
+  height: 63px;
+  border-top-left-radius: 30px;
+  background: #fff;
   pointer-events: none;
+}
+
+.service-card .notch::before,
+.service-card .notch::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  box-shadow: 40px 40px 0 0 #fff;
+}
+
+.service-card .notch::before {
+  left: -80px;
+  bottom: 0;
+  border-radius: 30px;
+}
+
+.service-card .notch::after {
+  right: 0;
+  top: -80px;
+  border-radius: 20px;
 }
 
 .service:hover .service-card,
@@ -1541,25 +1564,25 @@ html.kbd-nav .service-card:focus-visible {
   line-height: 19px;
 }
 
+/* 2026-11-05 수정 : 화살표 원 56px → 45px, 홈 안쪽 위치 (Figma 116:14400) */
 .service .arrow {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 3.5rem;
-  height: 3.5rem;
+  right: 2px;
+  bottom: 3px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background: #364C84;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 14px rgba(20, 30, 60, .14);
   z-index: 2;
   transition: background .2s ease, color .2s ease;
 }
 
 .service-green .service-card {
-  background: linear-gradient(160deg, #eafaf1, #cdeedb);
+  background: #caf0e9; /* 2026-11-05 수정 : 디자인 단색 */
 }
 
 .service-green .icon {
@@ -1571,7 +1594,7 @@ html.kbd-nav .service-card:focus-visible {
 }
 
 .service-blue .service-card {
-  background: linear-gradient(160deg, #eaf2fe, #cfe0fa);
+  background: #c8e8ff; /* 2026-11-05 수정 : 디자인 단색 */
 }
 
 .service-blue .icon {
@@ -1583,7 +1606,7 @@ html.kbd-nav .service-card:focus-visible {
 }
 
 .service-purple .service-card {
-  background: linear-gradient(160deg, #f4eefc, #e0cdf7);
+  background: #ede7ff; /* 2026-11-05 수정 : 디자인 단색 */
 }
 
 .service-purple .icon {
@@ -1750,7 +1773,7 @@ html.kbd-nav .top-btn:focus-visible {
   }
 }
 
-@media(max-width:1350px) {
+@media(max-width:1320px) { /* 2026-11-04 수정 : 1280 폭 기준 여백 (1350 → 1320) */
   .inner {
     padding: 0 20px;
   }
@@ -2583,7 +2606,7 @@ html.kbd-nav .top-btn:focus-visible {
 }
 
 .mega-menu-inner::before {
-  width: calc((100vw - 1280px) / 2 + 302px);
+  width: calc((100vw - 1280px) / 2 + 262px); /* 2026-11-04 수정 : 1280 기준 */
   background: #f4fbff;
 }
 
@@ -2710,10 +2733,10 @@ html.kbd-nav .top-btn:focus-visible {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc((1200px - 100vw) / 2);
+    left: calc((1280px - 100vw) / 2); /* 2026-11-04 수정 : 1280 기준 */
     z-index: -1;
 
-    width: calc((100vw - 1280px) / 2 + 302px);
+    width: calc((100vw - 1280px) / 2 + 262px);
     min-height: 370px;
 
     border-radius: 0 0 100px 0;
@@ -2748,8 +2771,8 @@ html.kbd-nav .top-btn:focus-visible {
   }
 }
 
-@media (max-width:1200px) and (min-width:877px) {
-  /* 1200px 이하 : 좌우 여백을 두고 왼쪽 배경을 화면 왼쪽 끝부터 제목 영역까지 채움 */
+@media (max-width:1320px) and (min-width:877px) { /* 2026-11-04 수정 : 1280 폭 기준 (1200 → 1320) */
+  /* 1320px 이하 : 좌우 여백을 두고 왼쪽 배경을 화면 왼쪽 끝부터 제목 영역까지 채움 */
   .mega-menu-inner {
     grid-template-columns: 200px minmax(0, 1fr);
     gap: 40px;
@@ -3157,161 +3180,6 @@ html.kbd-nav .top-btn:focus-visible {
   background: transparent;
 }
 
-.sitemap-page {
-  min-height: calc(100vh - var(--header-h));
-  background: #f7f9fc;
-}
-
-.sitemap-page-inner {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 64px 0 80px;
-}
-
-.sitemap-page-header {
-  margin-bottom: 32px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #dfe6ef;
-}
-
-.sitemap-page-eyebrow {
-  margin: 0 0 5px;
-  color: #52719b;
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: -0.3px;
-}
-
-.sitemap-page-header h1 {
-  margin: 0;
-  color: #152f53;
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -1px;
-}
-
-.sitemap-page-content {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  align-items: start;
-  gap: 16px;
-}
-
-.sitemap-page-section {
-  min-width: 0;
-  overflow: hidden;
-  border: 1px solid #dce5f0;
-  border-radius: 10px;
-  background: #fff;
-}
-
-.sitemap-page-section > h2 {
-  margin: 0;
-  padding: 16px 18px;
-  background: #2257b4;
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-
-.sitemap-page-section-groups {
-  padding: 6px 18px 18px;
-}
-
-.sitemap-page-section .mega-menu-group {
-  padding: 10px 0;
-  border-bottom: 1px solid #edf0f4;
-}
-
-.sitemap-page-section .mega-menu-group:last-child {
-  border-bottom: 0;
-}
-
-.sitemap-page-section .mega-menu-group-head {
-  min-height: 0;
-  margin: 0 0 6px;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-}
-
-.sitemap-page-section .mega-menu-group-title {
-  display: block;
-  width: auto;
-  padding: 0;
-  color: #1b3455;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.sitemap-page-section .mega-menu-group ul {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  padding: 0;
-}
-
-.sitemap-page-section .mega-menu-group li a {
-  display: flex;
-  align-items: flex-start;
-  gap: 7px;
-  color: #596574;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.45;
-  letter-spacing: -0.2px;
-}
-
-.sitemap-page-section .mega-menu-group li a::before {
-  flex: 0 0 4px;
-  width: 4px;
-  height: 4px;
-  margin-top: 0.48em;
-  border-radius: 50%;
-  background: #8ba2bf;
-  content: "";
-}
-
-.sitemap-page-section .mega-menu-group a:hover,
-.sitemap-page-section .mega-menu-group a:focus-visible {
-  color: #2257b4;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.sitemap-page-section .mega-menu-group .mega-menu-group-head:hover,
-.sitemap-page-section .mega-menu-group-head:focus-within,
-.sitemap-page-section .mega-menu-group:has(> ul a:hover) > .mega-menu-group-head,
-.sitemap-page-section .mega-menu-group:has(> ul:focus-within) > .mega-menu-group-head {
-  border: 0;
-  background: transparent;
-  box-shadow: none;
-}
-
-.sitemap-page-section .mega-menu-group .mega-menu-group-head:hover a,
-.sitemap-page-section .mega-menu-group-head:focus-within a,
-.sitemap-page-section .mega-menu-group:has(> ul a:hover) > .mega-menu-group-head a,
-.sitemap-page-section .mega-menu-group:has(> ul:focus-within) > .mega-menu-group-head a {
-  color: #2257b4;
-}
-
-@media (max-width: 1240px) {
-  .sitemap-page-inner {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 1200px) and (min-width: 877px) {
-  .sitemap-page-content {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
 /* PC hover 메뉴 / 사이트맵 뒤 배경 DIM */
 @media (min-width:877px) {
   .menu-backdrop {
@@ -3335,41 +3203,5 @@ html.kbd-nav .top-btn:focus-visible {
   .menu-backdrop {
     display: none !important;
   }
-
-  .sitemap-page-inner {
-    padding: 48px 24px 64px;
-  }
-
-  .sitemap-page-content {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-  }
 }
 
-@media (max-width: 560px) {
-  .sitemap-page-inner {
-    padding: 36px 16px 48px;
-  }
-
-  .sitemap-page-header {
-    margin-bottom: 20px;
-    padding-bottom: 16px;
-  }
-
-  .sitemap-page-header h1 {
-    font-size: 2rem;
-  }
-
-  .sitemap-page-content {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 10px;
-  }
-
-  .sitemap-page-section > h2 {
-    padding: 14px 16px;
-  }
-
-  .sitemap-page-section-groups {
-    padding: 2px 16px 12px;
-  }
-}

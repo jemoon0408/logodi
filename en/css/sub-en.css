@@ -1,0 +1,649 @@
+@charset "UTF-8";
+
+/* =========================================================
+   영문 서브페이지 (en/*-view.html)
+   - 헤더/푸터 : 영문 메인(main-en.css)
+   - 서브 비주얼/위치/게시판 상세/버튼 : 국문 공통(layout.css, sub.css)
+   - 레이아웃(LNB + 본문)도 국문 sub-layout 그대로 사용
+========================================================= */
+@import url("./main-en.css");
+@import url("../../css/layout.css");
+@import url("../../css/sub.css");
+@import url("../../css/sitemap.css");
+
+/* GNB 현재 메뉴 */
+.en-gnb a[aria-current="page"] {
+  color: #0051d3;
+}
+
+/* 본문 이미지 */
+.en-view-figure {
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.en-view-figure img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.en-view-body p + p {
+  margin-top: 16px;
+}
+
+/* 게시판 출력 개수 : 영문 "10 per page" 가 잘리지 않게 */
+.government-award-page-size {
+  flex-basis: 150px;
+  width: 150px;
+}
+
+/* Partners 첫 화면 : 협력국 지도 (Figma 1015:4460)
+   - 지도 940×460.82 기준 % 좌표에 국가 핀, 핀 꼬리 방향 down/up/left/right */
+.en-partner-map {
+  position: relative;
+  width: 100%;
+}
+
+.en-partner-map__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.en-partner-map__pins {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.en-partner-pin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.en-partner-pin__link {
+  --pin-bg: #364c84;
+  position: relative;
+  padding: 4px 10px 4px 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 100px;
+  background: var(--pin-bg);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.72px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.en-partner-pin__link img {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.en-partner-pin__link:hover,
+.en-partner-pin__link:focus-visible {
+  --pin-bg: #1155d0;
+  z-index: 1;
+}
+
+/* 핀 꼬리 */
+.en-partner-pin__link::after {
+  content: "";
+  position: absolute;
+  border: solid transparent;
+}
+
+.en-partner-pin--down .en-partner-pin__link::after {
+  top: 100%;
+  left: 50%;
+  margin-left: -8.66px;
+  border-width: 8.25px 8.66px 0;
+  border-top-color: var(--pin-bg);
+}
+
+.en-partner-pin--up .en-partner-pin__link::after {
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8.66px;
+  border-width: 0 8.66px 8.25px;
+  border-bottom-color: var(--pin-bg);
+}
+
+.en-partner-pin--up {
+  padding-top: 8.25px;
+}
+
+.en-partner-pin--right .en-partner-pin__link::after {
+  top: 50%;
+  left: calc(100% - 2px);
+  margin-top: -7px;
+  border-width: 7px 0 7px 9px;
+  border-left-color: var(--pin-bg);
+}
+
+.en-partner-pin--left .en-partner-pin__link {
+  padding: 4px 10px 4px 4px;
+}
+
+.en-partner-pin--left .en-partner-pin__link::after {
+  top: 50%;
+  right: calc(100% - 2px);
+  margin-top: -7px;
+  border-width: 7px 9px 7px 0;
+  border-right-color: var(--pin-bg);
+}
+
+@media (max-width: 768px) {
+
+  /* 모바일 : 핀 축소 */
+  .en-partner-pin__link {
+    padding: 2px 6px 2px 2px;
+    gap: 3px;
+    font-size: 0.5625rem;
+    letter-spacing: -0.3px;
+  }
+
+  .en-partner-pin__link img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Partners 기관명 : 불릿 대신 국기 */
+.sub-small-title > .en-flag {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 4px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .sub-small-title > .en-flag {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Partners : 기관 소개 박스와 실적 표 간격 */
+.sub-info-box + .sub-table-wrap {
+  margin-top: 24px;
+}
+
+/* Partners 한·중 세미나 개최지 : 국가코드(KR/CN) + 지역 한 줄 */
+.en-loc {
+  white-space: nowrap;
+}
+
+.en-loc-code {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #e3ecfb;
+  color: #1155d0;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+
+  .en-view-body {
+    font-size: 1rem;
+  }
+
+  .sub-view-pager__label {
+    flex-basis: 76px;
+  }
+}
+
+
+/* =========================================================
+   Greetings (Figma 1012:1294) : 국문 .sub-greeting 사용
+========================================================= */
+.en-greeting .sub-greeting__title small {
+  letter-spacing: -0.5px;
+}
+
+.en-greeting__strong {
+  color: #111;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   International Training > Overview (Figma 1012:1722)
+========================================================= */
+/* 실적 원형 3개 (겹침) */
+.en-stats {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.en-stats__item {
+  position: relative;
+  flex: none;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background:
+    linear-gradient(155deg, rgba(0, 141, 173, 0.14) 0%, rgba(8, 199, 199, 0.14) 67%),
+    #edf8fe;
+  filter: drop-shadow(9px 16px 13px rgba(173, 193, 215, 0.2));
+  color: #3c4655;
+  text-align: center;
+}
+
+.en-stats__item + .en-stats__item {
+  margin-left: -40px;
+}
+
+.en-stats__item.is-main {
+  z-index: 1;
+  background: linear-gradient(162deg, #008dad 11%, #08c7c7 71%);
+  color: #fff;
+}
+
+.en-stats__item strong {
+  font-size: 2.8125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.en-stats__item span {
+  font-size: 1.375rem;
+  line-height: 1.1;
+}
+
+.en-text {
+  margin: 20px 0 0;
+  color: #3c4655;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   Seminar and Forum > Overview (Figma 1012:3117)
+========================================================= */
+.en-seminar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.en-seminar__item {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.en-seminar__title {
+  align-self: flex-start;
+  margin: 0;
+  padding: 8px 28px;
+  border-radius: 100px;
+  background: linear-gradient(177deg, #2257b4 0%, #6396ed 69%);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.en-seminar__box {
+  width: 100%;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.en-seminar__box p {
+  margin: 0;
+  color: #3c4655;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+
+
+/* =========================================================
+   Q&A (Figma 1012:2211) : 아코디언
+========================================================= */
+.en-faq {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.en-faq__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.en-faq__q {
+  margin: 0;
+}
+
+.en-faq__mark {
+  flex: none;
+  width: 32px;
+  font-family: "Montserrat", "Pretendard", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.en-faq__button {
+  width: 100%;
+  min-height: 94px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border: 0;
+  border-radius: 60px;
+  background: #f5f6f7;
+  text-align: left;
+  cursor: pointer;
+}
+
+.en-faq__item.is-open .en-faq__button {
+  background: #e1f2ff;
+}
+
+.en-faq__button .en-faq__mark {
+  color: #1155d0;
+}
+
+.en-faq__text {
+  flex: 1 1 0;
+  min-width: 0;
+  color: #002466;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* 펼침 버튼 : 흰 원 + 화살표 (닫힘 ↓ / 열림 ↑) */
+.en-faq__toggle {
+  position: relative;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.en-faq__toggle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #002466;
+  border-bottom: 2px solid #002466;
+  transform: translate(-50%, -70%) rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.en-faq__item.is-open .en-faq__toggle::before {
+  transform: translate(-50%, -30%) rotate(-135deg);
+}
+
+.en-faq__a {
+  padding: 28px 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  border: 1.5px solid #eceef1;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.en-faq__a[hidden] {
+  display: none;
+}
+
+.en-faq__a .en-faq__mark {
+  color: #002466;
+}
+
+.en-faq__answer {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.en-faq__answer p {
+  margin: 0;
+  color: #5a6570;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.en-faq__answer p + p {
+  margin-top: 1em;
+}
+
+
+@media (max-width: 1024px) {
+  .en-stats__item {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* 실적 원형 : 화면 폭 1/3 씩 */
+  .en-stats__item {
+    width: calc((100% + 40px) / 3);
+    height: auto;
+    aspect-ratio: 1;
+    gap: 4px;
+  }
+
+  .en-stats__item + .en-stats__item {
+    margin-left: -20px;
+  }
+
+  .en-stats__item strong {
+    font-size: 1.375rem;
+  }
+
+  .en-stats__item span {
+    font-size: 0.8125rem;
+  }
+
+  .en-text {
+    font-size: 1rem;
+  }
+
+
+  .en-seminar__title {
+    padding: 6px 20px;
+    font-size: 1rem;
+  }
+
+  .en-seminar__box {
+    padding: 20px;
+  }
+
+  .en-seminar__box p {
+    font-size: 1rem;
+  }
+
+  .en-faq {
+    gap: 16px;
+  }
+
+  .en-faq__button {
+    min-height: 0;
+    padding: 16px 18px;
+    gap: 12px;
+    border-radius: 30px;
+  }
+
+  .en-faq__text {
+    font-size: 1rem;
+  }
+
+  .en-faq__mark {
+    width: 20px;
+    font-size: 1.25rem;
+  }
+
+  .en-faq__toggle {
+    width: 32px;
+    height: 32px;
+  }
+
+  .en-faq__a {
+    padding: 20px 18px;
+    gap: 12px;
+    border-radius: 18px;
+  }
+
+  .en-faq__answer p {
+    font-size: 0.9375rem;
+  }
+}
+
+
+/* =========================================================
+   International Organizations (Figma 1012:2677)
+   - 표 : 국문 국제기구활동 표 그대로, 왼쪽에 기관 로고(160px)만 추가
+========================================================= */
+.en-org {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+
+.en-org__logo {
+  position: relative;
+  flex: none;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.en-org__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* EROPA 로고 : 원본 여백 잘라내기 (Figma 크롭값) */
+.en-org__logo--eropa img {
+  position: absolute;
+  left: -7.01%;
+  top: -11.01%;
+  width: 117.92%;
+  height: 117.92%;
+  max-width: none;
+}
+
+/* UCLG 로고 : Figma 크롭값 (좌우 여백 잘라 크게) */
+.en-org__logo--uclg img {
+  position: absolute;
+  left: -9.44%;
+  top: 24.97%;
+  width: 118.85%;
+  height: 50.81%;
+  max-width: none;
+  object-fit: fill;
+}
+
+
+@media (max-width: 768px) {
+  .en-org {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .en-org__logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+/* =========================================================
+   영문 서브 간격 (Figma 1012:1289)
+   - 제목/탭 → 본문 60px, 콘텐츠 블록 사이 60px
+   - Greetings 는 제목 → 박스 35px
+========================================================= */
+.sub-page-body {
+  margin-top: 60px;
+}
+
+.sub-page-body > .sub-section__contents {
+  gap: 60px;
+}
+
+.sub-page-body.en-greeting {
+  margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+  .sub-page-body {
+    margin-top: 30px;
+  }
+
+  .sub-page-body > .sub-section__contents {
+    gap: 50px;
+  }
+
+  .sub-page-body.en-greeting {
+    margin-top: 24px;
+  }
+}
+
+
+/* =========================================================
+   사이트맵 (en/sitemap.html) : 화면 높이 꽉 채우기
+   - 내용이 짧아도 푸터가 화면 맨 아래, 푸터 아래 여백 없음
+   - 국문 .sitemap-page 의 min-height(var(--header-h)) 는 영문에 변수가 없어 적용 안 됨
+========================================================= */
+.en-sitemap-body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.en-sitemap-body > .sitemap-page {
+  flex: 1 0 auto;
+  min-height: 0;
+}

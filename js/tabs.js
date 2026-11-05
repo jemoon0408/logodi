@@ -313,12 +313,22 @@
         ".preinfo__tab.is-active"
       ) || tabs[0];
 
-    activateTab(
-      initialTab,
-      {
-        behavior: "auto"
-      }
-    );
+    /*
+     * data-tabs-initial="none" : 처음엔 어떤 탭도 선택하지 않고
+     * 마크업의 기본 패널(.preinfo__tabpanel.is-active)을 그대로 표시
+     * (예: 영문 Partners 첫 화면 지도)
+     */
+    if (
+      tabList.getAttribute("data-tabs-initial") !== "none" ||
+      tabList.querySelector(".preinfo__tab.is-active")
+    ) {
+      activateTab(
+        initialTab,
+        {
+          behavior: "auto"
+        }
+      );
+    }
 
 
     /* =========================================================
