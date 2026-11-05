@@ -136,6 +136,14 @@ html.kbd-nav .admin-logo:focus-visible {
   margin-bottom: 20px;
 }
 
+/* 2026-11-05 : 언어 구분 + 상태 필터 묶음 */
+.admin-toolbar-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .admin-tabs {
   display: inline-flex;
   align-items: center;

@@ -49,7 +49,7 @@
       ],
       status: "done",
       a11y: "done",
-      date: "2026-10-22"
+      date: "2026-11-05"
     },
 
     {
@@ -959,6 +959,217 @@
       date: "2026-10-15"
     },
 
+
+    {
+      name: "사이트맵",
+      path: "pages/sitemap.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    /* ===================== 영문 ===================== */
+
+    {
+      name: "영문 - 메인페이지",
+      path: "en/index.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - About LOGODI - Greetings",
+      path: "en/greetings.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - About LOGODI - History",
+      path: "en/history.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - About LOGODI - Organization",
+      path: "en/organization.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - About LOGODI - Directions",
+      path: "en/directions.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Training - Domestic Training(Overview)",
+      path: "en/domestic-overview.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Training - Domestic Training(Global Leaders Program)",
+      path: "en/global-leaders.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Training - International Training(Overview)",
+      path: "en/training-overview.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Training - International Training(Programs)",
+      path: "en/programs.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Training - International Training(Programs 상세)",
+      path: "en/programs-view.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Cooperation - Partners",
+      path: "en/partners.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Cooperation - International Organizations",
+      path: "en/organizations.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Cooperation - Seminar and Forum(Overview)",
+      path: "en/seminar-forum.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Cooperation - Seminar and Forum(LOGODI-Tsinghua Seminar)",
+      path: "en/tsinghua-seminar-list.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Cooperation - Seminar and Forum(LOGODI-Tsinghua Seminar 상세)",
+      path: "en/tsinghua-seminar-view.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Cooperation - Seminar and Forum(LOGODI Global Forum)",
+      path: "en/global-forum-list.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - Cooperation - Seminar and Forum(LOGODI Global Forum 상세)",
+      path: "en/global-forum-view.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - News - LOGODI News",
+      path: "en/news-list.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - News - LOGODI News 상세",
+      path: "en/news-view.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - News - Publications(e-Newsletter)",
+      path: "en/newsletter.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - News - Publications(Brochure)",
+      path: "en/brochure.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - News - Q&A",
+      path: "en/qna.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - News - Reference",
+      path: "en/reference-list.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - News - Reference 상세",
+      path: "en/reference-view.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
+    {
+      name: "영문 - 사이트맵",
+      path: "en/sitemap.html",
+      note: [],
+      status: "done",
+      date: "2026-11-05"
+    },
+
   ];
 
 
@@ -993,7 +1204,7 @@
 
       var tabs =
         Array.prototype.slice.call(
-          document.querySelectorAll(".admin-tab")
+          document.querySelectorAll(".admin-tab[data-filter]")
         );
 
 
@@ -1012,7 +1223,16 @@
       /* =====================================================
          STATE
       ===================================================== */
+      var langTabs =
+        Array.prototype.slice.call(
+          document.querySelectorAll(".admin-lang-tab")
+        );
+
+
       var state = {
+
+        /* 2026-11-05 : 국문(ko) / 영문(en) 구분 */
+        lang: "ko",
 
         filter: "all",
 
@@ -1600,14 +1820,39 @@
       /* =====================================================
          통계
       ===================================================== */
+      /* 2026-11-05 : 언어 구분 (path 가 en/ 으로 시작하면 영문) */
+      function getLang(item) {
+
+        return item.lang ||
+          (item.path.replace(/^\/+/, "").indexOf("en/") === 0 ? "en" : "ko");
+
+      }
+
+
+      function getLangData() {
+
+        return PAGE_DATA.filter(
+          function (item) {
+
+            return getLang(item) === state.lang;
+
+          }
+        );
+
+      }
+
+
       function renderStats() {
 
+        var langData =
+          getLangData();
+
         var allCount =
-          PAGE_DATA.length;
+          langData.length;
 
 
         var progressCount =
-          PAGE_DATA.filter(
+          langData.filter(
             function (item) {
 
               return (
@@ -1620,7 +1865,7 @@
 
 
         var doneCount =
-          PAGE_DATA.filter(
+          langData.filter(
             function (item) {
 
               return (
@@ -1655,7 +1900,7 @@
           );
 
 
-        return PAGE_DATA.filter(
+        return getLangData().filter(
           function (item) {
 
 
@@ -1811,6 +2056,53 @@
 
 
               renderTable();
+
+            }
+          );
+
+        }
+      );
+
+
+      /* =====================================================
+         LANG TAB (2026-11-05)
+      ===================================================== */
+      langTabs.forEach(
+        function (tab) {
+
+          tab.addEventListener(
+            "click",
+            function () {
+
+              langTabs.forEach(
+                function (item) {
+
+                  var isActive =
+                    item === tab;
+
+                  item.classList.toggle(
+                    "is-active",
+                    isActive
+                  );
+
+                  item.setAttribute(
+                    "aria-pressed",
+                    isActive
+                      ? "true"
+                      : "false"
+                  );
+
+                }
+              );
+
+
+              state.lang =
+                tab.getAttribute(
+                  "data-lang"
+                );
+
+
+              render();
 
             }
           );
