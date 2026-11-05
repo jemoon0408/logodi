@@ -975,6 +975,7 @@
       path: "en/index.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -983,6 +984,7 @@
       path: "en/greetings.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -991,6 +993,7 @@
       path: "en/history.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -999,6 +1002,7 @@
       path: "en/organization.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1007,6 +1011,7 @@
       path: "en/directions.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1015,6 +1020,7 @@
       path: "en/domestic-overview.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1023,6 +1029,7 @@
       path: "en/global-leaders.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1031,6 +1038,7 @@
       path: "en/training-overview.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1039,6 +1047,7 @@
       path: "en/programs.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1047,6 +1056,7 @@
       path: "en/programs-view.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1055,6 +1065,7 @@
       path: "en/partners.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1063,6 +1074,7 @@
       path: "en/organizations.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1071,6 +1083,7 @@
       path: "en/seminar-forum.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1079,6 +1092,7 @@
       path: "en/tsinghua-seminar-list.html",
       note: [],
       status: "done",
+      a11y: "progress",
       date: "2026-11-05"
     },
 
@@ -1087,6 +1101,7 @@
       path: "en/tsinghua-seminar-view.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1095,6 +1110,7 @@
       path: "en/global-forum-list.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1103,6 +1119,7 @@
       path: "en/global-forum-view.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1111,6 +1128,7 @@
       path: "en/news-list.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1119,6 +1137,7 @@
       path: "en/news-view.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1127,6 +1146,7 @@
       path: "en/newsletter.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1135,6 +1155,7 @@
       path: "en/brochure.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1143,6 +1164,7 @@
       path: "en/qna.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1151,6 +1173,7 @@
       path: "en/reference-list.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1159,6 +1182,7 @@
       path: "en/reference-view.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
@@ -1167,6 +1191,7 @@
       path: "en/sitemap.html",
       note: [],
       status: "done",
+      a11y: "done",
       date: "2026-11-05"
     },
 
