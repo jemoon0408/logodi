@@ -79,4 +79,17 @@
       if (answer) answer.hidden = !open;
     });
   });
+
+  /* 오시는길 아코디언 : 아이콘+제목 버튼 클릭 시 내용 열기/닫기 */
+  document.querySelectorAll(".sub-way-acc__button").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var item = button.closest(".sub-way-acc__item");
+      var panel = document.getElementById(button.getAttribute("aria-controls"));
+      var open = button.getAttribute("aria-expanded") !== "true";
+
+      button.setAttribute("aria-expanded", String(open));
+      item.classList.toggle("is-open", open);
+      if (panel) panel.hidden = !open;
+    });
+  });
 })();

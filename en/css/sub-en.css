@@ -647,3 +647,151 @@
   flex: 1 0 auto;
   min-height: 0;
 }
+
+
+/* =========================================================
+   오시는길 아코디언 (en/directions.html, Figma 3750:27)
+   - 아이콘 : 투명 PNG(img/about/way-*.png) + 원형 배경(#edf8fe 110px) CSS
+   - 제목 : 국문 .sub-way__title(28px) 재사용, 항목마다 하단 구분선
+   - 첫 항목만 펼침, 버튼 클릭 시 열기/닫기 (js/sub-en.js)
+========================================================= */
+.sub-way-acc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sub-way-acc__item {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+/* 하단 구분선 : 아이콘 영역(110px + 간격 40px) 제외, 제목 시작 위치부터 */
+.sub-way-acc__item::after {
+  content: "";
+  position: absolute;
+  left: 150px;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-way-acc__icon {
+  flex: 0 0 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #edf8fe;
+}
+
+.sub-way-acc__icon img {
+  display: block;
+}
+
+.sub-way-acc__head {
+  margin: 0;
+}
+
+.sub-way-acc__button {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sub-way-acc__button .sub-way__title {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-top: 10px;
+}
+
+/* 열림/닫힘 표시 화살표 */
+.sub-way-acc__arrow {
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-right: 2px solid #111;
+  border-bottom: 2px solid #111;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.sub-way-acc__item.is-open .sub-way-acc__arrow {
+  transform: translateY(4px) rotate(-135deg);
+}
+
+.sub-way-acc__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0 0 150px;
+}
+
+.sub-way-acc__panel[hidden] {
+  display: none;
+}
+
+.sub-way-acc__panel .sub-dot-items {
+  margin-top: 0;
+}
+
+.sub-way-acc__panel > .sub-note {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sub-way-acc {
+    gap: 12px;
+  }
+
+  .sub-way-acc__item {
+    padding-bottom: 12px;
+  }
+
+  .sub-way-acc__item::after {
+    left: 80px;
+  }
+
+  .sub-way-acc__icon {
+    flex-basis: 64px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .sub-way-acc__icon img {
+    transform: scale(0.582);
+  }
+
+  .sub-way-acc__button {
+    gap: 16px;
+  }
+
+  .sub-way-acc__button .sub-way__title {
+    padding-top: 0;
+  }
+
+  .sub-way-acc__panel {
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 580px) {
+  .sub-way-acc__panel {
+    padding-left: 0;
+  }
+}
+
+/* 표 안 ↔ 기호 : 글꼴에서 위로 떠 보여 글자 중앙에 맞춤 */
+.sub-way-acc__arrow-text {
+  position: relative;
+  top: 0.12em;
+}

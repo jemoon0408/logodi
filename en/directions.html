@@ -230,159 +230,191 @@
 
 
           <!-- ========================= Directions START =========================
-               - 국문 오시는길(pages/about/content-action45.html) 마크업 그대로, 내용만 원본 영문
-               - 지도 : 원본 영문 지도(eng_map.jpg) -->
+               - 운영 영문(cmsid=102010400000)과 동일한 순서/내용 : Free Shuttle → By Bus → By Train → By Car
+               - 지도 : 원본 영문 지도(eng_map.jpg)
+               - 아코디언(Figma 3750:27) : 첫 항목만 펼침, 아이콘 img/about/way-bus|train|car.png (투명 배경, 원형 배경은 CSS) -->
           <section class="sub-section sub-page-body" aria-label="Directions">
             <div class="sub-section__contents">
 
               <img class="sub-way-map" src="img/about/eng-map.jpg" alt="Map to LOGODI - 150 Bangyo-ro, Iseo-myeon, Wanju-gun, Jeonbuk-do, near West Jeonju IC and Jeonbuk Innovation City">
 
-              <!-- 승용차 -->
-              <div class="sub-way">
-                <img class="sub-way__icon" src="../img/about/way-car.png" alt="">
-                <div class="sub-way__body">
-                  <h3 class="sub-way__title">By Car</h3>
+              <div class="sub-way-acc">
 
-                  <div class="sub-dot-items sub-dot-items--row">
-                    <div class="sub-dot-item">
-                      <strong>From Seoul</strong>
-                      <p>Gyeongbu Expressway → Cheonan JC (Nonsan-Cheonan Expressway) toward Sejong (Gwangju) → Nonsan JC (Honam Expressway) toward Iksan (Gwangju) → West Jeonju IC → West Jeonju TG → Toward Iseo → Kongjwipatjwi-ro toward Iseo → LOGODI</p>
+                <!-- Free Shuttle -->
+                <div class="sub-way-acc__item is-open">
+                  <h3 class="sub-way-acc__head">
+                    <button type="button" class="sub-way-acc__button" aria-expanded="true" aria-controls="wayPanelShuttle">
+                      <span class="sub-way-acc__icon"><img src="img/about/way-bus.png" alt="" width="42" height="50"></span>
+                      <span class="sub-way__title">Free Shuttle</span>
+                      <span class="sub-way-acc__arrow" aria-hidden="true"></span>
+                    </button>
+                  </h3>
+
+                  <div class="sub-way-acc__panel" id="wayPanelShuttle">
+                    <div class="sub-dot-items">
+                      <div class="sub-dot-item">
+                        <p>LOGODI runs a free shuttle service for trainees to the institute on Mondays and back to transportation hubs on Fridays.</p>
+                      </div>
+                      <div class="sub-dot-item">
+                        <p>For those commuting via Jeonju by bus or Iksan by train, separate shuttles are available at Jeonju Express Bus Terminal and Iksan Station every Monday, for departure at 9:25 AM and arrival at LOGODI around 9:50 AM. Every Friday, they depart from LOGODI at 12:15 PM and arrive back in Jeonju/Iksan around 12:45 PM.</p>
+                      </div>
                     </div>
-                    <div class="sub-dot-item">
-                      <strong>From Gwangju</strong>
-                      <p>Honam Expressway → West Jeonju IC → West Jeonju TG → Toward Iseo → Kongjwipatjwi-ro toward Iseo → LOGODI</p>
+
+                    <div class="sub-table-wrap sub-table-wrap--scroll">
+                      <table class="sub-table sub-course-table sub-table--center sub-table--wide sub-table--grid">
+                        <caption class="sr-only">Free shuttle timetable - Free shuttle timetable to LOGODI, information on Monday, Friday, and route, time, location</caption>
+                        <colgroup>
+                          <col style="width: 14%;">
+                          <col style="width: 32%;">
+                          <col style="width: 12%;">
+                          <col style="width: 42%;">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">Sortation</th>
+                            <th scope="col">Route</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Location</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="2" class="is-first">Mon</td>
+                            <td>Jeonju Express Bus Terminal <span class="sub-way-acc__arrow-text" aria-hidden="true">↔</span><span class="sr-only">to</span> LOGODI</td>
+                            <td>09:25</td>
+                            <td rowspan="2">On the bridge, across from the stop for Bus 72 (Buddhist Center/IMI)</td>
+                          </tr>
+                          <tr>
+                            <td>Iksan Station <span class="sub-way-acc__arrow-text" aria-hidden="true">↔</span><span class="sr-only">to</span> LOGODI</td>
+                            <td>09:25</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2" class="is-first">Fri</td>
+                            <td>Jeonju Express Bus Terminal <span class="sub-way-acc__arrow-text" aria-hidden="true">↔</span><span class="sr-only">to</span> LOGODI</td>
+                            <td>12:45</td>
+                            <td rowspan="2">Transfer area on the right after exiting Iksan Station</td>
+                          </tr>
+                          <tr>
+                            <td>Iksan Station <span class="sub-way-acc__arrow-text" aria-hidden="true">↔</span><span class="sr-only">to</span> LOGODI</td>
+                            <td>12:45</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                    <div class="sub-dot-item">
-                      <strong>From Daegu</strong>
-                      <p>Hwawon-Okpo JC (Olympic Expressway) → Jangsu JC (Iksan-Pohang Expressway) → Iksan JC (Honam Expressway) → West Jeonju IC → Toward Iseo → Kongjwipatjwi-ro toward Iseo → LOGODI</p>
+                    <p class="sub-note">※ Contact : Lim Jun-seok | +82 (0)63-907-5155</p>
+                  </div>
+                </div>
+
+                <!-- By Bus -->
+                <div class="sub-way-acc__item">
+                  <h3 class="sub-way-acc__head">
+                    <button type="button" class="sub-way-acc__button" aria-expanded="false" aria-controls="wayPanelBus">
+                      <span class="sub-way-acc__icon"><img src="img/about/way-bus.png" alt="" width="42" height="50"></span>
+                      <span class="sub-way__title">By Bus</span>
+                      <span class="sub-way-acc__arrow" aria-hidden="true"></span>
+                    </button>
+                  </h3>
+
+                  <div class="sub-way-acc__panel" id="wayPanelBus" hidden>
+                    <div class="sub-dot-items">
+                      <div class="sub-dot-item">
+                        <p>Direct buses to LOGODI run from Seoul via Express Bus Terminal (Central City), with a travel time of around 2 hrs 50 min.</p>
+                      </div>
+                      <div class="sub-dot-item">
+                        <p>Tickets can be purchased in advance at the terminal with cash or credit card or on board the bus with cash, and are 13,400 won for a standard, one-way fare. The departure timetable is below, which is subject to change at the discretion of the company.</p>
+                      </div>
                     </div>
-                    <div class="sub-dot-item">
-                      <strong>From Busan</strong>
-                      <p>Naengjeong JC (Namhae Expressway) → Jinju JC (Tongyeong-Daejeon Expressway) → Jangsu JC (Iksan-Pohang Expressway) → Iksan JC (Honam Expressway) → West Jeonju IC → Toward Iseo → Kongjwipatjwi-ro toward Iseo → LOGODI</p>
+
+                    <div class="sub-table-wrap sub-table-wrap--scroll">
+                      <table class="sub-table sub-course-table sub-table--kv">
+                        <caption class="sr-only">Bus Time table - from Seoul to LOGODI, from LOGODI to Seoul bus time table</caption>
+                        <colgroup>
+                          <col class="sub-table--kv__th">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Seoul → LOGODI</th>
+                            <td>06:40 | 08:20 | 10:50 | 12:40 | 15:10 | 17:20 | 19:30</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">LOGODI → Seoul</th>
+                            <td>06:55 | 08:35 | 10:55 | 12:55 | 15:25 | 17:25 | 19:25</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
+
+                    <p class="sub-note">By local bus in Jeonju, Bus 72 can be taken from outside the express or intercity bus terminals or Jeonju Stn. to LOGODI, and payment is accepted on board with cash or transportation card. Further information on local buses can be found in English, Chinese, and Japanese via the <a href="http://www.jeonjuits.go.kr/fore/main.view?lang=en" target="_blank" title="Opens in a new window">Jeonju City Traffic Information Center</a>.</p>
                   </div>
-
-                  <p class="sub-note">※ LOGODI can alternatively be located on navigation devices by searching the place "지방자치인재개발원" or address "전라북도 완주군 이서면 반교로 150."</p>
                 </div>
-              </div>
 
-              <!-- 버스 -->
-              <div class="sub-way">
-                <img class="sub-way__icon" src="../img/about/way-bus.png" alt="">
-                <div class="sub-way__body">
-                  <h3 class="sub-way__title">By Bus</h3>
+                <!-- By Train -->
+                <div class="sub-way-acc__item">
+                  <h3 class="sub-way-acc__head">
+                    <button type="button" class="sub-way-acc__button" aria-expanded="false" aria-controls="wayPanelTrain">
+                      <span class="sub-way-acc__icon"><img src="img/about/way-train.png" alt="" width="54" height="54"></span>
+                      <span class="sub-way__title">By Train</span>
+                      <span class="sub-way-acc__arrow" aria-hidden="true"></span>
+                    </button>
+                  </h3>
 
-                  <div class="sub-dot-items">
-                    <div class="sub-dot-item">
-                      <p>Direct buses to LOGODI run from Seoul via Express Bus Terminal (Central City), with a travel time of around 2 hrs 50 min.</p>
+                  <div class="sub-way-acc__panel" id="wayPanelTrain" hidden>
+                    <div class="sub-dot-items">
+                      <div class="sub-dot-item">
+                        <p>KTX, Saemaeul, and Mugunghwa trains depart from cities across Korea, and the closest stations to LOGODI are Jeonju and Iksan.</p>
+                      </div>
+                      <div class="sub-dot-item">
+                        <p>LOGODI can be reached by local bus from Jeonju Station or free shuttle from Iksan Station.</p>
+                      </div>
                     </div>
-                    <div class="sub-dot-item">
-                      <p>Tickets can be purchased in advance at the terminal with cash or credit card or on board the bus with cash, and are 13,400 won for a standard, one-way fare. The departure timetable is below, which is subject to change at the discretion of the company.</p>
+                    <p class="sub-note">Please see the relevant section above for further information on connections.</p>
+                  </div>
+                </div>
+
+                <!-- By Car -->
+                <div class="sub-way-acc__item">
+                  <h3 class="sub-way-acc__head">
+                    <button type="button" class="sub-way-acc__button" aria-expanded="false" aria-controls="wayPanelCar">
+                      <span class="sub-way-acc__icon"><img src="img/about/way-car.png" alt="" width="56" height="55"></span>
+                      <span class="sub-way__title">By Car</span>
+                      <span class="sub-way-acc__arrow" aria-hidden="true"></span>
+                    </button>
+                  </h3>
+
+                  <div class="sub-way-acc__panel" id="wayPanelCar" hidden>
+                    <div class="sub-table-wrap sub-table-wrap--scroll">
+                      <table class="sub-table sub-course-table sub-table--kv">
+                        <caption class="sr-only">By Car to LOGODI - By Car to LOGODI From Seoul, Gwangju, Daegu, Busan</caption>
+                        <colgroup>
+                          <col class="sub-table--kv__th">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">From Seoul</th>
+                            <td>Gyeongbu Expressway → Cheonan JC (Nonsan-Cheonan Expressway) toward Sejong (Gwangju) → Nonsan JC (Honam Expressway) toward Iksan (Gwangju) → West Jeonju IC → West Jeonju TG → Toward Iseo → Kongjwipatjwi-ro toward Iseo → LOGODI</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">From Gwangju</th>
+                            <td>Honam Expressway → West Jeonju IC → West Jeonju TG → Toward Iseo → Kongjwipatjwi-ro toward Iseo → LOGODI</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">From Daegu</th>
+                            <td>Hwawon-Okpo JC (Olympic Expressway) → Jangsu JC (Iksan-Pohang Expressway) → Iksan JC (Honam Expressway) → West Jeonju IC → Toward Iseo → Kongjwipatjwi-ro toward Iseo → LOGODI</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">From Busan</th>
+                            <td>Naengjeong JC (Namhae Expressway) → Jinju JC (Tongyeong-Daejeon Expressway) → Jangsu JC (Iksan-Pohang Expressway) → Iksan JC (Honam Expressway) → West Jeonju IC → Toward Iseo → Kongjwipatjwi-ro toward Iseo → LOGODI</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </div>
 
-                  <div class="sub-table-wrap sub-table-wrap--scroll">
-                    <table class="sub-table sub-course-table sub-table--kv">
-                      <caption class="sr-only">Bus timetable - from Seoul to LOGODI, from LOGODI to Seoul</caption>
-                      <colgroup>
-                        <col class="sub-table--kv__th">
-                        <col>
-                      </colgroup>
-                      <tbody>
-                        <tr>
-                          <th scope="row">Seoul → LOGODI</th>
-                          <td>06:40 | 08:20 | 10:50 | 12:40 | 15:10 | 17:20 | 19:30</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">LOGODI → Seoul</th>
-                          <td>06:55 | 08:35 | 10:55 | 12:55 | 15:25 | 17:25 | 19:25</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <div class="sub-notes">
-                    <p class="sub-note">※ By local bus in Jeonju, Bus 72 can be taken from outside the express or intercity bus terminals or Jeonju Stn. to LOGODI, and payment is accepted on board with cash or transportation card. Further information on local buses can be found in English, Chinese, and Japanese via the <a href="http://www.jeonjuits.go.kr/fore/main.view?lang=en" target="_blank" title="Opens in a new window">Jeonju City Traffic Information Center</a>.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 기차 -->
-              <div class="sub-content-block">
-                <div class="sub-small-title">
-                  <span class="sub-small-title__bullet" aria-hidden="true"></span>
-                  <h4>By Train</h4>
-                </div>
-
-                <div class="sub-dot-items">
-                  <div class="sub-dot-item">
-                    <p>KTX, Saemaeul, and Mugunghwa trains depart from cities across Korea, and the closest stations to LOGODI are Jeonju and Iksan.</p>
-                  </div>
-                  <div class="sub-dot-item">
-                    <p>LOGODI can be reached by local bus from Jeonju Station or free shuttle from Iksan Station.</p>
-                  </div>
-                </div>
-                <p class="sub-note">※ Please see By Bus above and Free Shuttle below for further information on connections.</p>
-              </div>
-
-              <!-- 무료 셔틀 (국문 통근버스 표) -->
-              <div class="sub-content-block">
-                <div class="sub-small-title">
-                  <span class="sub-small-title__bullet" aria-hidden="true"></span>
-                  <h4>Free Shuttle</h4>
-                </div>
-
-                <div class="sub-dot-items">
-                  <div class="sub-dot-item">
-                    <p>LOGODI runs a free shuttle service for trainees to the institute on Mondays and back to transportation hubs on Fridays.</p>
-                  </div>
-                  <div class="sub-dot-item">
-                    <p>For those commuting via Jeonju by bus or Iksan by train, separate shuttles are available at Jeonju Express Bus Terminal and Iksan Station every Monday, for departure at 9:25 AM and arrival at LOGODI around 9:50 AM. Every Friday, they depart from LOGODI at 12:15 PM and arrive back in Jeonju/Iksan around 12:45 PM.</p>
+                    <p class="sub-note">LOGODI can alternatively be located on navigation devices by searching the place "<span lang="ko">지방자치인재개발원</span>" or address "<span lang="ko">전라북도 완주군 이서면 반교로 150</span>."</p>
                   </div>
                 </div>
 
-                <div class="sub-table-wrap sub-table-wrap--scroll">
-                  <table class="sub-table sub-course-table sub-table--center sub-table--wide sub-table--grid">
-                    <caption class="sr-only">Free shuttle timetable - Sortation, Route, Time, Location</caption>
-                    <colgroup>
-                      <col style="width: 14%;">
-                      <col style="width: 32%;">
-                      <col style="width: 12%;">
-                      <col style="width: 42%;">
-                    </colgroup>
-                    <thead>
-                      <tr>
-                        <th scope="col">Sortation</th>
-                        <th scope="col">Route</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">Location</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td rowspan="2" class="is-first">Mon</td>
-                        <td>Jeonju Express Bus Terminal ↔ LOGODI</td>
-                        <td>09:25</td>
-                        <td rowspan="2">On the bridge, across from the stop for Bus 72 (Buddhist Center/IMI)</td>
-                      </tr>
-                      <tr>
-                        <td>Iksan Station ↔ LOGODI</td>
-                        <td>09:25</td>
-                      </tr>
-                      <tr>
-                        <td rowspan="2" class="is-first">Fri</td>
-                        <td>Jeonju Express Bus Terminal ↔ LOGODI</td>
-                        <td>12:45</td>
-                        <td rowspan="2">Transfer area on the right after exiting Iksan Station</td>
-                      </tr>
-                      <tr>
-                        <td>Iksan Station ↔ LOGODI</td>
-                        <td>12:45</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p class="sub-note">※ Contact : Lim Jun-seok | +82 (0)63-907-5155</p>
               </div>
 
             </div>
