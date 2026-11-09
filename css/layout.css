@@ -2643,8 +2643,10 @@ overflow-wrap: normal;
 	white-space: nowrap;
 }
 
-/* 공표항목 : 말줄임 없이 전체 표시 (줄바꿈) */
-.preinfo-table--disclosure .preinfo-table__content-text {
+/* 공표항목 : 말줄임 없이 전체 표시 (줄바꿈)
+   - preinfo-table--wrap : 다른 게시판 목록에서도 제목 전체 표시가 필요할 때 사용 */
+.preinfo-table--disclosure .preinfo-table__content-text,
+.preinfo-table--wrap .preinfo-table__content-text {
 	overflow: visible;
 	white-space: normal;
 	text-overflow: clip;
